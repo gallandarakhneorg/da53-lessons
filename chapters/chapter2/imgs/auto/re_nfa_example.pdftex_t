@@ -1,0 +1,9 @@
+%Overlays
+\bgroup%
+\begin{tikzpicture}%
+\node<1-> (X) {\includegraphics[width=424.11411em]{re_nfa_example_layer1}};%
+\node<2> (X) {\includegraphics[width=424.11411em]{re_nfa_example_layer2}};%
+\node<3> (X) {\includegraphics[width=424.11411em]{re_nfa_example_layer3}};%
+\node<4> (X) {\includegraphics[width=424.11411em]{re_nfa_example_layer4}};%
+\end{tikzpicture}%
+\egroup%

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="265.5173"
+   height="117.1124"
+   id="svg3089"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="memory_hierarchy.svg">
+  <defs
+     id="defs3091" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="130.30104"
+     inkscape:cy="69.972033"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="876"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3094">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Base &lt;1-&gt;"
+     style="display:inline"
+     transform="translate(165.28957,-32.993988)">
+    <rect
+       style="color:#000000;fill:#dfeff7;fill-opacity:1;fill-rule:nonzero;stroke:#2b5879;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect11075"
+       width="126.07142"
+       height="112.55872"
+       x="-87.506523"
+       y="35.243988" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="231.42857"
+       y="146.64285"
+       id="text15223"
+       sodipodi:linespacing="125%"
+       transform="translate(-107.72169,-11.291725)"><tspan
+         sodipodi:role="line"
+         id="tspan15225"
+         x="231.42857"
+         y="146.64285" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-24.668566"
+       y="50.014305"
+       id="text6463"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465"
+         x="-24.668566"
+         y="50.014305">Virtual Memory</tspan></text>
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m -87.863664,57.673503 126.785707,0"
+       id="path6453-5"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-24.480577"
+       y="72.584084"
+       id="text6459-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6461-5"
+         x="-24.480577"
+         y="72.584084">Physical Memory</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-24.668566"
+       y="95.303566"
+       id="text6463-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-7"
+         x="-24.668568"
+         y="95.303566">2<tspan
+   style="font-size:65.00091553%;baseline-shift:super"
+   id="tspan3026">nd</tspan>-Level Cache</tspan></text>
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m -87.863664,80.336462 126.785707,0"
+       id="path6453-9-6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m -87.863664,102.77829 126.785707,0"
+       id="path6453-0-0"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-24.480577"
+       y="117.6621"
+       id="text6459-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6461-4"
+         x="-24.480579"
+         y="117.6621">1<tspan
+   style="font-size:65.00091553%;baseline-shift:super"
+   id="tspan3024">st</tspan>-Level Cache</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-24.668566"
+       y="140.38167"
+       id="text6463-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-0"
+         x="-24.668566"
+         y="140.38167">Registers</tspan></text>
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m -87.863665,125.41454 126.785708,0"
+       id="path6453-9-2"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m -87.863665,147.85639 126.785708,0"
+       id="path6453-0-6"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-100.16457"
+       y="50.352264"
+       id="text6463-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-9"
+         x="-100.16457"
+         y="50.352264">&gt; 2 GB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="48.535355"
+       y="50.303436"
+       id="text6463-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-2"
+         x="48.535355"
+         y="50.303436">3-15 ms</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-100.16457"
+       y="73.066544"
+       id="text6463-0-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-9-4"
+         x="-100.16457"
+         y="73.066544">256 MB-16GB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="48.535347"
+       y="73.017715"
+       id="text6463-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-2-9"
+         x="48.535347"
+         y="73.017715">100-150 ns</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-100.16457"
+       y="95.423683"
+       id="text6463-0-2-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-9-4-2"
+         x="-100.16457"
+         y="95.423683">128 kB - 4MB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="48.535347"
+       y="95.374855"
+       id="text6463-9-6-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-2-9-8"
+         x="48.535347"
+         y="95.374855">40-60 ns</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-100.16457"
+       y="117.42368"
+       id="text6463-0-2-9-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-9-4-2-2"
+         x="-100.16457"
+         y="117.42368">16-64kB</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="48.535347"
+       y="117.37486"
+       id="text6463-9-6-4-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-2-9-8-6"
+         x="48.535347"
+         y="117.37486">5-10 ns</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-100.16457"
+       y="140.85226"
+       id="text6463-0-2-9-6-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-9-4-2-2-7"
+         x="-100.16457"
+         y="140.85226">32 Words</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       x="48.535347"
+       y="140.80345"
+       id="text6463-9-6-4-8-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6465-2-9-8-6-3"
+         x="48.535347"
+         y="140.80345">1 ns</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Temporaries &lt;2&gt;"
+     style="display:inline"
+     transform="translate(57.56788,-44.285713)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Local Data &lt;3&gt;"
+     style="display:inline"
+     transform="translate(57.56788,-44.285713)" />
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     id="g3096"
+     inkscape:label="SMS &lt;4&gt;"
+     transform="translate(57.56788,-44.285713)" />
+  <g
+     inkscape:label="AL &lt;5&gt;"
+     id="g3085"
+     inkscape:groupmode="layer"
+     style="display:inline"
+     transform="translate(57.56788,-44.285713)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="CL &lt;6&gt;"
+     transform="translate(55.515774,-44.642867)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="RV &lt;7&gt;"
+     transform="translate(55.515774,-44.642867)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="AP &lt;8&gt;"
+     style="display:inline"
+     transform="translate(55.515774,-44.642867)" />
+</svg>

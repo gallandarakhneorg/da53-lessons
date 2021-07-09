@@ -1,0 +1,2453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2032.2133"
+   height="876.17468"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="brief_history_of_languages.svg">
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath9833"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path9831"
+         d="m 0,11897 v 5953 h 8415 v -5953 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath10305"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10303"
+         d="m 0,5947 v 5953 H 8415 V 5947 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath10601"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path10599"
+         d="M 0,0 V 5950 H 8415 V 0 Z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.061871843"
+     inkscape:cx="-3115.9123"
+     inkscape:cy="443.85431"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3684.5945,-212.91393)">
+    <g
+       id="g1499"
+       transform="matrix(0,-0.13333333,-0.13333333,0,6066.5944,1325.7281)" />
+    <g
+       id="g9827"
+       transform="matrix(0,-0.13333333,-0.13333333,0,6066.5944,1325.7281)">
+      <g
+         id="g9829"
+         clip-path="url(#clipPath9833)">
+        <g
+           id="g9835"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,819.59502,1624.505)"
+             style="font-variant:normal;font-weight:bold;font-size:20px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9839">
+            <tspan
+               x="0 10 20 30"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9837">2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 7281.1001,15839.4 h -33 l 33,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9841"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 7281.1001,15839.4 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9843"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g9845"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,730.11401,1565.8311)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9849">
+            <tspan
+               x="0 6.0029998 9.9989996 12.501 15.003 21.006001 26.01 28.26 32.759998 35.009998 39.509998 41.759998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9847">Tcl/Tk 8.6.7</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,721.11401,1569.075)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9853">
+            <tspan
+               x="0 3.9960001 8.4960003 12.996 17.496 20.997 23.499001 25.749001 30.249001 32.499001 34.749001 39.249001 43.749001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9851">august 9, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 7281.1001,14705.5 h -33 l 33,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9855"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 7281.1001,14705.5 v 361.6"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9857"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,15459.2 h -33.0998 l 33.0998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9859"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,15459.2 v 921.7"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9861"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,17115 h -33.0998 l 33.0998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9863"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,17115 v 735"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9865"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g9867"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,219.304,1684.325)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9871">
+            <tspan
+               x="0 5.4990001 9.4949999 13.491 15.993 18.243 22.743 24.993 29.493"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9869">Perl 5.26</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,210.304,1691.9529)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9875">
+            <tspan
+               x="0 7.0019999 10.998 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9873">may 30, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,193.20697,1668.89)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9879">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9877">OCaml 4.04.2</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,184.20697,1667.1391)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9883">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9881">june 23, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 1895.3003,16831.5 h -33.1006 l 33.1006,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9885"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 1895.3003,16831.5 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9887"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g9889"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,191.27698,1581.292)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9893">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9891">OCaml 4.05.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,182.27698,1578.794)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9897">
+            <tspan
+               x="0 2.5020001 7.0019999 9.5039997 14.004 16.254 20.754 25.254 27.504 29.754 34.254002 38.754002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9895">july 13, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 1895.3003,15960.8 h -33.1006 l 33.1006,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9899"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,15960.8 v 168.1"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9901"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,15051.9 h -33.1006 l 33.1006,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9903"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 1895.3003,15051.9 V 15220"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9905"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g9907"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,615.404,1495.706)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9911">
+            <tspan
+               x="0 5.4990001 9.9989996 12.996 18 22.5 27.504 29.754 34.254002 36.504002 41.004002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9909">Python 3.6.3</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,606.404,1499.95)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9915">
+            <tspan
+               x="0 4.5 8.4960003 10.998 15.498 19.997999 23.993999 26.990999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9913">october 3, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,614.44297,1749.4701)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9919">
+            <tspan
+               x="0 5.4990001 9.9989996 12.996 18 22.5 27.504 29.754 34.254002 36.504002 41.004002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9917">Python 3.6.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,605.44297,1759.959)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9923">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 46.233002 48.483002 50.733002 55.233002 59.733002 64.233002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9921">december 23, 2016</tspan>
+          </text>
+        </g>
+        <path
+           d="m 6147.3,17681.9 h -33.0998 l 33.0998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9925"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,17681.9 v 309.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9927"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,15130.7 h -33.0998 l 33.0998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9929"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,15130.7 v 1727.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9931"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,13049.7 h -33.0998 l 33.0998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9933"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,13049.7 v 1347"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9935"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g9937"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,530.75801,1714.799)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9941">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999 26.747999 28.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9939">Swift 3.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,521.75801,1726.1711)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9945">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9943">march 27, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,529.54302,1515.697)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9949">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999 26.747999 28.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9947">Swift 4.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,520.54302,1534.318)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9953">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 50.490002 52.740002 57.240002 61.740002 66.239998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9951">september 19, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="M 5296.9001,17398.4 H 5263.8 l 33.1001,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9955"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,17398.4 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9957"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,15414.2 H 5263.8 l 33.1001,-115.4 33.0999,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9959"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5296.9001,15414.2 v 1205.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9961"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,13571.7 H 5263.8 l 33.1001,-115.4 33.0999,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9963"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5296.9001,13571.7 v 1018.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9965"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,15555.9 h -33 l 33,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9967"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5013.4001,15555.9 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9969"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g9971"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,500.98701,1520.228)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9975">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9973">Java 9</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,490.98701,1543.223)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9979">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 50.490002 52.740002 57.240002 61.740002 66.239998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9977">september 21, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,457.32197,1563.553)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9983">
+            <tspan
+               x="0 6.4980001 10.998 13.248 17.747999 19.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9981">C# 7.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,448.32197,1579.928)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9987">
+            <tspan
+               x="0 3.9960001 8.4960003 12.996 17.496 20.997 23.499001 25.749001 30.249001 34.749001 36.999001 39.249001 43.749001 48.249001 52.749001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9985">august 14, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,457.99897,1717.102)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9991">
+            <tspan
+               x="0 6.4980001 10.998 13.248 17.747999 19.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9989">C# 7.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,448.99897,1726.224)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text9995">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 38.241001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan9993">march 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="M 4588.2002,14422 H 4555.2 l 33.0002,-115.3 33.0998,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path9997"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4588.2002,14422 v 780.1"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path9999"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,17398.4 H 4555.2 l 33.0002,-115.3 33.0998,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10001"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,17398.4 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10003"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,15891.1 H 4555.2 l 33.0002,-115.3 33.0998,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10005"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4588.2002,15891.1 v 876.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10007"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10009"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,331.50901,1538.248)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10013">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001 34.506001 36.756001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10011">Ruby 2.4.2</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,322.50901,1542.869)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10017">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 16.749001 18.999001 23.499001 27.999001 30.249001 32.499001 36.999001 41.499001 45.999001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10015">sept. 14, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3312.6001,17681.9 h -32.9998 l 32.9998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10019"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3312.6001,17681.9 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10021"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,14698.7 h -32.9998 l 32.9998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10023"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,14698.7 v 168.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10025"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,15555.9 h -32.9998 l 32.9998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10027"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,15555.9 v 1160.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10029"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10031"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,333.00901,1733.975)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10035">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10033">Ruby 2.4</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,324.00901,1751.0881)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10039">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 46.233002 48.483002 50.733002 55.233002 59.733002 64.233002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10037">december 25, 2016</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,261.14602,1736.9711)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10043">
+            <tspan
+               x="0 5.4990001 12.501 18 20.25 24.75 27"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10041">PHP 7.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,252.14602,1753.3369)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10047">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 43.983002 46.233002 50.733002 55.233002 59.733002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10045">december 1, 2016</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,263.39504,1491.093)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10051">
+            <tspan
+               x="0 5.4990001 12.501 18 20.25 24.75 27"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10049">PHP 7.2</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,254.39504,1510.213)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10055">
+            <tspan
+               x="0 4.5 9 13.5 17.496 24.497999 28.997999 32.993999 35.991001 38.241001 42.741001 47.241001 49.491001 51.741001 56.241001 60.741001 65.240997"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10053">november 30, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2604.0002,17681.9 h -33.0998 l 33.0998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10057"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2604.0002,17681.9 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10059"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,15272.4 h -33.0998 l 33.0998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10061"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,15272.4 v 1585.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10063"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,11897.2 v 2409.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10065"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10067"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,819.59502,1260.116)"
+             style="font-variant:normal;font-weight:bold;font-size:20px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10071">
+            <tspan
+               x="0 10 20 30"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10069">2018</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,728.61499,1448.624)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10075">
+            <tspan
+               x="0 6.0029998 9.9989996 12.501 15.003 21.006001 26.01 28.26 32.759998 35.009998 39.509998 41.759998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10073">Tcl/Tk 8.6.8</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,719.61499,1459.86)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10079">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 46.233002 48.483002 50.733002 55.233002 59.733002 64.233002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10077">december 22, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,617.44199,1284.716)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10083">
+            <tspan
+               x="0 5.4990001 9.9989996 12.996 18 22.5 27.504 29.754 34.254002 36.504002 41.004002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10081">Python 3.7.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,608.44199,1285.463)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10087">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10085">june 27, 2018</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,534.11401,1333.477)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10091">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999 26.747999 28.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10089">Swift 4.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,525.11401,1341.851)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10095">
+            <tspan
+               x="0 3.9960001 8.4960003 11.493 13.995 16.497 18.747 23.247 27.747 29.997 32.247002 36.747002 41.247002 45.747002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10093">april 29, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 5013.4001,14138.6 h -33 l 33,-115.4 33.0999,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10097"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,14138.6 v 593.3"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10099"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,13146.5 H 4555.2 l 33.0002,-115.4 33.0998,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10101"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4588.2002,13146.5 v 593.3"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10103"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10105"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,456.64399,1409.679)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10109">
+            <tspan
+               x="0 6.4980001 10.998 13.248 17.747999 19.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10107">C# 7.2</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,447.64399,1429.547)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10113">
+            <tspan
+               x="0 2.997 6.993 11.493 14.49 18.99 22.986 25.983 30.483 32.733002 37.233002 41.733002 43.983002 46.233002 50.733002 55.233002 59.733002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10111">february 20, 2018</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,463.60996,1287.135)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10117">
+            <tspan
+               x="0 6.4980001 10.998 13.248 17.747999 19.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10115">C# 7.3</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,454.60996,1297.26)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10121">
+            <tspan
+               x="0 7.0019999 10.998 15.498 17.747999 22.247999 24.497999 26.747999 31.247999 35.748001 40.248001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10119">may 7, 2018</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,331.93999,1454.442)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10125">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001 34.506001 36.756001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10123">Ruby 2.5.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,322.93999,1458.06)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10129">
+            <tspan
+               x="0 4.5 8.4960003 12.492 14.742 16.992001 21.492001 25.992001 28.242001 30.492001 34.992001 39.492001 43.992001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10127">dec. 25, 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,330.01001,1337.234)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10133">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001 34.506001 36.756001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10131">Ruby 2.5.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,321.01001,1344.727)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10137">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10135">march 28, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3312.6001,13571.7 h -32.9998 l 32.9998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10139"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,13571.7 v 451.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10141"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10143"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,219.87798,1519.441)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10147">
+            <tspan
+               x="0 5.4990001 9.4949999 13.491 15.993 18.243 22.743 24.993 29.493 33.993 36.243"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10145">Perl 5.26.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,210.87798,1534.439)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10151">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 50.490002 52.740002 57.240002 61.740002 66.239998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10149">september 22, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2178.8,13571.7 h -33.0998 l 33.0998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10153"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,13571.7 v 1018.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10155"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10157"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,237.22602,1388.957)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10161">
+            <tspan
+               x="0 5.4990001 9.4949999 13.491 15.993 18.243 22.743 24.993 29.493 33.993 38.493 42.993 45.243 49.743"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10159">Perl 6 2018,04</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,228.22602,1384.2091)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10165">
+            <tspan
+               x="0 7.0019999 10.998 15.498 17.747999 22.247999 24.497999 26.747999 31.247999 35.748001 40.248001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10163">may 7, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2320.5,13996.8 h -33.1001 l 33.1001,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10167"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2320.5,13996.8 V 14165"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10169"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2320.5164,14164.971 c 0,181.394 -63.4559,328.443 -141.7322,328.443"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10171"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10173"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,237.36999,1284.447)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10177">
+            <tspan
+               x="0 5.4990001 9.4949999 13.491 15.993 18.243 22.743 24.993 29.493 33.993 38.493 42.993 45.243 49.743"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10175">Perl 6 2018,06</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,228.36999,1281.95)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10181">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10179">june 27, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2320.5,13004.7 h -33.1001 l 33.1001,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10183"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2320.5,13004.7 v 309.9"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10185"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2320.5,12109.3 h -33.1001 l 33.1001,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10187"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2320.5,12109.3 v 168.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10189"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10191"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,191.03003,1484.111)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10195">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10193">OCaml 4.06.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,182.03003,1490.357)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10199">
+            <tspan
+               x="0 4.5 9 13.5 17.496 24.497999 28.997999 32.993999 35.991001 38.241001 42.741001 44.991001 47.241001 51.741001 56.241001 60.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10197">november 3, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="m 1895.3003,11897.2 v 2254.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10201"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10203"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,503.23701,1396.262)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10207">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25 24.75 29.25 31.5"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10205">Java 10,0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,493.23701,1403.3859)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10211">
+            <tspan
+               x="0 3.9960001 8.4960003 11.493 13.995 16.497 18.747 23.247 27.747 29.997 32.247002 36.747002 41.247002 45.747002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10209">april 20, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 5013.4001,11188.6 v 2254.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10213"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3879.6001,14989 H 3846.5 l 33.1001,-115.4 33,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10215"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3879.6001,14989 v 2861"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10217"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10219"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,392.77202,1481.944)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10223">
+            <tspan
+               x="0 3.5009999 8.5050001 15.507 18.009001 21.51 27.513 34.011002 36.261002 42.758999 47.889 53.019001 55.269001 58.265999 64.764 69.893997 75.024002 79.524002 84.024002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10221">ISO/IEC C++ (C++17)</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,383.77202,1470.55)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10227">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 43.983002 46.233002 50.733002 55.233002 59.733002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10225">december 1, 2017</tspan>
+          </text>
+        </g>
+        <path
+           d="M 3879.6001,13713.4 H 3846.5 l 33.1001,-115.4 33,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10229"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3879.6001,13713.4 v 168.1"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10231"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 7281.1001,11613.8 V 13868"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10233"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,11485.6 v 836.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10235"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,11091.8 v 1700.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10237"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10239"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,216.95601,1337.655)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10243">
+            <tspan
+               x="0 5.4990001 9.4949999 13.491 15.993 18.243 22.743 24.993 29.493 33.993 36.243"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10241">Perl 5.30.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,207.95601,1341.908)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10247">
+            <tspan
+               x="0 7.0019999 10.998 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10245">may 22, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 5296.9001,11897.2 v 947.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10249"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10251"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,377.45801,1670.448)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10255">
+            <tspan
+               x="0 6.0029998 12.501 20.997 27.495001 32.499001 36.494999 40.491001 42.993 47.997002 50.993999 53.243999 57.240002 62.243999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10253">ECMAScript ed8</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,368.45801,1654.95)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10259">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 31.247999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10257">june 2017</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,377.45801,1285.982)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10263">
+            <tspan
+               x="0 6.0029998 12.501 20.997 27.495001 32.499001 36.494999 40.491001 42.993 47.997002 50.993999 53.243999 57.240002 62.243999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10261">ECMAScript ed9</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,368.45801,1270.484)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10267">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 31.247999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10265">june 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3737.8,16831.5 h -32.9997 l 32.9997,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10269"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3737.8,16831.5 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10271"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3737.8,13004.7 h -32.9997 l 32.9997,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10273"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3737.8,13004.7 v 3002.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10275"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3737.8,11343.9 v 836.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10277"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,11188.6 v 1700.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10279"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4588.2002,11627.3 v 836.9"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10281"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10283"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,440.89897,1279.4801)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10287">
+            <tspan
+               x="0 3.5009999 8.5050001 15.507 18.009001 21.51 27.513 34.011002 36.261002 42.758999 45.008999 48.006001 54.504002 59.004002 63.504002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10285">ISO/IEC C (C17)</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,431.89897,1264.103)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10291">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 31.247999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10289">june 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 4446.5,13004.7 h -33.0999 l 33.0999,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10293"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4446.5,13004.7 V 17850"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10295"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4446.5,11188.6 v 836.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10297"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g10299"
+       transform="matrix(0,-0.13333333,-0.13333333,0,6066.5944,1325.7281)">
+      <g
+         id="g10301"
+         clip-path="url(#clipPath10305)">
+        <path
+           d="m 1895.3003,11731.9 h -33.1006 l 33.1006,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10307"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 1895.3003,11731.9 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10309"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10311"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,192.026,1157.094)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10315">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10313">OCaml 4.07.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,183.026,1154.596)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10319">
+            <tspan
+               x="0 2.5020001 7.0019999 9.5039997 14.004 16.254 20.754 25.254 27.504 29.754 34.254002 38.754002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10317">july 10, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 1895.3003,9039 h -33.1006 l 33.1006,-115.4001 33.1001,115.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10321"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,9039 v 1913.9"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10323"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10325"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,260.32397,1014.412)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10329">
+            <tspan
+               x="0 5.4990001 12.501 18 20.25 24.75 27"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10327">PHP 7.3</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,251.32397,1030.778)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10333">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 43.983002 46.233002 50.733002 55.233002 59.733002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10331">december 6, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2604.0002,10456.3 h -33.0998 l 33.0998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10335"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2604.0002,10456.3 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10337"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,11023.2 h -33 l 33,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10339"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,11023.2 v 1441.3"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10341"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10343"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,501.88203,1070.991)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10347">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25 24.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10345">Java 11</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,491.88203,1091.736)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10351">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 50.490002 52.740002 57.240002 61.740002 66.239998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10349">september 25, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 5013.4001,9889.4001 h -33 l 33,-115.4001 33.0999,115.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10353"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5013.4001,9889.4001 V 10167.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10355"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10357"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,819.59502,917.03896)"
+             style="font-variant:normal;font-weight:bold;font-size:20px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10361">
+            <tspan
+               x="0 10 20 30"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10359">2019</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,728.61499,1020.073)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10365">
+            <tspan
+               x="0 6.0029998 9.9989996 12.501 15.003 21.006001 26.01 28.26 32.759998 35.009998 39.509998 41.759998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10363">Tcl/Tk 8.6.9</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,719.61499,1031.813)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10369">
+            <tspan
+               x="0 4.5 9 13.5 17.496 24.497999 28.997999 32.993999 35.991001 38.241001 42.741001 47.241001 49.491001 51.741001 56.241001 60.741001 65.240997"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10367">november 16, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 7281.1001,10456.3 h -33 l 33,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10371"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 7281.1001,10456.3 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10373"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 7281.1001,7479.8999 h -33 l 33,-115.2998 33.1001,115.2998"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10375"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 7281.1001,7479.8999 V 9567"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10377"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,7621.7002 h -33.0998 L 6147.3,7506.3 l 33.1001,115.4002"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10379"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,7621.7002 v 451.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10381"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,8755.5 h -33.0998 l 33.0998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10383"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,8755.5 v 3286.2"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10385"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10387"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,619.69102,858.86406)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10391">
+            <tspan
+               x="0 5.4990001 9.9989996 12.996 18 22.5 27.504 29.754 34.254002 36.504002 41.004002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10389">Python 3.7.4</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,610.69102,856.61406)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10395">
+            <tspan
+               x="0 2.5020001 7.0019999 9.5039997 14.004 16.254 20.754 23.004 25.254 29.754 34.254002 38.754002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10393">july 8, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="M 5296.9001,9889.4001 H 5263.8 L 5296.9001,9774 5330,9889.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10397"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,9889.4001 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10399"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10401"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,530.43701,881.99795)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10405">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999 26.747999 28.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10403">Swift 5.1</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,521.43701,890.37295)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10409">
+            <tspan
+               x="0 3.9960001 8.4960003 11.493 13.995 16.497 18.747 23.247 27.747 29.997 32.247002 36.747002 41.247002 45.747002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10407">april 19, 2019</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,528.86499,962.74297)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10413">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10411">Swift 5</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,519.86499,977.48906)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10417">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10415">march 25, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="M 5296.9001,9025.4001 H 5263.8 l 33.1001,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10419"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5296.9001,9025.4001 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10421"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,10456.3 h -32.9998 l 32.9998,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10423"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3312.6001,10456.3 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10425"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10427"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,332.68901,898.14004)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10431">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001 34.506001 36.756001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10429">Ruby 2.6.3</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,323.68901,902.63496)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10435">
+            <tspan
+               x="0 3.9960001 8.4960003 11.493 13.995 16.497 18.747 23.247 27.747 29.997 32.247002 36.747002 41.247002 45.747002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10433">april 17, 2019</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,329.76299,1017.825)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10439">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10437">Ruby 2.6</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,320.76299,1034.939)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10443">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 46.233002 48.483002 50.733002 55.233002 59.733002 64.233002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10441">december 25, 2018</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3312.6001,9180.7002 h -32.9998 l 32.9998,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10445"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3312.6001,9180.7002 V 9632.3"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10447"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,8755.5 h -33.0998 l 33.0998,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10449"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,8755.5 v 876.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10451"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10453"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,262.04102,854.23906)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10457">
+            <tspan
+               x="0 5.4990001 12.501 18 20.25 24.75 27 31.5 33.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10455">PHP 7.3.8</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,253.04102,858.99102)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10461">
+            <tspan
+               x="0 2.5020001 7.0019999 9.5039997 14.004 16.254 20.754 25.254 27.504 29.754 34.254002 38.754002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10459">july 30, 2019</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,191.27698,883.304)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10465">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10463">OCaml 4.08.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,182.27698,881.55303)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10469">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10467">june 14, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="m 1895.3003,8046.8 h -33.1006 l 33.1006,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10471"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 1895.3003,8046.8 V 8215"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10473"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10475"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,501.88203,958.71699)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10479">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25 24.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10477">Java 12</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,491.88203,972.21299)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10483">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10481">march 19, 2019</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,376.45601,871.62998)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10487">
+            <tspan
+               x="0 6.0029998 12.501 20.997 27.495001 32.499001 36.494999 40.491001 42.993 47.997002 50.993999 53.243999 57.240002 62.243999 66.744003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10485">ECMAScript ed10</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,367.45601,853.88203)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10491">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 31.247999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10489">june 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3737.8,8897.2002 h -32.9997 l 32.9997,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10493"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3737.8,8897.2002 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10495"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10497"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,728.11201,724.49302)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10501">
+            <tspan
+               x="0 6.0029998 9.9989996 12.501 15.003 21.006001 26.01 28.26 32.759998 35.009998 39.509998 41.759998 46.259998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10499">Tcl/Tk 8.6.10</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,719.11201,733.98398)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10505">
+            <tspan
+               x="0 4.5 9 13.5 17.496 24.497999 28.997999 32.993999 35.991001 38.241001 42.741001 47.241001 49.491001 51.741001 56.241001 60.741001 65.240997"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10503">november 21, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="m 7281.1001,6435.9998 h -33 l 33,-115.2996 33.1001,115.2996"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10507"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 7281.1001,6435.9998 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10509"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10511"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,618.40298,738.523)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10515">
+            <tspan
+               x="0 5.4990001 9.9989996 12.996 18 22.5 27.504 29.754 34.254002 36.504002 41.004002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10513">Python 3.8.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,609.40298,745.01704)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10519">
+            <tspan
+               x="0 4.5 8.4960003 10.998 15.498 19.997999 23.993999 26.990999 29.240999 33.741001 38.241001 40.491001 42.741001 47.241001 51.741001 56.241001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10517">october 14, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="m 6147.3,5535.6001 v 1262"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10521"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,5947.1997 V 8356.7002"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10523"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5013.4001,5947.1997 V 7364.6001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10525"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10527"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,505.01704,789.31602)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10531">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25 24.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10529">Java 13</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,495.01704,803.31099)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10535">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 52.740002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10533">september 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="m 5013.4001,8188.5999 h -33 l 33,-115.3997 33.0999,115.3997"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10537"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5013.4001,8188.5999 V 9110.3"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10539"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3737.8,5947.1997 V 7931.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10541"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,5947.1997 v 283.5005"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10543"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10545"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,332.76201,687.57402)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10549">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001 34.506001 36.756001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10547">Ruby 2.7.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,323.76201,701.31201)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10553">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 46.233002 48.483002 50.733002 55.233002 59.733002 64.233002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10551">december 25, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3312.6001,7196.5 h -32.9998 l 32.9998,-115.4001 33.1001,115.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10555"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3312.6001,7196.5 V 8453.4001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10557"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2604.0002,5947.1997 V 8028.2002"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10559"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2178.8,5947.1997 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10561"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10563"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,191.27698,781.38203)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10567">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10565">OCaml 4.09.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,182.27698,790.37798)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10571">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 50.490002 52.740002 57.240002 61.740002 66.239998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10569">september 18, 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="M 1895.3003,5947.1997 V 7081.0999"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10573"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,8330.3 H 4555.2 l 33.0002,-115.3 33.0998,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10575"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,8330.3 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10577"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10579"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,461.82002,803.48799)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10583">
+            <tspan
+               x="0 6.4980001 10.998 13.248 17.747999 19.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10581">C# 8.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,452.82002,819.85898)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10587">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 52.740002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10585">september 2019</tspan>
+          </text>
+        </g>
+        <path
+           d="M 4588.2002,5947.1997 V 7551.3"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10589"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 4446.5,11731.9 h -33.0999 l 33.0999,-115.4 33.1001,115.4"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10591"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4446.5,11731.9 V 11900"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10593"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g10595"
+       transform="matrix(0,-0.13333333,-0.13333333,0,6066.5944,1325.7281)">
+      <g
+         id="g10597"
+         clip-path="url(#clipPath10601)">
+        <g
+           id="g10603"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,819.59502,452.49897)"
+             style="font-variant:normal;font-weight:bold;font-size:20px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10607">
+            <tspan
+               x="0 10 20 30"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10605">2020</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,618.40298,375.652)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10611">
+            <tspan
+               x="0 5.4990001 9.9989996 12.996 18 22.5 27.504 29.754 34.254002 36.504002 41.004002 43.254002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10609">Python 3.9.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,609.40298,379.896)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10615">
+            <tspan
+               x="0 4.5 8.4960003 10.998 15.498 19.997999 23.993999 26.990999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10613">october 5, 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 6147.3,3939.4001 h -33.0998 L 6147.3,3824 l 33.1001,115.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10617"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 6147.3,3939.4001 V 6091.7"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10619"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,2989.8003 h -33.0998 l 33.0998,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10621"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 6147.3,2989.8003 v 168.0998"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10623"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,3124.8003 H 5263.8 l 33.1001,-115.4002 33.0999,115.4002"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10625"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5296.9001,3124.8003 v 168.0998"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10627"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,5640.2002 H 5263.8 L 5296.9001,5524.8 5330,5640.2002"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10629"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5296.9001,5640.2002 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10631"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10633"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,532.68599,538.97202)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10637">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999 26.747999 28.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10635">Swift 5.2</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,523.68599,550.34399)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10641">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 35.991001 38.241001 42.741001 47.241001 51.741001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10639">march 24, 2020</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,531.93701,388.677)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10645">
+            <tspan
+               x="0 5.0040002 11.502 14.004 17.000999 19.997999 22.247999 26.747999 28.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10643">Swift 5.3</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,522.93701,407.29802)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10649">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 50.490002 52.740002 57.240002 61.740002 66.239998"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10647">september 16, 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="M 5296.9001,4222.8 H 5263.8 l 33.1001,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10651"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5296.9001,4222.8 v 638.3001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10653"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,5640.2002 h -33 l 33,-115.4002 33.0999,115.4002"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10655"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 5013.4001,5640.2002 V 6514.5"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10657"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,3273.3 h -33 l 33,-115.3999 L 5046.5,3273.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10659"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,3273.3 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10661"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10663"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,504.26802,538.75903)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10667">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25 24.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10665">Java 14</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,494.26802,545.504)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10671">
+            <tspan
+               x="0 7.0019999 10.998 13.995 17.990999 22.490999 24.740999 29.240999 33.741001 38.241001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10669">march 2020</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,505.01704,395.88501)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10675">
+            <tspan
+               x="0 4.5 9 13.5 18 20.25 24.75"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10673">Java 15</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,495.01704,409.87998)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10679">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 52.740002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10677">september 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 5013.4001,4222.8 h -33 l 33,-115.3 33.0999,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10681"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 5013.4001,4222.8 v 735.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10683"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3737.8,5073.2002 h -32.9997 l 32.9997,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10685"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3737.8,5073.2002 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10687"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3737.8,3919 h -32.9997 l 32.9997,-115.3 33.1001,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10689"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3737.8,3919 v 168.2002"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10691"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10693"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,376.45601,488.06602)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10697">
+            <tspan
+               x="0 6.0029998 12.501 20.997 27.495001 32.499001 36.494999 40.491001 42.993 47.997002 50.993999 53.243999 57.240002 62.243999 66.744003"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10695">ECMAScript ed11</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,367.45601,470.31802)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10701">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 31.247999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10699">june 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3312.6001,2753.8 h -32.9998 l 32.9998,-115.3999 33.1001,115.3999"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10703"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 3312.6001,2753.8 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10705"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10707"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,331.18999,352.19001)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10711">
+            <tspan
+               x="0 6.4980001 11.502 16.506001 21.006001 23.256001 27.756001 30.006001 34.506001 36.756001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10709">Ruby 3.0.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,322.18999,365.929)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10715">
+            <tspan
+               x="0 4.5 8.4960003 12.492 16.488001 23.49 27.99 31.986 34.983002 37.233002 41.733002 46.233002 48.483002 50.733002 55.233002 59.733002 64.233002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10713">december 25, 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 3312.6001,3797.6001 h -32.9998 l 32.9998,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10717"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 3312.6001,3797.6001 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10719"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,2906.6001 h -33.0998 l 33.0998,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10721"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,2906.6001 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10723"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2604.0002,3939.4001 h -33.0998 L 2604.0002,3824 l 33.1001,115.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10725"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2604.0002,3939.4001 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10727"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10729"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,262.04102,368.778)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10733">
+            <tspan
+               x="0 5.4990001 12.501 18 20.25 24.75 27 31.5 33.75 38.25"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10731">PHP 7.4.12</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,253.04102,377.77402)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10737">
+            <tspan
+               x="0 4.5 8.4960003 10.998 15.498 19.997999 23.993999 26.990999 29.240999 33.741001 38.241001 40.491001 42.741001 47.241001 51.741001 56.241001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10735">october 29, 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2178.8,5073.2002 h -33.0998 l 33.0998,-115.3001 33.1001,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10739"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 2178.8,5073.2002 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10741"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10743"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,220.198,484.42602)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10747">
+            <tspan
+               x="0 5.4990001 9.4949999 13.491 15.993 18.243 22.743 24.993 29.493 33.993 36.243"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10745">Perl 5.32.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,211.198,488.67798)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10751">
+            <tspan
+               x="0 2.5020001 7.0019999 11.502 15.498 17.747999 22.247999 26.747999 28.997999 31.247999 35.748001 40.248001 44.748001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10749">june 21, 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 2178.8,4105.8 h -33.0998 L 2178.8,3990.4001 2211.9001,4105.8"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10753"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 2178.8,4105.8 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10755"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,3525.3 h -33.1006 l 33.1006,-115.3999 33.1001,115.3999"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10757"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,3525.3 v 168.1001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10759"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,5781.9001 h -33.1006 l 33.1006,-115.4001 33.1001,115.4001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10761"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 1895.3003,5781.9001 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10763"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10765"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,189.922,558.46401)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10769">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10767">OCaml 4.10.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,180.922,564.20601)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10773">
+            <tspan
+               x="0 2.997 6.993 11.493 14.49 18.99 22.986 25.983 30.483 32.733002 37.233002 41.733002 43.983002 46.233002 50.733002 55.233002 59.733002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10771">february 20, 2020</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,191.10199,432.26001)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10777">
+            <tspan
+               x="0 7.0019999 13.5 18 25.497 27.999001 30.249001 34.749001 36.999001 41.499001 45.999001 48.249001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10775">OCaml 4.11.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,182.10199,434.51001)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10781">
+            <tspan
+               x="0 3.9960001 8.4960003 12.996 17.496 20.997 23.499001 25.749001 30.249001 34.749001 36.999001 39.249001 43.749001 48.249001 52.749001"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10779">august 19, 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="m 1895.3003,4506.3 h -33.1006 l 33.1006,-115.3999 33.1001,115.3999"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10783"
+           inkscape:connector-curvature="0" />
+        <path
+           d="m 1895.3003,4506.3 v 451.6001"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10785"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,4222.8 H 4555.2 l 33.0002,-115.3 33.0998,115.3"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10787"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,4222.8 V 5950"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10789"
+           inkscape:connector-curvature="0" />
+        <g
+           id="g10791"
+           transform="scale(10)">
+          <text
+             transform="matrix(0,-1,-1,0,461.82002,388.43301)"
+             style="font-variant:normal;font-weight:bold;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10795">
+            <tspan
+               x="0 6.4980001 10.998 13.248 17.747999 19.997999"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10793">C# 9.0</tspan>
+          </text>
+          <text
+             transform="matrix(0,-1,-1,0,452.82002,404.804)"
+             style="font-variant:normal;font-weight:normal;font-size:9px;font-family:'Times New Roman';-inkscape-font-specification:Times-Roman;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="text10799">
+            <tspan
+               x="0 3.5009999 7.4970002 11.997 14.499 18.495001 25.497 29.997 33.993 36.990002 39.240002 43.740002 48.240002 52.740002"
+               y="0"
+               sodipodi:role="line"
+               id="tspan10797">september 2020</tspan>
+          </text>
+        </g>
+        <path
+           d="M 4588.2002,3230.7002 H 4555.2 l 33.0002,-115.3001 33.0998,115.3001"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path10801"
+           inkscape:connector-curvature="0" />
+        <path
+           d="M 4588.2002,3230.7002 V 3398.8"
+           style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:3.8599999;stroke-dasharray:none;stroke-opacity:1"
+           id="path10803"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="23.94776"
+   height="143.69434"
+   id="svg3089"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="callee_caller.svg">
+  <defs
+     id="defs3091">
+    <marker
+       inkscape:stockid="TriangleInL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleInL"
+       style="overflow:visible">
+      <path
+         id="path4099"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#2b5879;fill-rule:evenodd;stroke:#2b5879;stroke-width:1pt"
+         transform="scale(-0.8,-0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path6655"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#2b5879;fill-rule:evenodd;stroke:#2b5879;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="80.978548"
+     inkscape:cy="71.833722"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="876"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3094">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Base &lt;1-&gt;"
+     style="display:inline"
+     transform="translate(289.1179,6.0373693)">
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="231.42857"
+       y="146.64285"
+       id="text15223"
+       sodipodi:linespacing="125%"
+       transform="translate(-107.72169,-11.291725)"><tspan
+         sodipodi:role="line"
+         id="tspan15225"
+         x="231.42857"
+         y="146.64285" /></text>
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#TriangleInL);marker-end:url(#TriangleOutL)"
+       d="m -282.6179,1.0786307 0,129.4623293"
+       id="path3853"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-56.672699"
+       y="-271.01306"
+       id="text4227"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4229"
+         x="-56.672699"
+         y="-271.01306">Callee</tspan></text>
+    <path
+       style="fill:none;stroke:#2b5879;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:none;display:inline"
+       d="m -267.67014,79.803239 -14.81948,0"
+       id="path3853-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-104.47749"
+       y="-271.01306"
+       id="text4194"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan4196"
+         x="-104.47749"
+         y="-271.01306">Caller</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Code &lt;2&gt;"
+     style="display:inline"
+     transform="translate(181.39621,-5.2543561)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Static &lt;3&gt;"
+     style="display:inline"
+     transform="translate(181.39621,-5.2543561)" />
+  <g
+     inkscape:label="Stack &lt;4&gt;"
+     id="g3085"
+     inkscape:groupmode="layer"
+     style="display:inline"
+     transform="translate(181.39621,-5.2543561)" />
+  <g
+     style="display:inline"
+     inkscape:groupmode="layer"
+     id="g3096"
+     inkscape:label="Heap &lt;5&gt;"
+     transform="translate(181.39621,-5.2543561)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Free Memory &lt;6&gt;"
+     transform="translate(181.39621,-5.2543561)" />
+</svg>

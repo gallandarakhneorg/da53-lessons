@@ -1,0 +1,301 @@
+\documentclass[english,partsectioncirclenumberstyle,noublogo,nocarnotlogo]{ciadbeamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{autolatex}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{algorithm2e}
+\usepackage{bibunits}
+
+\graphicspath{{./imgs/raw/}}
+
+\title{Compilation and Language Theory}
+\subtitle{4$^\text{th}$ edition}
+
+\keywords{Language Theory; Compiler}
+
+\addauthor[\textcircled{cc}\ 2012--\the\year\ St\'ephane Galland]{St\'ephane~GALLAND}
+
+\event[\texttt{stephane.galland@utbm.fr}]{DA53 Module - CC-BY-NC-SA 3.0}
+
+\partprefix[\arabic{part}]{Chapter}
+
+\instituteurl{http://www.utbm.fr}
+
+\institute[UTBM]{
+	\textbf{Universit\'e de Technologie de Belfort-Montb\'eliard} \\[0cm]
+	90010 Belfort cedex, France -- \insertinstituteurl
+}
+
+\usefootlinewithsections
+
+\def\MODULEICON{da53logo}
+\useheaderlinewithuserlogo[width=1.2cm,y=-15]{\MODULEICON}
+
+\pgfdeclareimage[width=5cm]{frontpageutbmlogo}{utbmlogo}
+\settitlepagerightfigure{250}{-30}{frontpageutbmlogo}
+
+\resolvepicturename{frontpagecode}
+\pgfdeclareimage[height=\paperheight]{frontpagecode}{\resolvedfilename}
+\settitlepageuserbackground{frontpagecode}
+
+\input{./chapters/chapter0/preamble}
+\input{./chapters/chapter1/preamble}
+\input{./chapters/chapter2/preamble}
+
+%
+
+%\newcommand{\concat}{\unskip\ \ensuremath{\|}\ \ignorespaces}
+%\newcommand{\alertconcat}{\unskip\ \ensuremath{\usebeamercolor[fg]{alerted text}\|}\ \ignorespaces}
+%
+%\newcommand{\deriv}{\ensuremath{\Rightarrow}\xspace}
+%\newcommand{\reduce}{\ensuremath{\Leftarrow}\xspace}
+%\newcommand{\derivlm}{\ensuremath{\underset{\mathit{lm}\hspace{.3em}}{\Rightarrow}}\xspace}
+%\newcommand{\derivrm}{\ensuremath{\underset{\mathit{rm}\hspace{.3em}}{\Rightarrow}}\xspace}
+%\newcommand{\seqderiv}{\ensuremath{\overset{*\hspace{.4em}}{\Rightarrow}}\xspace}
+%\newcommand{\seqderivone}{\ensuremath{\overset{+\hspace{.4em}}{\Rightarrow}}\xspace}
+%\newcommand{\seqderivrm}{\ensuremath{\overset{*\hspace{.4em}}{\underset{\mathit{rm}\hspace{.3em}}{\Rightarrow}}}\xspace}
+%
+%\newcommand{\sidecite}[1]{\sidenote{\cite{#1}}}
+%
+%\lstset{
+%	% choose the background color
+%	backgroundcolor=\color{white},
+%	% the size of the fonts that are used for the code
+%	basicstyle=\tiny,
+%	% sets if automatic breaks should only happen at whitespace
+%	breakatwhitespace=false,
+%	% sets automatic line breaking
+%	breaklines=true,
+%	% sets the caption-position to bottom
+%	captionpos=b,
+%	% comment style
+%	commentstyle=\color{IRTESgreen},
+%	% if you want to delete keywords from the given language
+%	%deletekeywords={...},
+%	% if you want to add LaTeX within your code
+%	escapeinside={\%*}{*)},
+%	% lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+%	%extendedchars=true,
+%	% adds a frame around the code
+%	frame=single,
+%	% keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+%	keepspaces=true,
+%	% keyword style
+%	keywordstyle=\bfseries,
+%	% the language of the code
+%	%language=Octave,
+%	% if you want to add more keywords to the set
+%	%morekeywords={*,...},
+%	% where to put the line-numbers; possible values are (none, left, right)
+%	numbers=none,
+%	% how far the line-numbers are from the code
+%	%numbersep=5pt,
+%	% the style that is used for the line-numbers
+%	%numberstyle=\tiny\color{IRTESblue},
+%	% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+%	rulecolor=\color{IRTESblue},
+%	% show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+%	showspaces=false,
+%	% underline spaces within strings only
+%	showstringspaces=true,
+%	% show tabs within strings adding particular underscores
+%	showtabs=false,
+%	% the step between two line-numbers. If it's 1, each line will be numbered
+%	stepnumber=4,
+%	% string literal style
+%	stringstyle=\color{IRTESmagenta},
+%	% sets default tabsize to 2 spaces
+%	tabsize=2,
+%	% show the filename of files included with \lstinputlisting; also try caption instead of title
+%	%title=\lstname
+%}
+%
+%
+%\newenvironment{myprocedure}[2]{%
+%	\begin{procedure}[H]%
+%	\renewcommand{\emph}[1]{\textit{##1}}%
+%	\SetLine%
+%	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
+%	\SetKwFunction{throw}{Throw}%
+%	\SetKwInOut{Input}{Input}%
+%	\SetKwInOut{Output}{Output}%
+%	\KwSty{Procedure} #1\ifthenelse{\equal{a#2}{a}}{}{(#2)} \\%
+%}{%
+%	\end{procedure}%
+%}
+%
+%\newenvironment{myfunction}[3]{%
+%	\begin{function}[H]%
+%	\renewcommand{\emph}[1]{\textit{##1}}%
+%	\SetLine%	
+%	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
+%	\SetKwFunction{throw}{Throw}%
+%	\SetKwInOut{Input}{Input}%
+%	\SetKwInOut{Output}{Output}%
+%	\KwSty{Function} #1\ifthenelse{\equal{a#2}{a}}{}{(#2)}\ifthenelse{\equal{a#3}{a}}{}{ : #3} \\%
+%}{%
+%	\end{function}%
+%}
+%
+%\makeatletter
+%\gdef\bnfstyle{\itshape}
+%\newcommand{\bnftext}[1]{{\bnfstyle#1}}
+%\gdef\bnfbody{\unskip\ \ensuremath{\rightarrow}\ \ignorespaces}
+%\gdef\bnfor{\unskip\ \ensuremath{|}\ \ignorespaces}
+%\gdef\bnf@sep#1{%
+%	\gdef\@tmp{a#1a}%
+%	\ifthenelse{\equal{\@tmp}{a a}\or\equal{\@tmp}{aa}}{%
+%		\bnfor%
+%	}{%
+%		\bnfbody%
+%	}%
+%}
+%\gdef\bnf@pp#1#2::=#3\;{%
+%	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & {\bnfstyle\ignorespaces#2} & \bnf@sep{#2} & {\bnfstyle\ignorespaces#3} \\%
+%}
+%\newcommand{\bnf@p}[2][]{%
+%	\bnf@pp{#1}#2\;%
+%}
+%
+%\newcommand{\bnfmark}[1]{\textcolor{IRTESmagenta}{\textmd{(#1)}}}
+%\newcommand{\bnfindex}{\ensuremath{\bullet}\xspace}
+%
+%\NewEnviron{bnf}[1][\linewidth]{%
+%	\global\let\bnf@old@p\p%
+%	\global\let\p\bnf@p%
+%	\newcommand{\pdots}{&\dots&&\\}%
+%	\begin{tabularx}{#1}{|c@{}lcX|}%
+%		\hline
+%		\BODY%
+%		\hline
+%	\end{tabularx}%
+%	\global\let\p\bnf@old@p%
+%}
+%
+%\gdef\sdd@pp#1#2#3::=#4\;{%
+%	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & {\bnfstyle\ignorespaces#3} & \bnf@sep{#3} & {\bnfstyle\ignorespaces#4} & #2 \\%
+%}
+%\newcommand{\sdd@p}[3][]{%
+%	\sdd@pp{#1}{#3}#2\;%
+%}
+%\newcommand{\sdd@pcont}[3][]{%
+%	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & & & {\bnfstyle\ignorespaces#2} & #3 \\
+%}
+%
+%\NewEnviron{sdd}[1][\linewidth]{%
+%	\global\let\bnf@old@p\p%
+%	\global\let\p\sdd@p%
+%	\global\let\bnf@old@pcont\p%
+%	\global\let\pcont\sdd@pcont%
+%	\smaller%
+%	\newcommand{\pdots}{&\dots&&&\dots\\}%
+%	\newcommand{\ptitle}[2]{\multicolumn{4}{c}{##1}&\multicolumn{1}{c}{##2}\\\hline}%
+%	\newcommand{\newl}{\\&&&&}%
+%	\begin{tabularx}{#1}{|c@{}lcX||l|}%
+%		\hline
+%		\BODY%
+%		\hline
+%	\end{tabularx}%
+%	\global\let\p\bnf@old@p%
+%	\global\let\pcont\bnf@old@pcont%
+%}
+%\makeatother
+%
+%\makeatletter
+%\newcommand{\tac@a}[3][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+%	\texttt{\ignorespaces#2} \texttt{=} \texttt{\ignorespaces#3} \\%
+%}
+%\newcommand{\tac@t}[1]{%
+%	\texttt{t}\ensuremath{_{\texttt{#1}}}%
+%}
+%\newcommand{\tac@dots}[1][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} & \dots \\%
+%}
+%\newcommand{\tac@param}[2][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+%	\texttt{\tok{param} \ignorespaces#2} \\%
+%}
+%\newcommand{\tac@callp}[2][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} & %
+%	\texttt{\tok{call} \ignorespaces#2} \\%
+%}
+%\newcommand{\tac@callf}[3][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+%	\texttt{\ignorespaces#2 = \tok{call} \ignorespaces#3} \\%
+%}
+%\newcommand{\tac@ifgoto}[3][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+%	\texttt{\tok{if} \ignorespaces#2\ \tok{then} \tok{goto} \ignorespaces#3} \\%
+%}
+%\newcommand{\tac@ifnotgoto}[3][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+%	\texttt{\tok{ifFalse} \ignorespaces#2\ \tok{then} \tok{goto} \ignorespaces#3} \\%
+%}
+%\newcommand{\tac@goto}[2][]{%
+%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+%	\texttt{\tok{goto} \ignorespaces#2} \\%
+%}
+%\newcommand{\tactext}[1]{%
+%	\global\let\bnf@old@t\t%
+%	\global\let\t\tac@t%
+%	\texttt{#1}%
+%	\global\let\t\bnf@old@t%
+%}
+%\NewEnviron{tac}[1][\linewidth]{%
+%	\global\let\tac@old@p\i%
+%	\global\let\a\tac@a%
+%	\global\let\tac@old@t\t%
+%	\global\let\t\tac@t%
+%	\global\let\tac@old@ifgoto\ifgoto%
+%	\global\let\ifgoto\tac@ifgoto%
+%	\global\let\tac@old@ifnotgoto\ifnotgoto%
+%	\global\let\ifnotgoto\tac@ifnotgoto%
+%	\global\let\tac@old@goto\goto%
+%	\global\let\goto\tac@goto%
+%	\global\let\tac@old@callp\callproc%
+%	\global\let\callproc\tac@callp%
+%	\global\let\tac@old@callf\callfunc%
+%	\global\let\callfunc\tac@callf%
+%	\global\let\tac@old@param\param%
+%	\global\let\param\tac@param%
+%	\global\let\tac@old@dots\tacdots%
+%	\global\let\tacdots\tac@dots%
+%	\smaller%
+%	\begin{tabularx}{#1}{|c@{}X|}%
+%		\hline
+%		\BODY%
+%		\hline
+%	\end{tabularx}%
+%	\global\let\i\tac@old@i%
+%	\global\let\t\tac@old@t%
+%	\global\let\ifgoto\tac@old@ifgoto%
+%	\global\let\ifnotgoto\tac@old@ifnotgoto%
+%	\global\let\goto\tac@old@goto%
+%	\global\let\callproc\tac@old@callp%
+%	\global\let\callfunc\tac@old@callf%
+%	\global\let\param\tac@old@param%
+%	\global\let\tacdots\tac@old@dots%
+%}
+%\makeatother
+
+\begin{document}
+
+\input{chapters/chapter0/content}
+
+\input{chapters/chapter1/content}
+
+%\input{chapters/chapter2/content}
+
+%\input{chapters/chapter3}
+
+%\input{chapters/chapter4}
+
+%\input{chapters/chapter5}
+
+%\input{chapters/chapter6}
+
+\input{chapters/appendix/content}
+
+\end{document}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="294.75006"
+   height="220.7327"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="intermediate_code_optim.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-85"
+       style="overflow:visible">
+      <path
+         id="path3833-16"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="152.06132"
+     inkscape:cy="84.051501"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3580"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="1000"
+     inkscape:window-x="1440"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(279.79453,-27.096802)"
+     inkscape:groupmode="layer"
+     id="g3580"
+     inkscape:label="Analysis - ICG ex &lt;5-&gt;"
+     style="display:inline">
+    <text
+       sodipodi:linespacing="125%"
+       id="text3610"
+       y="34.377075"
+       x="-279.97031"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         y="34.377075"
+         x="-279.97031"
+         id="tspan3612"
+         sodipodi:role="line">t1=inttofloat(60)</tspan><tspan
+         id="tspan3614"
+         y="46.877075"
+         x="-279.97031"
+         sodipodi:role="line">t2=id3*t1</tspan><tspan
+         id="tspan3616"
+         y="59.377075"
+         x="-279.97031"
+         sodipodi:role="line">t3=id2+t2</tspan><tspan
+         id="tspan3618"
+         y="71.877075"
+         x="-279.97031"
+         sodipodi:role="line">id1=t3</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3592"
+       y="235.21231"
+       x="-279.97031"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         y="235.21231"
+         x="-279.97031"
+         id="tspan3594"
+         sodipodi:role="line">t1=id3*60.0</tspan><tspan
+         id="tspan3596"
+         y="247.71231"
+         x="-279.97031"
+         sodipodi:role="line">id1=id2+t1</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3610-2"
+       y="134.74831"
+       x="-279.97031"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       xml:space="preserve"><tspan
+         y="134.74831"
+         x="-279.97031"
+         id="tspan3612-0"
+         sodipodi:role="line">t1=60.0</tspan><tspan
+         id="tspan3614-2"
+         y="147.24831"
+         x="-279.97031"
+         sodipodi:role="line">t2=id3*t1</tspan><tspan
+         id="tspan3616-7"
+         y="159.74831"
+         x="-279.97031"
+         sodipodi:role="line">t3=id2+t2</tspan><tspan
+         id="tspan3618-0"
+         y="172.24831"
+         x="-279.97031"
+         sodipodi:role="line">id1=t3</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-85)"
+       d="m 156.57364,49.992404 c 62.32315,33.32952 41.86613,58.168766 0,80.812206"
+       id="path3207"
+       inkscape:connector-curvature="0"
+       transform="translate(-359.22568,0)"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-85);display:inline"
+       d="m -202.65204,152.41002 c 62.32315,33.32952 41.86613,58.16876 0,80.8122"
+       id="path3207-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-154.34621"
+       y="79.791901"
+       id="text4229"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4231"
+         x="-154.34621"
+         y="79.791901">Conversions of constants are</tspan><tspan
+         sodipodi:role="line"
+         x="-154.34621"
+         y="92.291901"
+         id="tspan4233">replaced by the results of the </tspan><tspan
+         sodipodi:role="line"
+         x="-154.34621"
+         y="104.7919"
+         id="tspan4235">conversions themselves</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-154.28761"
+       y="178.28177"
+       id="text4237"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4239"
+         x="-154.28761"
+         y="178.28177">Registers, when initialized with one</tspan><tspan
+         sodipodi:role="line"
+         x="-154.28761"
+         y="190.78177"
+         id="tspan4241">operand on the right side, are</tspan><tspan
+         sodipodi:role="line"
+         x="-154.28761"
+         y="203.28177"
+         id="tspan4243">replaced by the right side in the others</tspan><tspan
+         sodipodi:role="line"
+         x="-154.28761"
+         y="215.78177"
+         id="tspan4245">instructions</tspan></text>
+  </g>
+</svg>

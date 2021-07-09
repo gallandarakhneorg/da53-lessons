@@ -1,0 +1,35 @@
+\begin{graphicspathcontext}{{./chapters/chapter2/imgs/auto/}}
+	
+\resolvepicturename{rightarrow}
+\pgfdeclareimage[width=2em]{rightarrow}{\resolvedfilename}
+
+\end{graphicspathcontext}
+	
+\newcommand{\str}[1]{{\code{\textcolor{CIADmagenta}{#1}}}}
+\newcommand{\tok}[1]{{\textbf{#1}}\xspace}
+
+\newcommand{\powerset}{\ensuremath{\mathcal{P}}}
+\newcommand{\permut}{\ensuremath{\mathcal{S}}}
+
+\newcommand{\regex}[1]{{\textbf{#1}}}
+
+\newenvironment{myalgorithm}{%
+	\begin{algorithm}[H]%
+	\renewcommand{\emph}[1]{\textit{##1}}%
+	%\SetLine%	
+	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
+	\SetKwFunction{throw}{Throw}
+	\SetKwInOut{Input}{Input}%
+	\SetKwInOut{Output}{Output}%
+	\SetKwInOut{Method}{Method}%
+}{%
+	\end{algorithm}%
+}
+
+\newcommand{\animatedslide}[4][]{%
+	\begin{frame}<#1>{#2}%
+		\includeanimatedfigure[#4]{#3}%
+	\end{frame}%
+}
+	
+\endinput

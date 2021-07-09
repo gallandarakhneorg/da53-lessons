@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="96.605469"
+   height="301.52039"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="compiler_structure+layers.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-4.9996779"
+     inkscape:cy="146.3287"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3250"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="1000"
+     inkscape:window-x="1440"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Base &lt;1-&gt;"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(104.02939,-316.98688)"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <path
+       transform="translate(-122.30239,485.98477)"
+       style="color:#000000;fill:#faf0f6;fill-opacity:1;fill-rule:nonzero;stroke:#cc7aaa;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       d="m 30.304577,-168.49789 72.730973,0 0,286.52038 9.81726,0 -46.182747,14 -46.182743,-14 9.817257,0 z"
+       id="rect3230"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+    <g
+       id="g3761"
+       transform="translate(-136.99401,-154.89242)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect2985"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line">Lexical Analyzer</tspan></text>
+    </g>
+    <g
+       id="g3761-3"
+       transform="translate(-136.99401,-120.76749)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect2985-9"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-2"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759-8"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line">Syntax Analyzer</tspan></text>
+    </g>
+    <g
+       id="g3761-8"
+       transform="translate(-136.99401,-84.955068)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect2985-3"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-8"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759-84"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line">Semantic Analyzer</tspan></text>
+    </g>
+    <g
+       id="g3761-5"
+       transform="translate(-136.99401,-49.142649)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="28.492039"
+         width="90.56665"
+         id="rect2985-7"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-9"
+         y="498.05991"
+         x="81.011002"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759-6"
+           y="498.05991"
+           x="81.011002"
+           sodipodi:role="line">Intermediate Code</tspan><tspan
+           y="510.55991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3058">Generator</tspan></text>
+    </g>
+    <g
+       id="g3761-5-2"
+       transform="translate(-136.99401,-4.4302424)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="28.492039"
+         width="90.56665"
+         id="rect2985-7-1"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-9-2"
+         y="498.05991"
+         x="81.011002"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="498.05991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3058-1"
+           style="font-size:9px">Machine-Independent</tspan><tspan
+           y="509.30991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3092"
+           style="font-size:9px">Code Optimizer</tspan></text>
+    </g>
+    <g
+       id="g3761-3-7"
+       transform="translate(-136.99401,40.282164)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect2985-9-1"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-2-8"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759-8-9"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line">Code Generator</tspan></text>
+    </g>
+    <g
+       id="g3761-5-2-2"
+       transform="translate(-136.99401,75.996931)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="28.492039"
+         width="90.56665"
+         id="rect2985-7-1-8"
+         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-9-2-3"
+         y="498.05991"
+         x="81.011002"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="498.05991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3058-1-3"
+           style="font-size:9px">Machine-Dependent</tspan><tspan
+           y="509.30991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3092-8"
+           style="font-size:9px">Code Optimizer</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.664154"
+       y="327.04272"
+       id="text3151"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153"
+         x="-55.664154"
+         y="327.04272">Character stream</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.558685"
+       y="361.17154"
+       id="text3151-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-7"
+         x="-55.558685"
+         y="361.17154">Token stream</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.738373"
+       y="395.39413"
+       id="text3151-53"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-9"
+         x="-55.738373"
+         y="395.39413">Syntax tree</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.738373"
+       y="431.20654"
+       id="text3151-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-1"
+         x="-55.738373"
+         y="431.20654">Syntax tree</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.822357"
+       y="476.0127"
+       id="text3151-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-2"
+         x="-55.822357"
+         y="476.0127">Intermediate representation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.822357"
+       y="520.7251"
+       id="text3151-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-22"
+         x="-55.822357"
+         y="520.7251">Intermediate representation</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.652435"
+       y="556.34613"
+       id="text3151-04"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-0"
+         x="-55.652435"
+         y="556.34613">Target-machine code</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       x="-55.652435"
+       y="601.15228"
+       id="text3151-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3153-26"
+         x="-55.652435"
+         y="601.15228">Target-machine code</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Analysis - LA &lt;2,9&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="g3761-6"
+       transform="translate(-32.96462,-471.8793)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect2985-1"
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-91"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759-82"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line"
+           style="fill:#ffffff">Lexical Analyzer</tspan></text>
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Analysis - SyA &lt;3,9&gt;"
+     id="g3065"
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
+    <g
+       transform="translate(-32.96462,-437.75437)"
+       id="g3075">
+      <rect
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3077"
+         width="90.56665"
+         height="19.40065"
+         x="35.984024"
+         y="486.48477" />
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="80.837662"
+         y="498.71194"
+         id="text3079"
+         sodipodi:linespacing="125%"><tspan
+           style="fill:#ffffff"
+           sodipodi:role="line"
+           x="80.837662"
+           y="498.71194"
+           id="tspan3081">Syntax Analyzer</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g3111"
+     inkscape:label="Analysis - SeA &lt;4,9&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="g3129"
+       transform="translate(-32.96462,-401.94195)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect3131"
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3133"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3135"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line"
+           style="fill:#ffffff">Semantic Analyzer</tspan></text>
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Analysis - ICG &lt;5,9&gt;"
+     id="g3158"
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
+    <g
+       transform="translate(-32.96462,-366.12953)"
+       id="g3184">
+      <rect
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3186"
+         width="90.56665"
+         height="28.492039"
+         x="35.984024"
+         y="486.48477" />
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="81.011002"
+         y="498.05991"
+         id="text3188"
+         sodipodi:linespacing="125%"><tspan
+           style="fill:#ffffff"
+           sodipodi:role="line"
+           x="81.011002"
+           y="498.05991"
+           id="tspan3190">Intermediate Code</tspan><tspan
+           style="fill:#ffffff"
+           id="tspan3192"
+           sodipodi:role="line"
+           x="81.011002"
+           y="510.55991">Generator</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g3204"
+     inkscape:label="Analysis - MICO &lt;6,9&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="g3240"
+       transform="translate(-32.96462,-321.41712)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="28.492039"
+         width="90.56665"
+         id="rect3242"
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3244"
+         y="498.05991"
+         x="81.011002"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           y="498.05991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3246"
+           style="font-size:9px;fill:#ffffff">Machine-Independent</tspan><tspan
+           y="509.30991"
+           x="81.011002"
+           sodipodi:role="line"
+           id="tspan3248"
+           style="font-size:9px;fill:#ffffff">Code Optimizer</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Synthesis - CG &lt;7,10&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       style="display:inline"
+       id="g3761-3-7-7"
+       transform="translate(-32.96462,-276.70472)">
+      <rect
+         y="486.48477"
+         x="35.984024"
+         height="19.40065"
+         width="90.56665"
+         id="rect2985-9-1-8"
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3755-2-8-3"
+         y="498.71194"
+         x="80.837662"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         xml:space="preserve"><tspan
+           id="tspan3759-8-9-0"
+           y="498.71194"
+           x="80.837662"
+           sodipodi:role="line"
+           style="fill:#ffffff">Code Generator</tspan></text>
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="Synthesis - MDCO &lt;8,10&gt;"
+     id="g3250"
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
+    <g
+       transform="translate(-32.96462,-240.98995)"
+       id="g3260"
+       style="display:inline">
+      <rect
+         style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="rect3262"
+         width="90.56665"
+         height="28.492039"
+         x="35.984024"
+         y="486.48477" />
+      <text
+         xml:space="preserve"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         x="81.011002"
+         y="498.05991"
+         id="text3264"
+         sodipodi:linespacing="125%"><tspan
+           style="font-size:9px;fill:#ffffff"
+           id="tspan3266"
+           sodipodi:role="line"
+           x="81.011002"
+           y="498.05991">Machine-Dependent</tspan><tspan
+           style="font-size:9px;fill:#ffffff"
+           id="tspan3268"
+           sodipodi:role="line"
+           x="81.011002"
+           y="509.30991">Code Optimizer</tspan></text>
+    </g>
+  </g>
+</svg>
