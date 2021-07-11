@@ -13,7 +13,7 @@
    height="36.057995"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="environment_state.svg">
   <defs
      id="defs4">
@@ -40,15 +40,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="157.22006"
+     inkscape:cx="68.326637"
      inkscape:cy="89.260158"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3761-4"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="876"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -62,7 +62,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,22 +80,23 @@
          height="35.057995"
          width="75.919441"
          id="rect2985"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755"
          y="500.29062"
          x="73.826553"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            y="500.29062"
            x="73.826553"
            id="tspan3757"
-           sodipodi:role="line">Locations</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Locations</tspan><tspan
            id="tspan3759"
            y="512.79065"
            x="73.826553"
-           sodipodi:role="line">(variables)</tspan></text>
+           sodipodi:role="line"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">(variables)</tspan></text>
     </g>
     <g
        transform="translate(157.38119,0)"
@@ -106,18 +107,18 @@
          height="35.057995"
          width="75.919441"
          id="rect2985-9"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755-3"
          y="507.53427"
          x="74.114639"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            id="tspan3759-0"
            y="507.53427"
            x="74.114639"
-           sodipodi:role="line">Values</tspan></text>
+           sodipodi:role="line"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Values</tspan></text>
     </g>
     <g
        transform="translate(-157.78641,0)"
@@ -128,22 +129,22 @@
          height="35.057995"
          width="75.919441"
          id="rect2985-3"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000012;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755-6"
          y="507.53427"
          x="73.755753"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            id="tspan3759-7"
            y="507.53427"
            x="73.755753"
-           sodipodi:role="line">Names</tspan></text>
+           sodipodi:role="line"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Names</tspan></text>
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-       d="m -45.882945,504.01377 81.664363,0"
+       d="M -45.882945,504.01377 H 35.781418"
        id="path3816"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -153,7 +154,7 @@
        inkscape:connection-start="#g3761-8" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
-       d="m 111.70086,504.01377 81.66435,0"
+       d="m 111.70086,504.01377 h 81.66435"
        id="path3818"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -163,25 +164,25 @@
        inkscape:connection-start="#g3761" />
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="-5.6690178"
        y="498.29349"
-       id="text4446"
-       sodipodi:linespacing="125%"><tspan
+       id="text4446"><tspan
          sodipodi:role="line"
          id="tspan4448"
          x="-5.6690178"
-         y="498.29349">Environment</tspan></text>
+         y="498.29349"
+         style="font-size:10px;line-height:1.25">Environment</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="151.11064"
        y="498.2886"
-       id="text4450"
-       sodipodi:linespacing="125%"><tspan
+       id="text4450"><tspan
          sodipodi:role="line"
          id="tspan4452"
          x="151.11064"
-         y="498.2886">State</tspan></text>
+         y="498.2886"
+         style="font-size:10px;line-height:1.25">State</tspan></text>
   </g>
 </svg>

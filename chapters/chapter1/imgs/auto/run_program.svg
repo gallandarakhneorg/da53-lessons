@@ -13,7 +13,7 @@
    height="103.93552"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="run_program.svg">
   <defs
      id="defs4">
@@ -40,15 +40,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="-65.384171"
+     inkscape:cx="-154.27759"
      inkscape:cy="105.50675"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3761"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
-     inkscape:window-x="1440"
-     inkscape:window-y="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -91,44 +91,45 @@
          height="35.057995"
          width="75.919441"
          id="rect2985"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755"
          y="500.29062"
          x="73.885147"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            id="tspan3759"
            y="500.29062"
            x="73.885147"
-           sodipodi:role="line">Target</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Target</tspan><tspan
            y="512.79065"
            x="73.885147"
            sodipodi:role="line"
-           id="tspan2996">Program</tspan></text>
+           id="tspan2996"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Program</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="74.466873"
        y="459.81686"
-       id="text3005"
-       sodipodi:linespacing="125%"><tspan
+       id="text3005"><tspan
          sodipodi:role="line"
          id="tspan3007"
          x="74.466873"
-         y="459.81686">Inputs</tspan></text>
+         y="459.81686"
+         style="font-size:10px;line-height:1.25">Inputs</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="74.574295"
        y="554.36761"
-       id="text3009"
-       sodipodi:linespacing="125%"><tspan
+       id="text3009"><tspan
          sodipodi:role="line"
          id="tspan3011"
          x="74.574295"
-         y="554.36761">Outputs</tspan></text>
+         y="554.36761"
+         style="font-size:10px;line-height:1.25">Outputs</tspan></text>
   </g>
 </svg>

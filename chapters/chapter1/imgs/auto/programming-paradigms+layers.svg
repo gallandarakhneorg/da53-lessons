@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="1392.7411"
+   height="676.26239"
+   viewBox="0 0 1392.7411 676.26239"
+   sodipodi:docname="programming-paradigms.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="0.70367475"
+     inkscape:cx="521.57389"
+     inkscape:cy="490.48309"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer7"
+     showguides="false"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Base &lt;1-&gt;"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path819"
+       d="m 603.78318,159.2867 c -28.01797,-10.9805 -49.00739,-23.1326 -59.62175,-34.51878 -9.77547,-10.48629 -9.37825,-7.5449 -9.37825,-69.446057 V 2.0000026 h 86.5 86.5 V 57.033243 112.06649 Z"
+       style="fill:#66455a;fill-opacity:1"
+       sodipodi:nodetypes="csscccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path831-3"
+       d="m 208.53928,354.5 h 172.24546 l -0.37329,88.5 c -0.34555,0 -0.62827,50.4 -0.62827,112 v 112 h -86 -86 V 555 c 0,-61.6 0.9186,-111.99994 0.5061,-111.99987 z"
+       style="opacity:0.7;fill:#d7a0a7;fill-opacity:1"
+       sodipodi:nodetypes="cccscccscc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path829"
+       d="m 2.26964,571.75 0.26964,-95.25 2.69589,-5.75264 c 5.21069,-11.1189 17.23863,-21.48632 35.54337,-30.63645 14.46247,-7.22945 25.54642,-11.48655 62.93587,-24.17223 37.82123,-12.83218 51.8354,-18.19487 65.82487,-25.18868 19.39601,-9.69672 30.6073,-19.15936 36.20473,-30.55781 L 208.53928,354.5 h 173.50133 l -79.62492,52.47928 -94.12641,36.02085 c -0.4125,8e-5 -4.16733,2.18969 -8.34406,4.8658 -9.89675,6.34105 -17.95163,14.4894 -21.53276,21.78263 L 175.53928,475.5 175.27451,571.25 175.00974,667 H 88.50487 2 Z"
+       style="opacity:0.7;fill:#e08f9d;fill-opacity:1"
+       sodipodi:nodetypes="cccsssccccccscccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path829-7"
+       d="m 583.30564,571.75 -0.26964,-95.25 -2.69589,-5.75264 c -5.21069,-11.1189 -17.23863,-21.48632 -35.54337,-30.63645 -14.46247,-7.22945 -25.54642,-11.48655 -62.93587,-24.17223 C 444.03964,403.1065 430.02547,397.74381 416.036,390.75 396.63999,381.05328 385.4287,371.59064 379.83127,360.19219 L 377.036,354.5 H 207.28318 l 75.87641,52.47928 94.12641,36.02085 c 0.4125,8e-5 4.16733,2.18969 8.34406,4.8658 9.89675,6.34105 17.95163,14.4894 21.53276,21.78263 l 2.87318,5.85144 0.26477,95.75 0.26477,95.75 h 86.50487 86.50487 z"
+       style="opacity:0.7;fill:#ccabb1;fill-opacity:1"
+       sodipodi:nodetypes="cccsssccccccscccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path821"
+       d="m 208.28562,357.86231 1.6585,-88.68539 c 1.25952,-3.7426 3.60504,-6.8752 9.75,-13.0218 16.78808,-16.79256 44.72122,-29.69905 112.0915,-51.79185 20.9,-6.85375 56,-18.35892 78,-25.56704 43.01012,-14.09192 63.05456,-21.67656 82,-31.02806 22.26436,-10.98974 35.52262,-21.40357 40.8433,-32.08077 l 2.6567,-5.33131 173,1.45918 -86.19251,53.70169 -13.65374,4.69119 c -7.50956,2.58016 -26.25375,8.72837 -41.65375,13.66271 -61.5792,19.73067 -98.81693,32.28233 -115,38.76286 -39.36535,15.76392 -60.8621,29.60299 -68.63957,44.18843 -2.35022,4.40748 -3.93218,4.62322 -2.86043,47.42663 l 1.00156,40 c -8.97451,31.23645 -69.57303,49.88981 -85.62593,55.08934 -16.41425,-4.90558 -80.82287,-23.57489 -87.37563,-51.47581 z"
+       style="fill:#b34f62"
+       sodipodi:nodetypes="ccssssccccsssssccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path831-3-9"
+       d="m 862.1953,354.5 h 172.2454 l -0.3732,88.5 c -0.3456,0 -0.6283,50.4 -0.6283,112 V 667 H 947.43921 861.4392 V 555 c 0,-61.6 0.9186,-111.99994 0.5061,-111.99987 z"
+       style="opacity:0.7;fill:#b1b9c7;fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="cccscccscc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path829-1"
+       d="m 655.92566,571.75 0.26964,-95.25 2.69589,-5.75264 c 5.21069,-11.1189 17.23863,-21.48632 35.54337,-30.63645 14.46247,-7.22945 25.54642,-11.48655 62.93587,-24.17223 37.82123,-12.83218 51.8354,-18.19487 65.82487,-25.18868 19.39601,-9.69672 30.6073,-19.15936 36.20473,-30.55781 L 862.1953,354.5 h 173.5013 l -79.62489,52.47928 -94.12641,36.02085 c -0.4125,8e-5 -4.16733,2.18969 -8.34406,4.8658 -9.89675,6.34105 -17.95163,14.4894 -21.53276,21.78263 L 829.1953,475.5 828.93053,571.25 828.66576,667 h -86.50487 -86.50487 z"
+       style="opacity:0.7;fill:#8d7686;fill-opacity:1"
+       sodipodi:nodetypes="cccsssccccccscccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path829-7-2"
+       d="m 1236.9617,571.75 -0.2697,-95.25 -2.6959,-5.75264 c -5.2106,-11.1189 -17.2386,-21.48632 -35.5433,-30.63645 -14.4625,-7.22945 -25.5464,-11.48655 -62.9359,-24.17223 -37.8212,-12.83218 -51.8354,-18.19487 -65.8249,-25.18868 -19.396,-9.69672 -30.6073,-19.15936 -36.2047,-30.55781 L 1030.692,354.5 H 860.9392 l 75.87641,52.47928 94.12639,36.02085 c 0.4125,8e-5 4.1673,2.18969 8.3441,4.8658 9.8967,6.34105 17.9516,14.4894 21.5327,21.78263 l 2.8732,5.85144 0.2648,95.75 0.2648,95.75 h 86.5048 86.5049 z"
+       style="opacity:0.7;fill:#97bfd3;fill-opacity:1"
+       sodipodi:nodetypes="cccsssccccccscccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path821-6"
+       d="m 1034.1912,356.71945 -1.6585,-88.68539 c -1.2595,-3.7426 -3.605,-6.8752 -9.75,-13.0218 -16.7881,-16.79256 -44.72119,-29.69905 -112.09149,-51.79185 -20.9,-6.85375 -55.99999,-18.35892 -77.99999,-25.56704 -43.01012,-14.09192 -63.05456,-21.67656 -82,-31.02806 -22.26436,-10.98974 -35.52262,-21.40357 -40.8433,-32.08077 l -2.6567,-5.33131 -173,1.45918 86.19251,53.70169 13.65374,4.69119 c 7.50956,2.58016 26.25375,8.72837 41.65375,13.66271 61.5792,19.73067 98.81693,32.28233 115,38.76286 39.36535,15.76392 60.8621,29.60299 68.63957,44.18843 2.35022,4.40748 3.93218,4.62322 2.86043,47.42663 l -1.00156,40 c 8.97451,31.23645 69.57305,49.88981 85.62595,55.08934 16.4142,-4.90558 80.82279,-23.57489 87.37559,-51.47581 z"
+       style="fill:#5b6d80;fill-opacity:1"
+       sodipodi:nodetypes="ccssssccccsssssccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path819-3"
+       d="m 620.95683,165.89383 c -28.01797,-10.9805 -66.18104,-29.73973 -76.7954,-41.12591 -9.77547,-10.48629 -9.37825,-7.5449 -9.37825,-69.446057 V 2.0000026 h 86.5 86.49999 V 57.033243 112.06649 c -7.88799,24.21389 -58.66614,43.19975 -86.82634,53.82734 z"
+       style="fill:#66455a;fill-opacity:1"
+       sodipodi:nodetypes="csscccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="1149.6755"
+       y="499.63556"
+       id="text945-7"><tspan
+         sodipodi:role="line"
+         id="tspan943-0"
+         x="1149.6755"
+         y="499.63556"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Query</tspan><tspan
+         sodipodi:role="line"
+         x="1149.6755"
+         y="532.96887"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff"
+         id="tspan1083">Markup</tspan><tspan
+         sodipodi:role="line"
+         x="1149.6755"
+         y="566.30225"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff"
+         id="tspan1085">...</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="947.13287"
+       y="499.63556"
+       id="text945-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-3"
+         x="947.13287"
+         y="499.63556"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Functional</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="738.22961"
+       y="499.63556"
+       id="text945-7-6"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-0"
+         x="738.22961"
+         y="499.63556"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Logic</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="498.95633"
+       y="499.63556"
+       id="text945-7-62"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-6"
+         x="498.95633"
+         y="499.63556"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Parallel</tspan><tspan
+         sodipodi:role="line"
+         x="498.95633"
+         y="532.96887"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff"
+         id="tspan1041">Processing</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="291.47409"
+       y="499.63556"
+       id="text945-7-1"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-8"
+         x="291.47409"
+         y="499.63556"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Object</tspan><tspan
+         sodipodi:role="line"
+         x="291.47409"
+         y="532.96887"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff"
+         id="tspan1039">Oriented</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="90.35965"
+       y="499.63556"
+       id="text945-7-7"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-9"
+         x="90.35965"
+         y="499.63556"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Procedural</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="294.63187"
+       y="320.25775"
+       id="text945-7-2"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-02"
+         x="294.63187"
+         y="320.25775"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Imperative</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="945.18512"
+       y="325.427"
+       id="text945-7-3"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-7"
+         x="945.18512"
+         y="325.427"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Declarative</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="620.62445"
+       y="69.30368"
+       id="text945-7-5"><tspan
+         sodipodi:role="line"
+         id="tspan943-0-92"
+         x="620.62445"
+         y="69.30368"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Paradigms</tspan></text>
+    <rect
+       style="opacity:1;fill:#cc8bb1;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect941-8"
+       width="217.72583"
+       height="80.764587"
+       x="64.442902"
+       y="577.70892" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="173.63785"
+       y="625.448"
+       id="text945-9"><tspan
+         sodipodi:role="line"
+         id="tspan943-7"
+         x="173.63785"
+         y="625.448"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Scripting</tspan></text>
+    <rect
+       style="opacity:1;fill:#cc8bb1;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect941-8-3"
+       width="787.59137"
+       height="80.764587"
+       x="317.32126"
+       y="578.78986" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="711.33179"
+       y="626.11877"
+       id="text945-9-6"><tspan
+         sodipodi:role="line"
+         id="tspan943-7-1"
+         x="711.33179"
+         y="626.11877"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Actor/Agent</tspan></text>
+    <rect
+       style="opacity:1;fill:#6b7b94;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect941"
+       width="170.82916"
+       height="73.65905"
+       x="841.79077"
+       y="520.02618" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="926.4566"
+       y="566.79718"
+       id="text945"><tspan
+         sodipodi:role="line"
+         id="tspan943"
+         x="926.4566"
+         y="566.79718"
+         style="font-size:26.66666603px;text-align:center;text-anchor:middle;fill:#ffffff">Dataflow</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="procedural &lt;2&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 31.264444,265.06427 81.003333,472.54649"
+       id="path994"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:1;fill:#e08e9d;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect989"
+       width="255.79994"
+       height="324.01337"
+       x="-68.213333"
+       y="0.73760211" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-54.00222"
+       y="37.686493"
+       id="text998"><tspan
+         sodipodi:role="line"
+         id="tspan996"
+         x="-54.00222"
+         y="37.686493">Sequence of</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="67.686493"
+         id="tspan1012">statements.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="97.686493"
+         id="tspan1002">Uses variables, </tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="127.68649"
+         id="tspan1014">loops and other </tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="157.68649"
+         id="tspan1016">elements.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="187.68649"
+         id="tspan1004">Functions controls </tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="217.68649"
+         id="tspan1018">variables and have</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="247.68649"
+         id="tspan1006">border effect, in </tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="277.68649"
+         id="tspan1020">addition to value</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="307.68649"
+         id="tspan1022">returns</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="337.68649"
+         id="tspan1000" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="functional &lt;3&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1025"
+       style="font-style:normal;font-weight:normal;font-size:16px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+         id="flowRegion1027"><rect
+           id="rect1029"
+           width="518.70557"
+           height="608.23553"
+           x="-252.95778"
+           y="-76.002396" /></flowRegion><flowPara
+         id="flowPara1031"></flowPara></flowRoot>    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1152.5211,270.51559 967.77667,460.94449"
+       id="path994-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="opacity:1;fill:#b1b9c7;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect989-6"
+       width="255.79994"
+       height="324.01337"
+       x="1053.0433"
+       y="0.73760211" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="1067.2545"
+       y="43.137821"
+       id="text998-7"><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="43.137821"
+         id="tspan1000-9"
+         style="fill:#ffffff">Uses stored data.</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="73.137817"
+         id="tspan1156"
+         style="fill:#ffffff">No loop, recursive</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="103.13782"
+         style="fill:#ffffff"
+         id="tspan1168">functions instead.</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="133.13782"
+         id="tspan1160"
+         style="fill:#ffffff">Focus on the return </tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="163.13782"
+         id="tspan1162"
+         style="fill:#ffffff">values of functions.</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="193.13782"
+         style="fill:#ffffff"
+         id="tspan1176">Side effects and</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="223.13782"
+         style="fill:#ffffff"
+         id="tspan1178">changes of storing</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="253.13782"
+         style="fill:#ffffff"
+         id="tspan1180">state are </tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="283.13782"
+         style="fill:#ffffff"
+         id="tspan1182">discouraged. </tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="oop &lt;4&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 31.264444,265.06427 260.06334,459.75649"
+       id="path994-36"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="display:inline;opacity:1;fill:#d7a0a7;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect989-0"
+       width="255.79994"
+       height="324.01337"
+       x="-68.213333"
+       y="0.73760259" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-54.00222"
+       y="37.686493"
+       id="text998-6"><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="37.686493"
+         id="tspan1000-7">Group of objects</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="67.686493"
+         id="tspan1304">with internal data</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="97.686493"
+         id="tspan1306">and external</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="127.68649"
+         id="tspan1308">accessing parts</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="157.68649"
+         id="tspan1310">of that data.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="187.68649"
+         id="tspan1314">Everything is an</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="217.68649"
+         id="tspan1316">object.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="247.68649"
+         id="tspan1318">Encapsulation,</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="277.68649"
+         id="tspan1320">inheritance.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="307.68649"
+         id="tspan1322">polymorphism.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="337.68649"
+         id="tspan1312" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Logic &lt;5&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1152.5211,270.51559 794.40112,468.05005"
+       id="path994-3-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="display:inline;opacity:1;fill:#8d7686;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect989-6-9"
+       width="255.79993"
+       height="207.48227"
+       x="1053.0433"
+       y="117.26871" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="1067.2545"
+       y="151.13782"
+       id="text998-7-2"><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="151.13782"
+         style="fill:#ffffff"
+         id="tspan1182-9">Declarative</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="181.13782"
+         style="fill:#ffffff"
+         id="tspan1417">statements and </tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="211.13782"
+         style="fill:#ffffff"
+         id="tspan1419">reasoning about</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="241.13782"
+         style="fill:#ffffff"
+         id="tspan1421">the consequences</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="271.13782"
+         style="fill:#ffffff"
+         id="tspan1423">of those</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="301.13782"
+         style="fill:#ffffff"
+         id="tspan1427">statements</tspan><tspan
+         sodipodi:role="line"
+         x="1067.2545"
+         y="331.13782"
+         style="fill:#ffffff"
+         id="tspan1425" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Script &lt;6&gt;"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 31.264444,265.06427 116.53112,589.0776"
+       id="path994-36-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="display:inline;opacity:1;fill:#cc8bb1;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect989-0-2"
+       width="255.79994"
+       height="235.90448"
+       x="-68.213333"
+       y="88.846489" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="-54.00222"
+       y="125.68649"
+       id="text998-6-0"><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="125.68649"
+         id="tspan1312-3">Not full-fledged</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="155.68649"
+         id="tspan1581">languages with</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="185.68649"
+         id="tspan1585">for small systems.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="215.68649"
+         id="tspan1591">Usually interpreted.</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="245.68649"
+         id="tspan1595">Usually have a</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="275.68649"
+         id="tspan1597">simple and easy-</tspan><tspan
+         sodipodi:role="line"
+         x="-54.00222"
+         y="305.68649"
+         id="tspan1601">to-use syntax.</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Agent &lt;7&gt;"
+     sodipodi:insensitive="true"
+     transform="translate(73.213333,4.2623979)">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1158.2056,189.49089 726.18786,593.08644"
+       id="path994-36-3-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="display:inline;opacity:1;fill:#cc8bb1;fill-opacity:1;stroke:none;stroke-width:1.88976383;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect989-0-2-4"
+       width="255.79994"
+       height="235.90448"
+       x="1058.7278"
+       y="13.273105" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none"
+       x="1072.9388"
+       y="50.11311"
+       id="text998-6-0-5"><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="50.11311"
+         id="tspan1601-3">Autonomous and</tspan><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="80.113113"
+         id="tspan1675">distributed entities</tspan><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="110.11311"
+         id="tspan1677">able to interact</tspan><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="140.11311"
+         id="tspan1679">together.</tspan><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="170.11311"
+         id="tspan1681">Actor = threaded</tspan><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="200.11311"
+         id="tspan1683">object.</tspan><tspan
+         sodipodi:role="line"
+         x="1072.9388"
+         y="230.11311"
+         id="tspan1685">Agent = AI</tspan></text>
+  </g>
+</svg>

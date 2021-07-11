@@ -23,8 +23,7 @@
 \end{frame}
 
 \section{Programming languages}
-
-\tableofcontentslide[sectionstyle={show/shaded},subsectionstyle={show/show/hide},subsubsectionstyle={hide/hide/hide/hide}]
+\subsectiontableofcontentslide
 
 \subsection{Brief history}
 
@@ -34,7 +33,7 @@
 \figureslide[scale=1]{{More than 8,900} Programming Languages}{brief_history_of_languages}
 
 \subsection{Classifications and types of programming languages}
-\tableofcontentslide[currentsection,currentsubsection]
+\subsectiontableofcontentslide
 
 \begin{frame}{Generations of Programming Languages}
 	\begin{columns}
@@ -77,79 +76,100 @@
 	}{whatthis}{}
 \end{frame}
 
-\sidecite{Firmeprogramming.2013}
-\figureslide{Types of Programming Languages}{programming-paradigms}
+\sidenote{\cite{Firmeprogramming.2013} - \url{www.vimustar.com}}
+\animatedfigureslide{Types of Programming Languages}{programming-paradigms}
 
-\begin{frame}{Scripting Language}
-	\begin{itemize}
-	\item \emph{Interpreted languages with high-level operators designed for ``gluing together'' computations.}
-	\vfill
-	\item Programs are much shorter than equivalent program written in other languages.
-	\end{itemize}
-	\vfill
-	\begin{examples}
-		Awk, Basic, JavaScript, Perl, PHP, Python, Ruby, Tcl, \dots
-	\end{examples}
-\end{frame}
+\figureslide{Static vs. Dynamic Typing}{static_dynamic}
 
-\begin{frame}{Strongly Typing Language}
-\end{frame}
-	
-\begin{frame}{Null-Safe Language}
+\begin{frame}{Strongly vs. Weakly Typed Language}
+	\alertbox*{A variable may be associated to a type of values, i.e. the definition of a set of values}
+	\vspace{.5cm}
+		\fancybox[vpos=b]{Strongly Typed}{%
+			Single type for each variable \\
+			Type defined at compile time
+		}{strongly-typed}{}
+		\raisebox{\height}{\larger\begin{tabular}{@{}l@{}p{2cm}@{}}
+			\textcolor{CIADgreen}{$\oplus$} & reliable \\
+			\textcolor{CIADmagenta}{$\ominus$} & tedious to write type annotations \\
+		\end{tabular}}
+		\hfill
+		\fancybox[vpos=b]{Weakly Typed}{%
+			Variable type depends on the run-time context \\
+			Values are converted at run-time
+		}{weakly-typed}{}
+		\raisebox{\height}{\larger\begin{tabular}{@{}l@{}p{2cm}@{}}
+			\textcolor{CIADgreen}{$\oplus$} & flexible \\
+			\textcolor{CIADmagenta}{$\ominus$} & unexpected run-time errors \\
+		\end{tabular}}
 \end{frame}
 
 \subsection{Basics of programming languages}
 
-\tableofcontentslide[currentsection,currentsubsection]
-
 \subsubsection{Definitions}
+\subsubsectiontableofcontentslide*
 
 \sidecite{Sethi.1996, Scott.2006}
-\begin{frame}{Definitions \#1}
-	\begin{description}
-	\item[Name] a string of characters that refers to a thing in the program.
-	\item[Identifier] a string of characters that refers to an entity (data object, procedure, class, type). \begin{itemize}
-		\item All identifiers are names; but not all names are identifiers
-		\item \id{x.y} is a name but not an identifier, and \id{x} and \id{y} are identifiers.
+\begin{frame}[t]{Several Key Definitions}
+	\begin{definitionblock}{Name}
+		A string of characters that refers to a thing in the program
+	\end{definitionblock}
+	\begin{definitionblock}{Identifier}
+		A string of characters that refers to an entity (data object, procedure, class, type) \begin{itemize}
+			\item All identifiers are names; but not all names are identifiers
+			\item \id{x.y} is a name but not an identifier, and \id{x} and \id{y} are identifiers.
 		\end{itemize}
-	\item[Variable] a particular location of the store of the values at run-time. A variable is denoted by a name. Each declaration of an identifier introduces a new variable.
-	\item[Keyword] an identifier that has a particular meaning to the programming language.
-	\end{description}
+	\end{definitionblock}
+	\begin{definitionblock}{Variable}
+		A particular location of the store of the values at run-time. \\
+		A variable is denoted by a name. Each declaration of an identifier introduces a new variable.
+	\end{definitionblock}
+	\begin{definitionblock}{Keyword}
+		An identifier that has a particular meaning to the programming language
+	\end{definitionblock}
 \end{frame}
 
 \sidecite{Sethi.1996, Scott.2006}
-\begin{frame}{Definitions \#2}
-	\begin{description}
-	\item[Procedure] a subprogram that may be called.
-	\item[Function] a procedure that may return a value of some type (the``return type'').
-	\item[Method] a procedure or a function inside a class in object-oriented languages.
-	\end{description}
+\begin{frame}{Several Key Definitions \insertcontinuationtext}
+	\begin{definitionblock}{Program or Subprogram}
+		A sequence of instructions and statements
+	\end{definitionblock}
+	\begin{definitionblock}{Procedure}
+		A subprogram with a name and formal parameters that may be called
+	\end{definitionblock}
+	\begin{definitionblock}{Function}
+		A procedure that may return a value of some type (the``return type'')
+	\end{definitionblock}
+	\begin{definitionblock}{Method}
+		A procedure or a function inside a class in object-oriented languages
+	\end{definitionblock}
 	\begin{alertblock}{Caution}
-	In the C-family languages, all the subprograms are functions; and a function is enabled to return nothing (\kw{void}).
+	In the C-family languages, all the subprograms are functions; and a function is enabled to return nothing (\kw{void})
 	\end{alertblock}
 \end{frame}
 
 \sidecite{Sethi.1996, Scott.2006}
-\begin{frame}{Definitions \#3}
-	\begin{description}
-	\item[Declaration] tells us about the type of a thing. \begin{itemize}
-		\item \inlineexample{\code{\kw{int} i;}}
-		\end{itemize}
-	\item[Definition] tells us about the value of a thing. \begin{itemize}
-		\item \inlineexample{\code{i = 1;}}
-		\end{itemize}
-	\item[Signature of a procedure] the declaration of the procedure. It is composed of a return type, an identifier, and a collection of parameter declarations.
-	\end{description}
+\begin{frame}{Several Key Definitions \insertcontinuationtext}
+	\begin{definitionblock}{Declaration}
+		Tells us about the type of an element. \inlineexample{\code{\kw{int} i;}}
+	\end{definitionblock}
+	\begin{definitionblock}{Definition}
+		Tells us about the value of an element. \inlineexample{\code{i = 1;}}
+	\end{definitionblock}
+	\begin{definitionblock}{Signature of a procedure/function}
+		The declaration of the procedure/function \\
+		Composed of: a return type, an identifier, and a collection of parameter declarations
+	\end{definitionblock}
 	\begin{example}\smaller In C++: \begin{itemize}
-		\item a method is declared in a \code{.hpp} file.
-		\item a method is defined in a \code{.cpp} file.
+		\item a method is declared in a \code{.hpp} file
+		\item a method is defined in a \code{.cpp} file
 		\end{itemize}
 	\end{example}
 \end{frame}
 
 \subsubsection{Environment and state}
+
 \begin{frame}{Environment and State}
-	The association of names with locations in memory (the store) and then with values is described by two mappings:
+	Association of names with locations in memory (the store) and then with values is described by two mappings:
 	\begin{description}
 	\item[Environment] mapping from names to locations in the store.
 	\item[State] mapping from locations in store to their values.
@@ -160,9 +180,8 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}[b,fragile]{Example of Environment and State}
-	\begin{lstlisting}[language=C]
-	...
+\begin{frame}[fragile]{Example of Environment and State}
+	\begin{lstlisting}[language=C,basicstyle=\normalcolor\smaller\smaller]
 	int i;         /* global i */
 	...
 	void f(...) {
@@ -176,28 +195,32 @@
 	\end{lstlisting}
 	\vfill
 	\begin{center}
-	\includegraphics[width=.9\linewidth]{environment_state_example}
+	\includegraphics[width=.8\linewidth]{environment_state_example}
 	\end{center}
 \end{frame}
 
 \subsubsection{Static or dynamic policy}
 \begin{frame}{Static or Dynamic Policy}
-	\alertbox{One of the most important issues when designing a compiler is what decisions can the compiler make about the program.}
-	\begin{block}{Static Policy}
+	\alertbox{One of the most important issues when designing a compiler is related to the decisions the compiler make about the program}
+	\vspace{1cm}
+	\begin{definitionblock}{Static Policy}
 	A program uses a policy that enables the compiler to decide an issue; \emph{the decision could be decided at compile time.}
-	\end{block}
-	\begin{block}{Dynamic Policy}
+	\end{definitionblock}
+	\vspace{.5cm}
+	\begin{definitionblock}{Dynamic Policy}
 	The decision can be made when we execute the program; \emph{the decision is required at run time.}
-	\end{block}
+	\end{definitionblock}
 \end{frame}
 
 \sidecite{Church.1941, Frege.1967, Wexelblat.1981}
-\begin{frame}{{Declaration Scope} Example}
-	\begin{itemize}
-	\item A language uses a static scope if it is possible to determine the scope of a declaration by looking only at the program (C, Java\dots)
-	\vfill
-	\item With dynamic scope, as the program runs, the same use of a variable x could refer to any of several different declarations of x (Perl, PHP\dots).
-	\end{itemize}
+\begin{frame}{Example: Declaration Scope}
+	\begin{definitionblock}{Static Scope}
+		A language uses a static scope if it is possible to determine the scope of a declaration by looking only at the program (C, Java\dots)
+	\end{definitionblock}
+	\vspace{1cm}
+	\begin{definitionblock}{Dynamic Scope}
+		With dynamic scope, as the program runs, the same use of a variable x could refer to any of several different declarations of x (Perl, PHP\dots)
+	\end{definitionblock}
 \end{frame}
 
 \begin{frame}{{``static'' Term Use} in Java}
@@ -206,94 +229,109 @@
 	\end{center}
 	\vfill
 	\begin{itemize}
-	\item Here \kw{static} refers not to the scope of the variable, but rather to the ability of the compiler to determine the location in memory.
+	\item Here \kw{static} refers not to the scope of the variable, but rather to the ability of the compiler to determine the location in memory
 	\vfill
-	\item If \kw{static} is omitted each object has this variable and the compiler cannot determine where it is in advance.
+	\item If \kw{static} is omitted each object has this variable and the compiler cannot determine where it is in advance
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{{Are Environment and State Mappings Dynamic or Static?}}
-	\alertbox*{The environment and state mappings are often dynamic.}
+\begin{frame}{{}{Are Environment and State Mappings Dynamic or Static?}}
+	\alertbox*{Environment and state mappings are often dynamic}
+	\vspace{.5cm}
 	\begin{block}{Static or Dynamic Environment Mapping?}
 	\begin{itemize}
-	\item Most of binding names to locations are dynamic.
-	\item Some declarations (\eg global \id{i}) are determine at compile time; they are static.
+	\item Most of binding names to locations are \emph{dynamic}
+	\item Some declarations (\eg global \id{i}) are determine at compile time; they are static
 	\end{itemize}
 	\end{block}
+	\vspace{.5cm}
 	\begin{block}{Static or Dynamic State Mapping?}
 	\begin{itemize}
-	\item Most of binding locations to values are dynamic because it is impossible to determine the location until we run the program.
-	\item Declared constants are an exception.
+	\item Most of binding locations to values are \emph{dynamic} because it is impossible to determine the location until we run the program
+	\item Declared constants are an exception
 	\end{itemize}
 	\end{block}
 \end{frame}
 
 \subsubsection{Parameter-passing mechanisms}
-\begin{frame}{\subsubsecname}
-	\begin{itemize}
-	\item All programming languages have the notion of procedure.
-	\item But they can differ in how these procedures get their arguments.
-	\vfill
-	\item How are the actual parameters (the parameters used in the call of a procedure) associated with the formal parameters (those used in the procedure definition)?
-		\begin{enumerate}
-		\item Call-by-value
-		\item Call-by-reference
-		\item Call-by-name
-		\end{enumerate}
-	\end{itemize}
+
+\begin{frame}{{Parameter-passing} Mechanisms}
+	\alertbox*{All programming languages have the notion of procedur; but they can differ in how these procedures get their arguments}
+	\vspace{1cm}
+	\alertbox{How are the actual parameters (the parameters used in the call of a procedure) associated with the formal parameters (those used in the procedure definition)?}
+	\vspace{1cm}
+	\begin{columns}
+		\begin{column}{.33\linewidth}
+			\simplebox{\textcircled{1} Call-by-value}
+		\end{column}
+		\begin{column}{.33\linewidth}
+			\simplebox{\textcircled{2} Call-by-reference}
+		\end{column}
+		\begin{column}{.33\linewidth}
+			\simplebox{\textcircled{3} Call-by-name}
+		\end{column}
+	\end{columns}
 \end{frame}
 
-\begin{frame}{{Passing Parameters} with Call-by-value}
-	\begin{itemize}
-	\item The actual parameter is evaluated or copied.
-	\item The value is placed in the location belonging to the corresponding formal parameter of the called procedure.
-	\item Used in C and Java; and the default option in C++.
-	\item All computation involving the formal parameters done by the called procedure is local to that procedure; and
-	\item The actual parameters themselves cannot be changed.
-	\end{itemize}
+\begin{frame}[t]{\textcircled{1} Call-by-value}
+	\begin{block}{Principle}
+		\begin{itemize}
+		\item Actual parameter is evaluated or copied
+		\item Value is in the location of the formal parameter
+		\end{itemize}
+	\end{block}
+	\begin{block}{Constraints}
+		\begin{itemize}
+			\item Changes to formal parameter is local to the procedure
+			\item Actual parameters themselves cannot be changed
+		\end{itemize}
+	\end{block}
+	\begin{example}
+		Used in C and Java; and the default option in C++
+	\end{example}
 	\begin{alertblock}{Caution}
-		In Java, all the object variables are references, or pointers, to the objects. Parameters are passed with the call-by-value policy, not the call-by-reference.
+		In Java, all the object variables are references (or pointers) to the objects. Parameters are passed with the call-by-value policy, not the call-by-reference
 	\end{alertblock}
 \end{frame}
 
-\begin{frame}{{Passing Parameters} with Call-by-reference}
-	\begin{itemize}
-	\item The address of the actual parameter is passed to the callee as the value of the corresponding formal parameter.
-	\vfill
-	\item Uses of the formal parameter in the code of the callee are implemented by following the pointer to the location indicated by the caller.
-	\vfill
-	\item Changes to the formal parameter thus appear as changes to the actual parameter.
-	\end{itemize}
+\begin{frame}{\textcircled{2} Call-by-reference}
+	\begin{block}{Principle}
+		\begin{itemize}
+			\item Address of the actual parameter is passed to the callee as the value of the corresponding formal parameter
+			\item Uses of the formal parameter are implemented by following the pointer to the location indicated by the caller
+		\end{itemize}
+	\end{block}
+	\begin{block}{Constraints}
+		\begin{itemize}
+			\item Changes to the formal parameter thus appear as changes to the actual parameter
+		\end{itemize}
+	\end{block}
 \end{frame}
 
-\begin{frame}{{Passing Parameters} with Call-by-name}
-	\begin{itemize}
-	\item It requires that the callee execute as if the actual parameter were substituted literally for the formal parameter in the code of the callee.
-	\vfill
-	\item Macro-functions in the C-family languages use this parameter passing mechanism.
-	\end{itemize}
+\begin{frame}{\textcircled{3} Call-by-name}
+	\begin{block}{Principle}
+		\begin{itemize}
+			\item It requires that the callee execute as if the actual parameter were substituted literally for the formal parameter in the code of the callee
+			\item Uses of the formal parameter are implemented by following the pointer to the location indicated by the caller
+		\end{itemize}
+	\end{block}
+	\vspace{1cm}
+	\begin{example}
+		Macro-functions in the C-family languages use this parameter passing mechanism
+	\end{example}
 \end{frame}
 
-\subsubsection{Aliasing mechanism}
-\begin{frame}{\subsubsecname}
-	\begin{itemize}
-	\item \emph{Aliasing} is occurring when two formal parameters refer to the same location.
-	\item Such variables are said to be aliases of one another.
-	\vfill
-	\item It is possible when references to the objects are passed by value (as in Java).
-	\end{itemize}
-\end{frame}
 
 \section[Language processor]{What is a language processor?}
 
-\tableofcontentslide[sectionstyle={show/shaded},subsectionstyle={hide/hide/hide},subsubsectionstyle={hide/hide/hide/hide}]
+\sectiontableofcontentslide
 
-\begin{frame}{What is a Compiler?}
+\begin{frame}{{What is a} Compiler?}
 	\begin{itemize}
-	\item Read a program in one language --- the source language.
-	\item Translate it into an equivalent program in a \Emph{low-level language} --- the target language.
+	\item Read a program in one language --- the source language
+	\item Translate it into an equivalent program in a \Emph{low-level language} --- the target language
 	\vfill
-	\item Report any errors in the source program that are detected during the translation process.
+	\item Report any errors in the source program that are detected during the translation process
 	\end{itemize}
 	\vfill
 	\begin{center}
@@ -301,12 +339,12 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{What is a Transpiler?}
+\begin{frame}{{What is a} Transpiler?}
 	\begin{itemize}
-		\item Read a program in one language --- the source language.
-		\item Translate it into an equivalent program in \Emph{another language that is not low-level} --- the target language.
+		\item Read a program in one language --- the source language
+		\item Translate it into an equivalent program in \Emph{another language that is not low-level} --- the target language
 		\vfill
-		\item Report any errors in the source program that are detected during the translation process.
+		\item Report any errors in the source program that are detected during the translation process
 	\end{itemize}
 	\vfill
 	\begin{center}
@@ -322,11 +360,11 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{What is an Interpreter?}
+\begin{frame}{{What is an} Interpreter?}
 	\begin{itemize}
-	\item A kind of language processor.
-	\item Does not produce a target program.
-	\item Directly execute the operations specified in the source program on inputs supplied by the user.
+	\item A kind of language processor
+	\item Does not produce a target program
+	\item Directly execute the operations specified in the source program on inputs supplied by the user
 	\end{itemize}
 	\vfill
 	\begin{center}
@@ -334,11 +372,11 @@
 	\end{center}
 \end{frame}
 
-\begin{frame}{What is an Hybrid Compiler?}
+\begin{frame}{{What is an} Hybrid Compiler?}
 	\begin{itemize}
-	\item Combine compilation and interpretation.
-	\item Generate intermediate program in a platform-independent language.
-	\item Execute the intermediate program in a platform-dependent virtual machine.
+	\item Combine compilation and interpretation
+	\item Generate intermediate program in a platform-independent language
+	\item Execute the intermediate program in a platform-dependent virtual machine
 	\end{itemize}
 	\vfill
 	\begin{center}
@@ -350,14 +388,15 @@
 	\begin{smaller}
 	\begin{block}{Compiler \vs Transpiler \vs Interpreter}
 	\begin{itemize}
-	\item Compiler (transpiler) is faster than interpreter at mapping inputs to outputs.
-	\item Interpreter gives better error diagnostics than compiler, because it execute the source program statement by statement (no code optimization).
+	\item Compiler and transpiler is faster than interpreter at mapping inputs to outputs
+	\item Interpreter gives better error diagnostics than compiler, because it execute the source program statement by statement (no code optimization)
 	\end{itemize}
 	\end{block}
+	\vspace{1cm}
 	\begin{block}{Hybrid Compiler}
 	\begin{itemize}
-	\item Hybrid compiler enables to compile on one machine, and to execute the generated program on an other machine with a different low-level architecture than the initial machine, or across a network\dots
-	\item In order to achieve faster processing, some hybrid compilers use just-in-time compilers to translate intermediate programs into machine language and avoid the interpretation, \eg the Oracle's Java Runtime Environment.
+	\item Compile on \emph{one machine}, execute the generated program on \emph{another machine}
+	\item To be faster, use just-in-time compilers to translate intermediate programs into machine language and avoid the interpretation, \eg the Oracle's Java Runtime Environment
 	\end{itemize}
 	\end{block}
 	\end{smaller}
@@ -365,46 +404,46 @@
 
 \begin{frame}<1>[t]{Toolchain}
 	\begin{itemize}
-	\item Several other programs may be required to create an executable target program.
-	\item They compose the toolchain of the compiler.
+	\item Several other programs may be required to create an executable target program
+	\item They compose the toolchain of the compiler
 	\end{itemize}
-	\putat(40,-210){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
+	\putat(40,-150){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
 \end{frame}
 
 \begin{frame}<2>[t]{Preprocessor in the Toolchain}
 	\begin{smaller}
 	\begin{block}{\smaller Goals}
 	\begin{itemize}
-	\item To collect the different files of the program's modules to compile.
-	\item To expand shorthands, macros into statements.
+	\item To collect the different files of the program's modules to compile
+	\item To expand shorthands, macros into statements
 	\end{itemize}
 	\end{block}
 	\end{smaller}
-	\putat(40,-210){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
+	\putat(40,-150){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
 \end{frame}
 
 \begin{frame}<3>[t]{Compiler in the Toolchain}
 	\begin{smaller}
 	\begin{block}{\smaller Goals}
 	\begin{itemize}
-	\item To produce an assembly-language program from the modified source program.
-	\item Assembly-language is easier to produce and debug.
+	\item To produce an assembly-language program from the modified source program
+	\item Assembly-language is easier to produce and debug
 	\end{itemize}
 	\end{block}
 	\end{smaller}
-	\putat(40,-210){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
+	\putat(40,-150){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
 \end{frame}
 
 \begin{frame}<4>[t]{Assembler in the Toolchain}
 	\begin{smaller}
 	\begin{block}{\smaller Goals}
 	\begin{itemize}
-	\item To translate to a machine code that could be relocated in the code segment of the program.
-	\item Code segment: the part of the memory where machine code is stored
+	\item To translate to a machine code that could be relocated in the code segment of the program
+	\item Code segment: the part of the memory where machine code is store
 	\end{itemize}
 	\end{block}
 	\end{smaller}
-	\putat(40,-210){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
+	\putat(40,-150){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
 \end{frame}
 
 \begin{frame}<5>[t]{Linker in the Toolchain}
@@ -415,15 +454,15 @@
 	\end{itemize}
 	\end{block}
 	\end{smaller}
-	\putat(40,-210){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
+	\putat(40,-150){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
 \end{frame}
 
 \section{Process of a compiler}
 
-\tableofcontentslide[sectionstyle={show/shaded},subsectionstyle={hide/hide/hide},subsubsectionstyle={hide/hide/hide/hide}]
+\sectiontableofcontentslide
 
 \begin{frame}<9>{Process of a Compiler}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
 	\begin{block}{Analysis}
 	\begin{itemize}
@@ -437,7 +476,7 @@
 \end{frame}
 
 \begin{frame}<10>{Process of a Compiler}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
 	\begin{block}{Synthesis}
 	\begin{itemize}
@@ -448,319 +487,326 @@
 	\end{minipage}
 \end{frame}
 
-\begin{frame}<2>{Lexical Analysis or Scanning}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+\begin{frame}<2>{{Lexical Analysis} or Scanning}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
 	\begin{itemize}
-	\item The lexical analyzer reads the stream of characters making up the source program.
-	\item It groups the characters into meaningful sequences called lexemes.
-	\item For each lexeme, the lexical analyzer produces as output a token of the following form; and passes it to the syntactic analyzer.
+	\item Reads the stream of characters making up the source program
+	\item Groups the characters into meaningful sequences called \emph{lexemes}
+	\item Output for each lexeme:
 		\begin{center}
-			\code{{\textless}token-name, attribute-value{\textgreater}}
+			\code{token={\textless}token-name, attribute-value{\textgreater}}
 		\end{center}
-	\item The \code{token-name} is the identifier of the token.
-	\item The \code{attribute-value} points to an entry in the symbol table for this token.
-	\end{itemize}
+		\begin{itemize}
+		\item \code{token-name}: the identifier of the token
+		\item \code{attribute-value}: entry in the symbol table for this token
+		\end{itemize}
+		\end{itemize}
 	\end{minipage}
 \end{frame}
 
 \begin{frame}<2>{Example of Scanning}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{small}
+	\begin{minipage}{.8\linewidth}
 	\begin{center}
 		\code{position = initial + rate * 60}
 	\end{center}
-	\begin{minipage}{.8\linewidth}
-	\begin{itemize}
-	\item \code{position} is a lexeme mapped into the token \code{{\textless}id,1{\textgreater}}; where \code{id} is an abstract symbol standing for identifier and \code{``1''} points to the symbol-table entry for position.
-	\item \code{=} is a lexeme mapped into the token \code{{\textless}={\textgreater}}
-	\item \code{initial} is a lexeme mapped into the token \code{{\textless}id,2{\textgreater}}
-	\item \code{+} is a lexeme mapped into the token \code{{\textless}+{\textgreater}}
-	\item \code{rate} is a lexeme mapped into the token \code{{\textless}id,3{\textgreater}}
-	\item \code{*} is a lexeme mapped into the token \code{{\textless}*{\textgreater}}
-	\item \code{60} is a lexeme mapped into the token \code{{\textless}number,60{\textgreater}}
-	\end{itemize}
+	\begin{tabularx}{\linewidth}{|l|X|}
+		\hline
+		\tabularheading\chead{Lexeme}&\chead{Token} \\
+		\hline
+		\code{position} & \code{{\textless}id,1{\textgreater}} 
+			\begin{itemize}
+				\item \code{id}: abstract symbol standing for ``identifier''
+				\item \code{``1''}: points to the symbol-table entry for position
+			\end{itemize} \\
+		\hline
+		\code{=} & \code{{\textless}={\textgreater}} \\
+		\hline
+		\code{initial} & \code{{\textless}id,2{\textgreater}} \\
+		\hline
+		\code{+} & \code{{\textless}+{\textgreater}} \\
+		\hline
+		\code{rate} & \code{{\textless}id,3{\textgreater}} \\
+		\hline
+		\code{*} & \code{{\textless}*{\textgreater}} \\
+		\hline
+		\code{60} & \code{{\textless}number,60{\textgreater}} \\
+		\hline
+	\end{tabularx}
 	\end{minipage}
 	\end{small}
 \end{frame}
 
 \begin{frame}<2>{Example of Scanning}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
-	\putat(0,-200){\includeanimatedfigure[width=.7\linewidth]{compiler_cycle_example}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
+	\putat(0,-120){\includeanimatedfigure[width=.65\linewidth]{compiler_cycle_example}}
 \end{frame}
 
 \begin{frame}{Symbol Table}
-	\begin{itemize}
-	\item The symbol table is a data structure containing a record for each variable name, with fields for the attributes of the name.
-	\vfill
-	\item The symbol table is filled or used by the different stages of the compiler.
-	\vfill
-	\item The attributes may provide information about the storage allocated for a name, its type, its scope, the number and types of the formal parameters, the method of passing each argument, and the type returned.
-	\vfill
-	\item The data structure should be designed to allow the compiler to find the record for each name quickly and to store or retrieve data from that record quickly.
-	\end{itemize}
+	\begin{definitionblock}{Symbol Table}
+		Central data structure containing a record for each variable name, with record fields for the attributes associated to the name
+	\end{definitionblock}
+	\vspace{.5cm}
+	\begin{definitionblock}{Record Attribute}
+		Information about the storage allocated for a name: type, scope, number and types of the formal parameters, the method of passing each argument, and the type of the returned value
+	\end{definitionblock}
+	\vspace{.5cm}
+	\begin{alertblock}{Caution}
+		Should be designed to allow the compiler to find the record for each name quickly and to store or retrieve data from that record quickly
+	\end{alertblock}
 \end{frame}
 
 \begin{frame}{Symbol Table and Scope}
-	\begin{itemize}
-	\item Scopes are implemented by setting up a separate symbol table for each scope.
-	\item The \emph{most-closely nested rule for blocks} permits to define a data structure, which is based on \emph{chained symbol tables}.
-	\end{itemize}
-	\vspace{2em}
+	\alertbox*{Scopes are implemented by setting up a separate symbol table for each scope}
+	\vspace{.25cm}
+	\begin{block}{Principle}
+		The \emph{most-closely nested rule for blocks} permits to define a data structure, which is based on \emph{chained symbol tables}.
+	\end{block}
 	\begin{center}
 		\includegraphics[width=.8\linewidth]{symbol_table_chain}
 	\end{center}
 \end{frame}
 
-\begin{frame}[fragile]{Simple Java Implementation of the Symbol Table Chain}
-	\begin{lstlisting}[language=Java]
-	/** Define the properties of a single symbol. */
-	public class Symbol {
-	    public final String lexeme;
-	    public Type type;
-	    public Address storagePosition;
-	    public Symbol(String lexeme) { this.lexeme = lexeme; }
-	}
+\begin{frame}[t,fragile]{{Simple Java Implementation} of the Symbol Table Chain}
+	\begin{lstlisting}[language=java,basicstyle=\normalcolor\smaller\smaller]
+/** Define the properties of a single symbol. */
+public class Symbol {
+ public final String lexeme;
+ public Type type;
+ public Address storagePosition;
+ public Symbol(String lexeme) { this.lexeme = lexeme; }
+}
 
-	/** Define a symbol table. */
-	public class SymbolTable {
+/** Define a symbol table. */
+public class SymbolTable {
 
-	    /** Collection of the symbol in the current context. */
-	    private final Map<String,Symbol> table = new TreeMap<String,Symbol>();
+ /** Collection of the symbol in the current context. */
+ private final Map<String,Symbol> table = new TreeMap<String,Symbol>();
 
-	    /** Reference to the symbol table that is associated to the enclosing scope. */
-	    private final SymbolTable enclosingEnvironment;
+ /** Reference to the symbol table that is associated to the enclosing scope. */
+ private final SymbolTable enclosingEnvironment;
 
-	    /** Constructor. */
-	    private SymbolTable(SymbolTable enclosingEnvironment) {
-	        this.enclosingEnvironment = enclosingEnvironment;
-	    }
-
-	    //....
+ /** Constructor. */
+ private SymbolTable(SymbolTable enclosingEnvironment) {
+     this.enclosingEnvironment = enclosingEnvironment;
+ }
+ //....
 	\end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile]{Simple Java Implementation of the Symbol Table Chain}
-	\begin{lstlisting}[language=Java]
-	    /** Declare a symbol in the current context. */
-	    public void declare(String identifier, Symbol symbol) {
-	        this.table.put(identifier, symbol);
-	    }
+\begin{frame}[t,fragile]{{Simple Java Implementation} of the Symbol Table Chain}
+	\begin{lstlisting}[language=java,basicstyle=\normalcolor\smaller\smaller]
+ /** Declare a symbol in the current context. */
+ public void declare(String identifier, Symbol symbol) {
+     this.table.put(identifier, symbol);
+ }
 
-	    /** Get the definition of a symbol in the current context,
-	        or in an enclosing scope. */
-	    public Symbol get(String identifier) {
-	        SymbolTable e = this;
-	        Symbol symbol;
-	        while (e!=null) {
-	            symbol = e.table.get(identifier);
-	            if (symbol != null) {
-	                return symbol;
-	            }
-	            e = e.enclosingEnvironment;
-	        }
-	        return null;
-	    }
-
-	    //....
+ /** Get the definition of a symbol in the current context,
+     or in an enclosing scope. */
+ public Symbol get(String identifier) {
+     SymbolTable e = this;
+     Symbol symbol;
+     while (e!=null) {
+         symbol = e.table.get(identifier);
+         if (symbol != null) {
+             return symbol;
+         }
+         e = e.enclosingEnvironment;
+     }
+     return null;
+ }
+ //....
 	\end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile]{Simple Java Implementation of the Symbol Table Chain}
-	\begin{lstlisting}[language=Java]
-	    /** Reference to the current symbol table.
-	        The reference is initialized with the
-	        root context (or the global context). */
-	    private static SymbolTable current = new SymbolTable(null);
+\begin{frame}[t,fragile]{{Simple Java Implementation} of the Symbol Table Chain}
+	\begin{lstlisting}[language=java,basicstyle=\normalcolor\smaller\smaller]
+ /** Reference to the current symbol table.
+     The reference is initialized with the
+     root context (or the global context). */
+ private static SymbolTable current = new SymbolTable(null);
 
-	    /** Replies the symbol table of the current context. */
-	    public static SymbolTable getCurrent() {
-	        return current;
-	    }
+ /** Replies the symbol table of the current context. */
+ public static SymbolTable getCurrent() {
+     return current;
+ }
 
-	    /** Open a new context and create the corresponding
-	        symbol table. */
-	    public static void openContext() {
-	        current = new SymbolTable(current);
-	    }
-
-	    /** Close the current context. */
-	    public static void closeContext() {
-	        if (current.enclosingEnvironment!=null) {
-	            current = current.enclosingEnvironment;
-	        }
-	    }
-
-	}
+ /** Open a new context and create the corresponding
+     symbol table. */
+ public static void openContext() {
+     current = new SymbolTable(current);
+ }
+ /** Close the current context. */
+ public static void closeContext() {
+     if (current.enclosingEnvironment!=null) {
+         current = current.enclosingEnvironment;
+     }
+ }
+}
 	\end{lstlisting}
 \end{frame}
 
 \begin{frame}<3>{Syntax Analysis}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
-	\begin{itemize}
-	\item The syntax analyzer uses the tokens produced by the lexical analyzer to create an intermediate representation.
-	\item A typical representation is a syntax tree: \begin{description}
-		\item[node] operation in the program
-		\item[children] parameters of the operation
-		\end{description}
-		\vspace{1em}
-		\includegraphics[width=\linewidth]{syntax_tree_example}
-		\vspace{1em}
-	\item In real-life compilers, a context free grammar is used to describe the syntax of the language and to help to analyze this syntax.
-	\end{itemize}
+		\alertbox*{Uses the tokens produced by the lexical analyzer to create an intermediate representation}
+		\vspace{.5cm}
+		\begin{block}{Syntax Tree}
+			A typical representation is a syntax tree: \begin{description}
+			\item[node] operation in the program
+			\item[children] parameters of the operation
+			\end{description}
+			\vspace{1em}
+			\includegraphics[width=\linewidth]{syntax_tree_example}
+		\end{block}
 	\end{minipage}
 \end{frame}
 
 \begin{frame}<3>{Example of Syntax Analysis}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
-	\putat(0,-200){\includeanimatedfigure[width=.7\linewidth]{compiler_cycle_example}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
+	\putat(0,-120){\includeanimatedfigure[width=.65\linewidth]{compiler_cycle_example}}
 \end{frame}
 
 \begin{frame}<4>{Semantic Analysis}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
-	\begin{itemize}
-	\item The semantic analyzer uses the syntax tree and the information in the symbol table to check the source program for semantic consistency with the language definition.
-	\vfill
-	\item It gathers type information and saves it in either the syntax tree and the symbol table.
-	\vfill
-	\item \emph{Type checking} is an important part of the semantic analyzer: the compiler checks that each operator has matching operands.
-	\vfill
-	\item The semantic analyzer applies \emph{coercions}, or type conversions.
-	\end{itemize}
+		\alertbox*{Uses the syntax tree and the information in the symbol table to check the source program for semantic consistency with the language definition}
+		\vspace{.25cm}
+		\begin{block}{Actions}
+			\begin{itemize}
+			\item Gathers type information and saves it in either the syntax tree and the symbol table
+			\item Applies \emph{coercions}, or type conversions
+			\end{itemize}
+		\end{block}
+		\vspace{.25cm}
+		\begin{alertblock}{Type Checking}
+			Important part of the semantic analyzer: the compiler checks that each operator has matching operands
+		\end{alertblock}
 	\end{minipage}
 \end{frame}
 
 \begin{frame}<4>{Example of Semantic Analysis}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
-	\putat(0,-200){\includeanimatedfigure[width=.7\linewidth]{compiler_cycle_example}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
+	\putat(0,-120){\includeanimatedfigure[width=.65\linewidth]{compiler_cycle_example}}
 \end{frame}
 
-\begin{frame}<5>{Intermediate Code Generator}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+\begin{frame}<5>{{Intermediate Code} Generator}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
-	\begin{itemize}
-	\item Many compilers generate an explicit low-level or machine-like intermediate representation, which is a program for an abstract machine.
-	\vfill
-	\item The intermediate code generator should be: \begin{itemize}
-		\item easy to produce, and
-		\item easy to translate into the target machine.
-		\end{itemize}
-	\vfill
-	\item Two intermediate representations are generally used: \begin{itemize}
-		\item Syntax tree, and
-		\item Three-address code
-		\end{itemize}
-	\end{itemize}
+		\alertbox*{Many compilers generate an \emph{explicit low-level or machine-like intermediate representation}, which is a program for an abstract machine}
+		\vspace{1cm}
+		\begin{block}{Intermediate code}
+			Two representations are generally used: \begin{itemize}
+				\item Syntax tree
+				\item Three-address code
+			\end{itemize}
+			that is easy to produce, and translate into the target machine
+		\end{block}
 	\end{minipage}
 \end{frame}
 
-\begin{frame}{What is the Three-address Code?}
+\begin{frame}{{What is} Three-address Code?}
+	\alertbox*{A sequence of assembly-like instructions with, at most, three operands per instruction. \\
+		\code{{\textless}variable{\textgreater} = {\textless}operand1{\textgreater} {\textless}operator{\textgreater} {\textless}operand2{\textgreater}}}
 	\begin{itemize}
-	\item Three-address code consists of a sequence of assembly-like instructions with, at most, three operands per instruction.
-		\begin{center}
-			\code{{\textless}variable{\textgreater} = {\textless}operand1{\textgreater} {\textless}operator{\textgreater} {\textless}operand2{\textgreater}}
-		\end{center}
-	\vfill
-	\item Each operand can act like a register.
-	\item The affectation operator is implicit and always present.
-	\vfill
-	\item \alert{Constraints}: \begin{enumerate}
-		\item at most one operator on the right side.
-		\item temporary names are generated to hold the value computed by the three-address instruction.
-		\item some instructions have fewer then three operands.
-		\end{enumerate}
+	\item Each operand can act like a register
+	\item The affectation operator is implicit and always present
 	\end{itemize}
+	\begin{alertblock}{Constraints}
+		\begin{enumerate}
+			\item At most one operator on the right side
+			\item Temporary names are generated to hold the value computed by the three-address instruction
+			\item Some instructions have fewer then three operands
+		\end{enumerate}
+	\end{alertblock}
 \end{frame}
 
 \begin{frame}<5>{Example of Intermediate Code Generation}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
-	\putat(0,-200){\includeanimatedfigure[width=.7\linewidth]{compiler_cycle_example}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
+	\putat(0,-120){\includeanimatedfigure[width=.65\linewidth]{compiler_cycle_example}}
 \end{frame}
 
-\begin{frame}<6>{Machine-Independent Code Optimizer}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+\begin{frame}<6>{{Machine-Independent Code} Optimizer}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
-	\begin{itemize}
-	\item The code optimizer improves the intermediate code so that better target code will result.
-	\item ``Better'' means faster, shorter, less power consumer\dots
-	\item All the compilers include a machine-independent code optimizer.
-	\item Those that spent a large amount of time on this phase are named ``optimizing compilers.''
-	\item Remember that many of the simple optimizations permit to significantly improve the running time of the target program without too much time spent on this phase.
-	\end{itemize}
+		\alertbox*{Improves the intermediate code for better target code \\
+			(faster, shorter, less power consumer\dots)}
+		\vspace{.5cm}
+		\begin{itemize}
+		\item All the compilers include a machine-independent code optimizer
+		\item Those that spent a large amount of time on this phase are named ``optimizing compilers''
+		\end{itemize}
+		\vspace{.5cm}
+		\begin{block}{Note}
+			Many of the simple optimizations permit to significantly improve the running time of the target program without too much time spent on this phase
+		\end{block}
 	\end{minipage}
 \end{frame}
 
 \figureslide{Example of Optimization}{intermediate_code_optim}
 
 \begin{frame}<6>{Example of Machine-Independent Code Optimization}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
-	\putat(0,-200){\includeanimatedfigure[width=.7\linewidth]{compiler_cycle_example}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
+	\putat(0,-120){\includeanimatedfigure[width=.65\linewidth]{compiler_cycle_example}}
 \end{frame}
 
 \begin{frame}<7>{Code Generator}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
-	\begin{itemize}
-	\item The code generator takes as input an intermediate representation and maps it into the target language.
-	\vfill
-	\item If the target language is machine code, registers or memory locations are selected for each variables used by the program.
-	\item Then, the intermediate instructions are translated into sequences of machine instructions that perform the same tasks.
-	\vfill
-	\item A crucial aspect is the judicious assignment of registers to hold variables.
-	\end{itemize}
+		\alertbox*{Maps an intermediate representation into the target language}
+		\vspace{.5cm}
+		\begin{itemize}
+		\item If the target language is machine code, registers or memory locations are selected for each variables used by the program
+		\item Then, the intermediate instructions are translated into sequences of machine instructions that perform the same tasks
+		\vspace{.5cm}
+		\item A crucial aspect is the judicious assignment of registers to hold variables
+		\end{itemize}
 	\end{minipage}
 \end{frame}
 
 \begin{frame}{Example of Code Generation}
 	\begin{itemize}
-	\item Assumes that R1 and R2 are registers.
-	\item Variables are mapped to registers so that they can be easily used for the generation of the next instructions.
+	\item Assumes that R1 and R2 are registers
+	\item Variables are mapped to registers so that they can be easily used for the generation of the next instructions
 	\end{itemize}
-	\vfill
+	\vspace{.25cm}
 	\includegraphics[width=\linewidth]{code_generator_example}
 \end{frame}
 
 \begin{frame}<7>{Example of Code Generation}
-	\putat(270,-207){\includeanimatedfigure[width=.2\linewidth]{compiler_structure}}
-	\putat(0,-200){\includeanimatedfigure[width=.7\linewidth]{compiler_cycle_example}}
+	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
+	\putat(0,-120){\includeanimatedfigure[width=.65\linewidth]{compiler_cycle_example}}
 \end{frame}
 
 \section{Tools to create a compiler}
-
-\tableofcontentslide[sectionstyle={show/shaded},subsectionstyle={hide/hide/hide},subsubsectionstyle={hide/hide/hide/hide}]
+\sectiontableofcontentslide
 
 \begin{frame}{Tools to Create a Compiler}
-	\begin{itemize}
-	\item Several tools are available to help the compiler writer to build his compiler.
-	\item These tools use specialized languages for specifying and implementing specific components.
-	\end{itemize}
-	\begin{block}{Tools}\smaller
-	\begin{description}
-	\item[Parser generators] produce syntax analyzers from grammatical description of a programming language (Yacc, JavaCC, Bison\dots)
-	\item[Scanner generators] produce lexical analyzers from a regular-expression description of the tokens of the languages (Flex, JFlex\dots)
-	\item[Syntax-directed translation engines] produce collections of routines for walking a parse tree and generating intermediate code.
-	\end{description}
-	\end{block}
+	\alertbox*{Several tools are available to help the compiler writer to build his compiler}
+	\vspace{.5cm}
+	\fancybox{Scanner generators}{Lexical analyzers from a reg-ex description tokens \\
+	(Flex, JFlex\dots)}{scanner-icon}{1}
+	\hfill
+	\fancybox{Parser generators}{Syntax analyzers from grammar \\
+	(Yacc, JavaCC, Bison\dots)}{parser-icon}{2}
+	\hfill
+	\fancybox{Syntax-directed translation engines}{Parse-tree walkthrough routines for intermediate code generation}{assembly-icon}{3}
 \end{frame}
 
-\begin{frame}{Tools to Create a Compiler}
-	\begin{block}{Tools}\smaller
-	\begin{description}
-	\item[Code-generator generators] produce a code generator from a collection of rules for translating each operation of the intermediate language into the machine language for a target machine.
-	\item[Data-flow analysis engines] facilitate the gathering of information about how values are transmitted from one part of the program to each other part.
-	\item[Compiler-construction toolkits] provide an integrated set of routines for constructing various phases of a compiler (xtext\dots)
-	\end{description}
-	\end{block}
+\begin{frame}{Tools to Create a Compiler \insertcontinuationtext}
+	\fancybox{Code-generator generators}{Procedures for generating target machine code from intermediate code}{machine-code-icon}{4}
+	\hfill
+	\fancybox{Data-flow analysis engines}{Help for management of value exchange between compiler components}{data-flow-icon}{5}
+	\hfill
+	\fancybox{Construction toolkits}{Include the other tools and IDE integration (Xtext\dots)}{toolkit-icon}{6}
 \end{frame}
 
 \section{Conclusion}
+\sectiontableofcontentslide
 
-\tableofcontentslide[sectionstyle={show/shaded},subsectionstyle={hide/hide/hide},subsubsectionstyle={hide/hide/hide/hide}]
-
-%allowframebreaks
-\begin{frame}[t]{Key Concepts of the Chapter}
+\begin{frame}[t]{{Key Concepts} in the Chapter}
 	\begin{description}
 	\item[Language Processors] An integrated software development environment: compilers, interpreters, linkers, loaders, debuggers, profilers.
 	\item[Compiler Phases] Sequence of phases, each of which transforms the source program from one intermediate representation to another.
@@ -769,19 +815,30 @@
 	\item[Higher-Level Languages] Programming languages take on progressively more of the tasks that formerly were left to the programmer: memory management, type-consistency\dots
 	\item[Environments] The association of names with locations in memory and then with values can be described in terms of environments.
 	\item[Parameter Passing] Parameters are passed from a calling procedure to the callee either by value or by reference.
-	\item[Aliasing] When parameters are (effectively) passed by reference, two formal parameters can refer to the same object.
-	\item[Compiler Front End] The part of the compiler that is dedicated to the analysis phases. The compiler front end takes the source program, breaks it to token, analyzes the grammar, detects errors and inconsistencies, and generate an intermediate representation.
-	\item[Compiler Back End] The part of the compiler that is dedicated to the synthesis phases. The compiler back end takes the intermediate representation, generates assembly and machine code.
-	\item[Lexical Analyzer] The lexical analyzer reads the input one character at a time and produces as output a stream of tokens. A token consists of a terminal symbol and attribute values.
-	\item[Parsing] Parsing is the problem of figuring out how a string of terminals can be derived from the start symbol of the grammar by repeatedly replacing a nonterminal by the body of one of its productions.
-	\item[Parse Tree] A graphical tree representation of the productions that are matching a sequence of input tokens.
-	\item[Intermediate Code] The result of the syntax analysis is a representation of the source program, called intermediate code. Two primary forms of intermediate code are illustrated: abstract syntax tree (similar to parse tree), and three-address code.
-	\item[Symbol Table] A data structure that holds information about identifiers.
 	\end{description}
 \end{frame}
 
-%allowframebreaks
-\begin{frame}[t]{\bibname\ of the Chapter}%
+\begin{frame}[t]{{Key Concepts} in the Chapter \insertcontinuationtext}
+	\begin{description}
+		\item[Aliasing] When parameters are (effectively) passed by reference, two formal parameters can refer to the same object.
+		\item[Compiler Front End] The part of the compiler that is dedicated to the analysis phases. The compiler front end takes the source program, breaks it to token, analyzes the grammar, detects errors and inconsistencies, and generate an intermediate representation.
+		\item[Compiler Back End] The part of the compiler that is dedicated to the synthesis phases. The compiler back end takes the intermediate representation, generates assembly and machine code.
+		\item[Lexical Analyzer] The lexical analyzer reads the input one character at a time and produces as output a stream of tokens. A token consists of a terminal symbol and attribute values.
+		\item[Parsing] Parsing is the problem of figuring out how a string of terminals can be derived from the start symbol of the grammar by repeatedly replacing a nonterminal by the body of one of its productions.
+	\end{description}
+\end{frame}
+
+
+\begin{frame}[t]{{Key Concepts} in the Chapter \insertcontinuationtext}
+	\begin{description}
+		\item[Parse Tree] A graphical tree representation of the productions that are matching a sequence of input tokens.
+		\item[Intermediate Code] The result of the syntax analysis is a representation of the source program, called intermediate code. Two primary forms of intermediate code are illustrated: abstract syntax tree (similar to parse tree), and three-address code.
+		\item[Symbol Table] A data structure that holds information about identifiers.
+	\end{description}
+\end{frame}
+
+%%allowframebreaks
+\begin{frame}[t]{{\bibname}\ of the Chapter}%
 	\tiny%
 	\putbib[chapters/chapter1/biblio]%
 \end{frame}%

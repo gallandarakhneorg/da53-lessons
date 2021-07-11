@@ -13,6 +13,6 @@
 *.blg
 */imgs/*.pdf
 */imgs/*/*.pdf
-*/imgs/*/*.pdftex_t
+*.pdftex_t
 bibliographies/*.bak
 
