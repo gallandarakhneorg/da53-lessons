@@ -1,35 +1,119 @@
-\begin{graphicspathcontext}{{./chapters/chapter2/imgs/auto/}}
-	
+\begin{graphicspathcontext}{{./chapters/chapter2/imgs/auto/},{./chapters/chapter2/imgs/raw/}}
+
+\resolvepicturename{lexical_analyzer_intro}
+\addlawnpicture{lexical-analyzer-introduction}{\resolvedfilename}
+
+\resolvepicturename{software_design}
+\addfancyboxpicture{software-design}{\resolvedfilename}
+
+\resolvepicturename{efficiency}
+\addfancyboxpicture{software-efficiency}{\resolvedfilename}
+
+\resolvepicturename{portability}
+\addfancyboxpicture{software-portability}{\resolvedfilename}
+
+\resolvepicturename{panic-button}
+\addlawnpicture{panic-mode}{\resolvedfilename}
+
+\resolvepicturename{delete-icon}
+\addgridpicture{delete-icon}{\resolvedfilename}
+
+\resolvepicturename{insert-icon}
+\addgridpicture{insert-icon}{\resolvedfilename}
+
+\resolvepicturename{replace-icon}
+\addgridpicture{replace-icon}{\resolvedfilename}
+
+\resolvepicturename{transpose-icon}
+\addgridpicture{transpose-icon}{\resolvedfilename}
+
+\resolvepicturename{goal}
+\pgfdeclareimage[height=1.8cm]{icon-goal}{\resolvedfilename}
+
+\resolvepicturename{danger}
+\pgfdeclareimage[height=1.8cm]{icon-problem}{\resolvedfilename}
+
+\resolvepicturename{solution}
+\pgfdeclareimage[height=1.8cm]{icon-solution}{\resolvedfilename}
+
+\resolvepicturename{buffer_pair_example0}
+\pgfdeclareimage[width=.7\paperwidth]{buffer_pair_example0}{\resolvedfilename}
+
+\resolvepicturename{buffer_pair_example1}
+\pgfdeclareimage[width=.7\paperwidth]{buffer_pair_example1}{\resolvedfilename}
+
+\resolvepicturename{buffer_pair_example0}
+\pgfdeclareimage[width=.7\paperwidth]{buffer_pair_example}{\resolvedfilename}
+
+\resolvepicturename{buffer_pair_sentinel_example}
+\pgfdeclareimage[width=.7\paperwidth]{buffer_pair_sentinel_example}{\resolvedfilename}
+
+\resolvepicturename{rplus_regex}
+\addfancyboxpicture{rplus_regex}{\resolvedfilename}
+
+\resolvepicturename{rquestionmark_regex}
+\addfancyboxpicture{rquestionmark_regex}{\resolvedfilename}
+
+\resolvepicturename{class_regex}
+\addfancyboxpicture{class_regex}{\resolvedfilename}
+
+\resolvepicturename{transition_diagram_identifier_keyword}
+\pgfdeclareimage[width=\linewidth]{transition_diagram_identifier_keyword}{\resolvedfilename}
+
+\resolvepicturename{lex_tool}
+\pgfdeclareimage[width=\linewidth]{lex_tool}{\resolvedfilename}
+
+\resolvepicturename{longuer}
+\addfancyboxpicture{longuer}{\resolvedfilename}
+
+\resolvepicturename{first_in_list}
+\addfancyboxpicture{first_in_list}{\resolvedfilename}
+
+\resolvepicturename{nfa_example}
+\pgfdeclareimage[width=.7\paperwidth]{nfa_example}{\resolvedfilename}
+
 \resolvepicturename{rightarrow}
-\pgfdeclareimage[width=2em]{rightarrow}{\resolvedfilename}
+\pgfdeclareimage[width=2em]{rightarrow-in-code}{\resolvedfilename}
+
+\resolvepicturename{dfa_example}
+\pgfdeclareimage[width=.7\paperwidth]{dfa_example}{\resolvedfilename}
+
+\resolvepicturename{re_nfa_epsilon}
+\pgfdeclareimage[width=.2\paperwidth]{re_nfa_epsilon}{\resolvedfilename}
+
+\resolvepicturename{re_nfa_expr}
+\pgfdeclareimage[width=.2\paperwidth]{re_nfa_expr}{\resolvedfilename}
+
+\resolvepicturename{re_nfa_or}
+\pgfdeclareimage[width=.35\paperwidth]{re_nfa_or}{\resolvedfilename}
+
+\resolvepicturename{re_nfa_seq}
+\pgfdeclareimage[width=.35\paperwidth]{re_nfa_seq}{\resolvedfilename}
+
+\resolvepicturename{re_nfa_loop}
+\pgfdeclareimage[width=.35\paperwidth]{re_nfa_loop}{\resolvedfilename}
+
+\resolvepicturename{nfa_full}
+\pgfdeclareimage[width=.7\linewidth]{nfa_full}{\resolvedfilename}
+
+\resolvepicturename{dfa_full}
+\pgfdeclareimage[width=.7\paperwidth]{dfa_full}{\resolvedfilename}
+
+\resolvepicturename{nfa_automaton_small}
+\pgfdeclareimage[width=.5\paperwidth]{nfa_automaton_small}{\resolvedfilename}
+
+\resolvepicturename{complete_dfa_automaton}
+\pgfdeclareimage[width=.7\linewidth]{complete_dfa_automaton}{\resolvedfilename}
 
 \end{graphicspathcontext}
-	
-\newcommand{\str}[1]{{\code{\textcolor{CIADmagenta}{#1}}}}
+
 \newcommand{\tok}[1]{{\textbf{#1}}\xspace}
+
+\newcommand{\kw}[1]{{\textbf{#1}}\xspace}
 
 \newcommand{\powerset}{\ensuremath{\mathcal{P}}}
 \newcommand{\permut}{\ensuremath{\mathcal{S}}}
 
-\newcommand{\regex}[1]{{\textbf{#1}}}
+\newcommand{\regex}[1]{{\textbf{#1}}\xspace}
 
-\newenvironment{myalgorithm}{%
-	\begin{algorithm}[H]%
-	\renewcommand{\emph}[1]{\textit{##1}}%
-	%\SetLine%	
-	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
-	\SetKwFunction{throw}{Throw}
-	\SetKwInOut{Input}{Input}%
-	\SetKwInOut{Output}{Output}%
-	\SetKwInOut{Method}{Method}%
-}{%
-	\end{algorithm}%
-}
-
-\newcommand{\animatedslide}[4][]{%
-	\begin{frame}<#1>{#2}%
-		\includeanimatedfigure[#4]{#3}%
-	\end{frame}%
-}
-	
 \endinput

@@ -13,7 +13,7 @@
    height="96.771416"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="lexical_parser_relation.svg">
   <defs
      id="defs4">
@@ -54,15 +54,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="157.69856"
+     inkscape:cx="68.805137"
      inkscape:cy="66.241324"
      inkscape:document-units="px"
-     inkscape:current-layer="g3761-5"
+     inkscape:current-layer="g3761-9"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
-     inkscape:window-x="1920"
-     inkscape:window-y="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -99,45 +99,46 @@
          height="35.057995"
          width="75.919441"
          id="rect2985"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755"
          y="506.66025"
          x="73.631241"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            y="506.66025"
            x="73.631241"
            sodipodi:role="line"
-           id="tspan2996">Lexical Analyser</tspan></text>
+           id="tspan2996"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Lexical Analyser</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
        x="32.528831"
        y="494.27173"
-       id="text3005"
-       sodipodi:linespacing="125%"><tspan
+       id="text3005"><tspan
          sodipodi:role="line"
          id="tspan3007"
          x="32.528831"
-         y="494.27173">Source</tspan><tspan
+         y="494.27173"
+         style="font-size:10px;line-height:1.25">Source</tspan><tspan
          sodipodi:role="line"
          x="32.528831"
          y="506.77173"
-         id="tspan3040">Program</tspan></text>
+         id="tspan3040"
+         style="font-size:10px;line-height:1.25">Program</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="159.42711"
        y="484.66708"
-       id="text3009"
-       sodipodi:linespacing="125%"><tspan
+       id="text3009"><tspan
          sodipodi:role="line"
          id="tspan3011"
          x="159.42711"
-         y="484.66708">Tokens</tspan></text>
+         y="484.66708"
+         style="font-size:10px;line-height:1.25">Tokens</tspan></text>
     <g
        id="g3761-5"
        transform="translate(164.49646,-6.079936)">
@@ -147,22 +148,23 @@
          height="35.057995"
          width="75.919441"
          id="rect2985-0"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755-6"
          y="500.16611"
          x="73.631241"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            y="500.16611"
            x="73.631241"
            sodipodi:role="line"
-           id="tspan3014">Parser or</tspan><tspan
+           id="tspan3014"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Parser or</tspan><tspan
            y="512.66614"
            x="73.631241"
            sodipodi:role="line"
-           id="tspan3018">Syntax Analyzer</tspan></text>
+           id="tspan3018"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Syntax Analyzer</tspan></text>
     </g>
     <g
        id="g3761-9"
@@ -173,45 +175,46 @@
          height="35.057995"
          width="75.919441"
          id="rect2985-6"
-         style="color:#000000;fill:#dfefed;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
       <text
-         sodipodi:linespacing="125%"
          id="text3755-5"
          y="506.66025"
          x="73.631241"
-         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;"
          xml:space="preserve"><tspan
            y="506.66025"
            x="73.631241"
            sodipodi:role="line"
-           id="tspan2996-2">Symbol Table</tspan></text>
+           id="tspan2996-2"
+           style="font-size:10px;line-height:1.25;fill:#ffffff;">Symbol Table</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="279.56976"
        y="494.76031"
-       id="text3005-8"
-       sodipodi:linespacing="125%"><tspan
+       id="text3005-8"><tspan
          sodipodi:role="line"
          x="279.56976"
          y="494.76031"
-         id="tspan3040-9">Syntax</tspan><tspan
+         id="tspan3040-9"
+         style="font-size:10px;line-height:1.25">Syntax</tspan><tspan
          sodipodi:role="line"
          x="279.56976"
          y="507.26031"
-         id="tspan3068">Tree</tspan></text>
+         id="tspan3068"
+         style="font-size:10px;line-height:1.25">Tree</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="157.19861"
        y="519.08142"
-       id="text3009-5"
-       sodipodi:linespacing="125%"><tspan
+       id="text3009-5"><tspan
          sodipodi:role="line"
          id="tspan3011-9"
          x="157.19861"
-         y="519.08142">getNextToken</tspan></text>
+         y="519.08142"
+         style="font-size:10px;line-height:1.25">getNextToken</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="m 275.94593,497.93383 26.26396,0"

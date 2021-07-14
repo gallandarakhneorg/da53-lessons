@@ -7,7 +7,7 @@
 
 \section{Introduction}
 
-\begin{frame}{{Base Principles} of Computing}
+\begin{frame}[background=6]{{Base Principles} of Computing}
 	\begin{itemize}
 	\item Programming languages are \emph{notations} for describing computations to people and to machines
 	\item All the software running on all the computers was written in some \emph{programming language}
@@ -143,14 +143,14 @@
 		A procedure or a function inside a class in object-oriented languages
 	\end{definitionblock}
 	\begin{alertblock}{Caution}
-	In the C-family languages, all the subprograms are functions; and a function is enabled to return nothing (\kw{void})
+	In the C-family languages, all the subprograms are functions; and a function is enabled to return nothing (\code{void})
 	\end{alertblock}
 \end{frame}
 
 \sidecite{Sethi.1996, Scott.2006}
 \begin{frame}{Several Key Definitions \insertcontinuationtext}
 	\begin{definitionblock}{Declaration}
-		Tells us about the type of an element. \inlineexample{\code{\kw{int} i;}}
+		Tells us about the type of an element. \inlineexample{\code{int i;}}
 	\end{definitionblock}
 	\begin{definitionblock}{Definition}
 		Tells us about the value of an element. \inlineexample{\code{i = 1;}}
@@ -160,8 +160,8 @@
 		Composed of: a return type, an identifier, and a collection of parameter declarations
 	\end{definitionblock}
 	\begin{example}\smaller In C++: \begin{itemize}
-		\item a method is declared in a \code{.hpp} file
-		\item a method is defined in a \code{.cpp} file
+		\item a method is declared in a \ccode{.hpp} file
+		\item a method is defined in a \ccode{.cpp} file
 		\end{itemize}
 	\end{example}
 \end{frame}
@@ -181,7 +181,7 @@
 \end{frame}
 
 \begin{frame}[fragile]{Example of Environment and State}
-	\begin{lstlisting}[language=C,basicstyle=\normalcolor\smaller\smaller]
+	\begin{lstlisting}[style=lststyle-c]
 	int i;         /* global i */
 	...
 	void f(...) {
@@ -223,15 +223,15 @@
 	\end{definitionblock}
 \end{frame}
 
-\begin{frame}{{``static'' Term Use} in Java}
+\begin{frame}[background=6]{{``static'' Term Use} in Java}
 	\begin{center}
-		\code{\kw{public} \kw{static} \kw{int} x = 1;}
+		\code{public static int x = 1;}
 	\end{center}
 	\vfill
 	\begin{itemize}
-	\item Here \kw{static} refers not to the scope of the variable, but rather to the ability of the compiler to determine the location in memory
+	\item Here \code{static} refers not to the scope of the variable, but rather to the ability of the compiler to determine the location in memory
 	\vfill
-	\item If \kw{static} is omitted each object has this variable and the compiler cannot determine where it is in advance
+	\item If \code{static} is omitted each object has this variable and the compiler cannot determine where it is in advance
 	\end{itemize}
 \end{frame}
 
@@ -241,7 +241,7 @@
 	\begin{block}{Static or Dynamic Environment Mapping?}
 	\begin{itemize}
 	\item Most of binding names to locations are \emph{dynamic}
-	\item Some declarations (\eg global \id{i}) are determine at compile time; they are static
+	\item Some declarations (e.g., global \id{i}) are determine at compile time; they are static
 	\end{itemize}
 	\end{block}
 	\vspace{.5cm}
@@ -386,7 +386,7 @@
 
 \begin{frame}{Properties of the Language Processors}
 	\begin{smaller}
-	\begin{block}{Compiler \vs Transpiler \vs Interpreter}
+	\begin{block}{Compiler v.s. Transpiler v.s. Interpreter}
 	\begin{itemize}
 	\item Compiler and transpiler is faster than interpreter at mapping inputs to outputs
 	\item Interpreter gives better error diagnostics than compiler, because it execute the source program statement by statement (no code optimization)
@@ -396,7 +396,7 @@
 	\begin{block}{Hybrid Compiler}
 	\begin{itemize}
 	\item Compile on \emph{one machine}, execute the generated program on \emph{another machine}
-	\item To be faster, use just-in-time compilers to translate intermediate programs into machine language and avoid the interpretation, \eg the Oracle's Java Runtime Environment
+	\item To be faster, use just-in-time compilers to translate intermediate programs into machine language and avoid the interpretation, e.g., the Oracle's Java Runtime Environment
 	\end{itemize}
 	\end{block}
 	\end{smaller}
@@ -495,7 +495,7 @@
 	\item Groups the characters into meaningful sequences called \emph{lexemes}
 	\item Output for each lexeme:
 		\begin{center}
-			\code{token={\textless}token-name, attribute-value{\textgreater}}
+			\ccode{token={\textless}token-name, attribute-value{\textgreater}}
 		\end{center}
 		\begin{itemize}
 		\item \code{token-name}: the identifier of the token
@@ -516,23 +516,23 @@
 		\hline
 		\tabularheading\chead{Lexeme}&\chead{Token} \\
 		\hline
-		\code{position} & \code{{\textless}id,1{\textgreater}} 
+		\code{position} & \ccode{{\textless}id,1{\textgreater}} 
 			\begin{itemize}
-				\item \code{id}: abstract symbol standing for ``identifier''
-				\item \code{``1''}: points to the symbol-table entry for position
+				\item \ccode{id}: abstract symbol standing for ``identifier''
+				\item ``\ccode{1}'': points to the symbol-table entry for position
 			\end{itemize} \\
 		\hline
-		\code{=} & \code{{\textless}={\textgreater}} \\
+		\code{=} & \ccode{{\textless}={\textgreater}} \\
 		\hline
-		\code{initial} & \code{{\textless}id,2{\textgreater}} \\
+		\code{initial} & \ccode{{\textless}id,2{\textgreater}} \\
 		\hline
-		\code{+} & \code{{\textless}+{\textgreater}} \\
+		\code{+} & \ccode{{\textless}+{\textgreater}} \\
 		\hline
-		\code{rate} & \code{{\textless}id,3{\textgreater}} \\
+		\code{rate} & \ccode{{\textless}id,3{\textgreater}} \\
 		\hline
-		\code{*} & \code{{\textless}*{\textgreater}} \\
+		\code{*} & \ccode{{\textless}*{\textgreater}} \\
 		\hline
-		\code{60} & \code{{\textless}number,60{\textgreater}} \\
+		\code{60} & \ccode{{\textless}number,60{\textgreater}} \\
 		\hline
 	\end{tabularx}
 	\end{minipage}
@@ -570,7 +570,7 @@
 \end{frame}
 
 \begin{frame}[t,fragile]{{Simple Java Implementation} of the Symbol Table Chain}
-	\begin{lstlisting}[language=java,basicstyle=\normalcolor\smaller\smaller]
+	\begin{lstlisting}[style=lststyle-java]
 /** Define the properties of a single symbol. */
 public class Symbol {
  public final String lexeme;
@@ -597,7 +597,7 @@ public class SymbolTable {
 \end{frame}
 
 \begin{frame}[t,fragile]{{Simple Java Implementation} of the Symbol Table Chain}
-	\begin{lstlisting}[language=java,basicstyle=\normalcolor\smaller\smaller]
+	\begin{lstlisting}[style=lststyle-java]
  /** Declare a symbol in the current context. */
  public void declare(String identifier, Symbol symbol) {
      this.table.put(identifier, symbol);
@@ -622,7 +622,7 @@ public class SymbolTable {
 \end{frame}
 
 \begin{frame}[t,fragile]{{Simple Java Implementation} of the Symbol Table Chain}
-	\begin{lstlisting}[language=java,basicstyle=\normalcolor\smaller\smaller]
+	\begin{lstlisting}[style=lststyle-java]
  /** Reference to the current symbol table.
      The reference is initialized with the
      root context (or the global context). */
@@ -709,7 +709,7 @@ public class SymbolTable {
 
 \begin{frame}{{What is} Three-address Code?}
 	\alertbox*{A sequence of assembly-like instructions with, at most, three operands per instruction. \\
-		\code{{\textless}variable{\textgreater} = {\textless}operand1{\textgreater} {\textless}operator{\textgreater} {\textless}operand2{\textgreater}}}
+		\ccode{{\textless}variable{\textgreater} = {\textless}operand1{\textgreater} {\textless}operator{\textgreater} {\textless}operand2{\textgreater}}}
 	\begin{itemize}
 	\item Each operand can act like a register
 	\item The affectation operator is implicit and always present
@@ -837,8 +837,8 @@ public class SymbolTable {
 	\end{description}
 \end{frame}
 
-%%allowframebreaks
-\begin{frame}[t]{{\bibname}\ of the Chapter}%
+%allowframebreaks
+\begin{frame}[t,fancyframetitle=false]{{\bibname} of the Chapter}%
 	\tiny%
 	\putbib[chapters/chapter1/biblio]%
 \end{frame}%
