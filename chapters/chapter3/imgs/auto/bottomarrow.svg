@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="57.354622"
-   height="65.217735"
+   width="56.365486"
+   height="64.215813"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
    sodipodi:docname="bottomarrow.svg">
   <defs
      id="defs4" />
@@ -25,15 +25,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="-50.211554"
-     inkscape:cy="12.845525"
+     inkscape:cx="-71.677208"
+     inkscape:cy="28.503815"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
-     inkscape:window-x="1440"
-     inkscape:window-y="24"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,11 +57,11 @@
      inkscape:label="Base &lt;1-&gt;"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(156.80231,-419.80636)"
+     transform="translate(156.29732,-420.30413)"
      style="display:inline">
     <path
-       style="color:#000000;fill:#cc7aaa;fill-opacity:1;fill-rule:nonzero;stroke:#cc7aaa;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       d="m -146.48008,420.30413 36.2259,0 0,44.52038 10.322337,0 -28.182747,19.69543 -28.18274,-19.69543 9.81725,0 z"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#95bc0f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="m -146.48007,420.30413 h 36.2259 v 44.52038 h 10.322338 l -28.182748,19.69543 -28.18274,-19.69543 h 9.81725 z"
        id="rect3230"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccc" />

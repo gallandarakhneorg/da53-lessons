@@ -1,5 +1,4 @@
-\part[author={\protect\insertauthor}]{Lexical Analysis}
-\label{chap:lexical_analysis}
+\part[author={\protect\insertauthor},label={chap:lexical_analysis}]{Lexical Analysis}
 
 \begin{graphicspathcontext}{{./chapters/chapter1/imgs/auto/},{./chapters/chapter2/imgs/auto/},{./chapters/chapter2/imgs/raw/}}
 \begin{bibunit}[apalike]
@@ -140,7 +139,7 @@
 	\alertbox*{Lexical analyzer generally does not control the execution flow of the compiler}
 	\vspace{.5cm}
 	\begin{center}
-		\includegraphics[width=.8\linewidth]{lexical_parser_relation}
+		\pgfuseimage{lexical-parser-relation}
 	\end{center}
 	\vspace{.5cm}
 	\begin{itemize}
@@ -193,11 +192,11 @@
 \sectiontableofcontentslide
 
 \begin{frame}{Reading the Source Program}
-	\begin{leftarrowsequence}
+	\begin{rightarrowsequence}
 		\arrow[decoration=icon-goal]{Reading input is key task that must be efficient}
 		\arrow[bg=CIADmagenta, decoration=icon-problem]{Have to look one or more characters beyond the next lexeme to extract the right lexeme}
 		\arrow[bg=CIADgreen, decoration=icon-solution]{Two-buffer scheme that handles large lookaheads safely}
-	\end{leftarrowsequence}
+	\end{rightarrowsequence}
 	\vspace{.25cm}
 	\begin{example}
 		To be sure that a character is the last of an identifier, the next character must be read, and it is not part of the lexeme for \tok{id}
@@ -257,7 +256,7 @@
 \end{frame}
 
 \begin{frame}{{Can We Run Out Of} Buffer Space?}
-	\begin{leftarrowsequence}
+	\begin{rightarrowsequence}
 		\arrow{
 			In most modern languages, lexemes are short \\
 			$N \ge 1000$ is ample
@@ -271,7 +270,7 @@
 		\arrow[bg=CIADgreen, decoration=icon-solution]{
 			Reply a sequence of \tok{str} tokens, one for each of the shorter strings (see example)
 		}
-	\end{leftarrowsequence}
+	\end{rightarrowsequence}
 	\begin{example}
 		Compile-time string concatenation in C: \code{"ABC" "DEF"}
 	\end{example}
@@ -372,13 +371,13 @@
 		A sequence of characters that specifies a search pattern.
 	\end{definitionblock}
 	\vspace{.5cm}
-	\begin{leftarrowsequence}
+	\begin{rightarrowsequence}
 		\arrow{Usually used for describing all the languages that can be built from the operators previously defined}
 		\arrow{
 			Built recursively out of smaller regular expressions (see following slides). \\[.25cm]
 			Each regular expression $r$ denotes a language $L(r)$, which is also defined recursively from the languages denoted by $r$'s expressions.
 		}
-	\end{leftarrowsequence}
+	\end{rightarrowsequence}
 \end{frame}
 
 \begin{frame}{Basis of Regular Expressions}
@@ -1404,13 +1403,13 @@ Translation rules
 \subsubsectiontableofcontentslide
 
 \begin{frame}{Converting NFA to DFA}
-	\begin{leftarrowsequence}
+	\begin{rightarrowsequence}
 		\arrow{Each state of the constructed DFA corresponds to a set of NFA states}
 		\arrow[bg=CIADmagenta]{
 			Number of DFA states may be exponential \\
 			$\Rightarrow$ Difficulties to implement the DFA
 		}
-	\end{leftarrowsequence}
+	\end{rightarrowsequence}
 	\vspace{1cm}
 	\alertbox*{The conversion algorithm is described on the following slides}
 \end{frame}
@@ -1600,10 +1599,10 @@ Translation rules
 \animatedfigureslide<2->{Example of the NFA Automaton}{complete_nfa_automaton}
 
 \begin{frame}{Running the NFA Automaton}
-	\begin{leftarrowsequence}
+	\begin{rightarrowsequence}
 		\arrow{Lexical analyzer reads the input from \ccode{lexemeBegin}}
 		\arrow{NFA is evaluated according to the input pointed by the \ccode{forward} pointer}
-	\end{leftarrowsequence}
+	\end{rightarrowsequence}
 	\vspace{.5cm}
 	When the NFA simulation does not find any more state, we could find the longest validated lexeme: \begin{itemize}
 		\item Look backwards in the sequence of sets of states, until accepting states were found
@@ -1669,13 +1668,13 @@ Translation rules
 \end{frame}
 
 \begin{frame}{Running the DFA Automaton}
-	\begin{leftarrowsequence}
+	\begin{rightarrowsequence}
 		\arrow{Lexical analyzer reads the input from \ccode{lexemeBegin}}
 		\arrow{NFA is evaluated according to the input pointed by the \ccode{forward} pointer}
 		\arrow{Run until no next state or next state is $\emptyset$}
 		\arrow{Go back through the sequence of states}
 		\arrow{When DFA state is encountered, positive stop}
-	\end{leftarrowsequence}
+	\end{rightarrowsequence}
 \end{frame}
 
 \begin{frame}[t]{Example of Simulation of DFA}
@@ -1756,3 +1755,5 @@ Translation rules
 
 \end{bibunit}
 \end{graphicspathcontext}
+
+\endinput

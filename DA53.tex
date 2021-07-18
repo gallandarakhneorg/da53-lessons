@@ -57,37 +57,39 @@
 	\end{algorithm}%
 }
 
+%
+% Extension of the "algorithm" environment with predefined macros
+% for procedures
+%
+\newenvironment{myprocedure}[2]{%
+	\begin{procedure}[H]%
+	\renewcommand{\emph}[1]{\textit{##1}}%
+	%\SetLine%
+	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
+	\SetKwFunction{throw}{Throw}%
+	\SetKwInOut{Input}{Input}%
+	\SetKwInOut{Inputs}{Inputs}%
+	\SetKwInOut{Output}{Output}%
+	\SetKwInOut{Outputs}{Outputs}%
+	\KwSty{Procedure} #1\ifthenelse{\equal{a#2}{a}}{}{(#2)} \\%
+}{%
+	\end{procedure}%
+}
+
 \input{./chapters/chapter0/preamble}
 \input{./chapters/chapter1/preamble}
 \input{./chapters/chapter2/preamble}
+\input{./chapters/chapter3/preamble}
 
 %
 
 %\newcommand{\concat}{\unskip\ \ensuremath{\|}\ \ignorespaces}
 %\newcommand{\alertconcat}{\unskip\ \ensuremath{\usebeamercolor[fg]{alerted text}\|}\ \ignorespaces}
 %
-%\newcommand{\deriv}{\ensuremath{\Rightarrow}\xspace}
-%\newcommand{\reduce}{\ensuremath{\Leftarrow}\xspace}
-%\newcommand{\derivlm}{\ensuremath{\underset{\mathit{lm}\hspace{.3em}}{\Rightarrow}}\xspace}
-%\newcommand{\derivrm}{\ensuremath{\underset{\mathit{rm}\hspace{.3em}}{\Rightarrow}}\xspace}
-%\newcommand{\seqderiv}{\ensuremath{\overset{*\hspace{.4em}}{\Rightarrow}}\xspace}
-%\newcommand{\seqderivone}{\ensuremath{\overset{+\hspace{.4em}}{\Rightarrow}}\xspace}
-%\newcommand{\seqderivrm}{\ensuremath{\overset{*\hspace{.4em}}{\underset{\mathit{rm}\hspace{.3em}}{\Rightarrow}}}\xspace}
 %
 %
 %
-%\newenvironment{myprocedure}[2]{%
-%	\begin{procedure}[H]%
-%	\renewcommand{\emph}[1]{\textit{##1}}%
-%	\SetLine%
-%	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
-%	\SetKwFunction{throw}{Throw}%
-%	\SetKwInOut{Input}{Input}%
-%	\SetKwInOut{Output}{Output}%
-%	\KwSty{Procedure} #1\ifthenelse{\equal{a#2}{a}}{}{(#2)} \\%
-%}{%
-%	\end{procedure}%
-%}
+%
 %
 %\newenvironment{myfunction}[3]{%
 %	\begin{function}[H]%
@@ -122,8 +124,8 @@
 %	\bnf@pp{#1}#2\;%
 %}
 %
-%\newcommand{\bnfmark}[1]{\textcolor{IRTESmagenta}{\textmd{(#1)}}}
-%\newcommand{\bnfindex}{\ensuremath{\bullet}\xspace}
+%
+%
 %
 %\NewEnviron{bnf}[1][\linewidth]{%
 %	\global\let\bnf@old@p\p%
@@ -252,7 +254,7 @@
 
 \input{chapters/chapter2/content}
 
-%\input{chapters/chapter3}
+\input{chapters/chapter3/content}
 
 %\input{chapters/chapter4}
 
