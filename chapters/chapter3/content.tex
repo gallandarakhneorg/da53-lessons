@@ -245,7 +245,7 @@
 		\item Operator symbols, such as +, *, \dots
 		\item Punctuation symbols, such as parentheses, commas, \dots
 		\item Digits 0, \dots, 9
-		\item Boldface strings, such as \tok{id} or \tok{number}
+		\item Boldface strings, such as \bnfts{id} or \bnfts{number}
 		\item Underlined strings, such as \underline{id} or \underline{number}
 		\end{itemize}
 	\end{block}
@@ -639,7 +639,7 @@
 				  & \deriv & $\bnfpn{E} \bnfts{+} \bnfpn{E} \bnfts{*} \bnfpn{E}$ \\
 				  & \deriv & $\bnfts{id} \bnfts{+} \bnfpn{E} \bnfts{*} \bnfpn{E}$ \\
 				  & \deriv & $\bnfts{id} \bnfts{+} \bnfts{id} \bnfts{*} \bnfpn{E}$ \\
-				  & \deriv & $\bnfts{id} \bnfts{+} \bnfts{id} \bnfts{*} \tok{id}$
+				  & \deriv & $\bnfts{id} \bnfts{+} \bnfts{id} \bnfts{*} \bnfts{id}$
 		\end{tabular}
 		\raisebox{-.5\height}{\includegraphics[width=.25\linewidth]{ambiguity_1}}
 	\end{tabular*}
@@ -802,12 +802,12 @@
 				\bnfalt*{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement} \bnfts{else} \bnfpn{statement}} \\
 				\bnfalt*{\bnfts{other}}
 			\end{bnf}
-	\item[Input] \tok{if} $E_1$ \tok{then} \tok{if} $E_2$ \tok{else} $S_1$ \tok{else} $S_2$
+	\item[Input] \bnfts{if} $E_1$ \bnfts{then} \bnfts{if} $E_2$ \bnfts{else} $S_1$ \bnfts{else} $S_2$
 	\end{description}
 	\pgfuseimage{ambiguity-3}\hfill
 	\pgfuseimage{ambiguity-4}
 	\begin{itemize}
-	\item The first tree is preferred according to ``Match each \tok{else} with the closest unmatched \tok{then}.'' This rule is rarely built into productions
+	\item The first tree is preferred according to ``Match each \bnfts{else} with the closest unmatched \bnfts{then}.'' This rule is rarely built into productions
 	\end{itemize}
 	\end{small}
 \end{frame}
@@ -1005,7 +1005,7 @@
 	\item Define FOLLOW($A$), where $A$ is a nonterminal, to be the set of terminals $a$ that can appear immediately to the right of $A$ in some sentential form
 	\item The set of terminals $a$ such that there exists a derivation of the form $S \seqderiv \alpha\;A\;a\;\beta$, for some $\alpha$ and $\beta$
 	\item Note that there may have been symbols between $A$ and $a$, at some time during the derivation, but if so, they derive $\bnfes$ and disappeared
-	\item If $A$ can be the rightmost symbol, then \tok{eof} (or usually \tok{\$}) is in FOLLOW($A$)
+	\item If $A$ can be the rightmost symbol, then \bnfts{eof} (or usually \bnfts{\$}) is in FOLLOW($A$)
 	\end{itemize}
 	\end{scriptsize}
 	\vfill
@@ -1029,7 +1029,7 @@
 	\item To compute FOLLOW($A$) for a nonterminal $A$, apply the following rules until nothing can be added to any FOLLOW set
 		\begin{enumerate}
 		\vfill
-		\item Place \tok{eof} in FOLLOW($S$), where $S$ is the start symbol, and \tok{eof} is the input right end-marker
+		\item Place \bnfts{eof} in FOLLOW($S$), where $S$ is the start symbol, and \bnfts{eof} is the input right end-marker
 		\vfill
 		\item If there is a production $\bnfpn{A} \bnfopo \alpha\;\bnfpn{B}\;\beta$, then everything in FIRST($\beta$), except $\bnfes$ is added in FOLLOW($B$)
 		\vfill
@@ -1120,10 +1120,10 @@
 		\end{column}
 		\begin{column}{.5\linewidth}
 			\begin{tabular}{@{}ll@{}}
-				E & \deriv E \tok+ E \\
-				& \deriv E \tok+ E \tok+ E \\
-				& \deriv E \tok+ E \tok+ E \tok+ E \\
-				& \deriv E \tok+ E \tok+ E \tok+ E \tok+ E \\
+				E & \deriv E \bnfts+ E \\
+				& \deriv E \bnfts+ E \bnfts+ E \\
+				& \deriv E \bnfts+ E \bnfts+ E \bnfts+ E \\
+				& \deriv E \bnfts+ E \bnfts+ E \bnfts+ E \bnfts+ E \\
 				& \deriv \dots
 			\end{tabular}
 		\end{column}
@@ -1176,7 +1176,7 @@
 \begin{leftlawnframe}{Parsing a $LL(1)$ Grammar}{ll1}
 		To parse an input string, a \Emph{table} should be build \\[.2cm]
 		It determines the production to use from a given production and the input symbol \\[.2cm]
-		Table $M[A,a]$ is built from FIRST and FOLLOW sets, where $A$ is a nonterminal, and $a$ is a terminal or \tok{eof}
+		Table $M[A,a]$ is built from FIRST and FOLLOW sets, where $A$ is a nonterminal, and $a$ is a terminal or \bnfts{eof}
 \end{leftlawnframe}
 
 \begin{frame}[t]{{Algorithm} for Building the Predictive-Parsing Table}
@@ -1194,8 +1194,8 @@
 					\ForEach{$b \in$ FOLLOW($A$)}{
 						$M[A,b]$ \affect $M[A,b] \cup \left(\bnfpn{A} \bnfopo \alpha\right)$
 					}
-					\If{\tok{eof} $\in$ FOLLOW($A$)}{
-						$M[A,\tok{eof}]$ \affect $M[A,\tok{eof}] \cup \left(\bnfpn{A} \bnfopo \alpha\right)$
+					\If{\bnfts{eof} $\in$ FOLLOW($A$)}{
+						$M[A,\bnfts{eof}]$ \affect $M[A,\bnfts{eof}] \cup \left(\bnfpn{A} \bnfopo \alpha\right)$
 					}
 				}
 			}
@@ -1225,7 +1225,7 @@
 	\mbox{}\vspace{.5cm}
 	\begin{tabularx}{\linewidth}{|c|X|X|X|X|X|X|}
 		\hline
-		\tabularheading&\chead{$\bnfts{id}$}&\chead{$\bnfts{+}$}&\chead{$\bnfts{*}$}&\chead{$\bnfts{(}$}&\chead{$\bnfts{)}$}&\chead{\tok{eof}} \\
+		\tabularheading&\chead{$\bnfts{id}$}&\chead{$\bnfts{+}$}&\chead{$\bnfts{*}$}&\chead{$\bnfts{(}$}&\chead{$\bnfts{)}$}&\chead{\bnfts{eof}} \\
 		\hline
 		$E$ & \only<3->{\bnfmark{1}} & & & \only<3->{\bnfmark{1}} & & \\
 		\hline
@@ -1244,7 +1244,7 @@
 	\putat(150,200){\parbox[t]{.55\paperwidth}{\normalfont\normalcolor\small
 		\only<2-3>{	\Emph{For production:} \bnfmark{1}~$\bnfpn{E} \bnfopo \bnfpn{T} \bnfpn{E'}$ \\
 				FIRST($T E'$) = FIRST($T$) = FIRST($F$) = $\{ \bnfts{(}, \bnfts{id} \}$ \\
-				\only<3>{Then put the production in $M[E,\tok(]$ and $M[E,\tok{id}]$; the rest of the line is \emph{error}}
+				\only<3>{Then put the production in $M[E,\bnfts(]$ and $M[E,\bnfts{id}]$; the rest of the line is \emph{error}}
 		}
 		\only<4>{\Emph{For production:} \bnfmark{2}~$\bnfpn{E'} \bnfopo \bnfts{+} \bnfpn{T} \bnfpn{E'}$ \\
 				FIRST($\bnfts{+} T E'$) = $\{ \bnfts{+} \}$ \\
@@ -1252,9 +1252,9 @@
 		}
 		\only<5,6>{	\Emph{For production:} \bnfmark{3}~$\bnfpn{E'} \bnfopo \bnfes$ \\
 				FIRST($\bnfes$) = $\{ \bnfes \}$ \\
-				FOLLOW($E'$) = $\{ \bnfts{)}, \tok{eof} \}$ \\
-				Put the production in $M[E',\tok)]$ \\
-				\only<6>{Put the production in $M[E',\tok{eof}]$}
+				FOLLOW($E'$) = $\{ \bnfts{)}, \bnfts{eof} \}$ \\
+				Put the production in $M[E',\bnfts)]$ \\
+				\only<6>{Put the production in $M[E',\bnfts{eof}]$}
 		}
 		\only<7>{	\Emph{For production:} \bnfmark{4}~$\bnfpn{T} \bnfopo \bnfpn{F} \bnfpn{T'}$ \\
 				FIRST($F\;T'$) = FIRST($F$) = $\{ \bnfts{(}, \bnfts{id} \}$ \\
@@ -1266,9 +1266,9 @@
 		}
 		\only<9>{	\Emph{For production:} \bnfmark{6}~$\bnfpn{T'} \bnfopo \bnfes$ \\
 				FIRST($\bnfes$) = $\{ \bnfes \}$ \\
-				FOLLOW($T'$) = $\{ \bnfts{+}, \bnfts{)}, \tok{eof} \}$ \\
+				FOLLOW($T'$) = $\{ \bnfts{+}, \bnfts{)}, \bnfts{eof} \}$ \\
 				Put the production in $M[T',\bnfts{+}]$ and $M[T,\bnfts{)}]$ \\
-				Put the production in $M[T',\tok{eof}]$
+				Put the production in $M[T',\bnfts{eof}]$
 		}
 		\only<10>{	\Emph{For production:} \bnfmark{7}~$\bnfpn{F} \bnfopo \bnfts{(} \bnfpn{E} \bnfts{)}$ \\
 				FIRST($\bnfts{(}\;E\bnfts{)}$) = $\{ \bnfts{(} \}$ \\
@@ -1312,9 +1312,9 @@
 	\BlankLine
 	\Begin{
 		$a$ \affect \nextInputSymbol\;
-		\push($S$, \tok{eof}) \;
+		\push($S$, \bnfts{eof}) \;
 		\push($S$, $s_0$) \;
-		\While{$\topOf(S) \neq \tok{eof}$}{
+		\While{$\topOf(S) \neq \bnfts{eof}$}{
 			$X$ \affect \topOf($S$) \;
 			\uIf{$X = a$}{
 				\pop($S$); $a$ \affect \nextInputSymbol\;
@@ -1356,9 +1356,9 @@
 		\SetKwFunction{print}{print}
 		\Begin{
 			$a$ \affect \nextInputSymbol\;
-			\push($S$, \tok{eof}) \;
+			\push($S$, \bnfts{eof}) \;
 			\push($S$, $s_0$) \;
-			\While{$\topOf(S) \neq \tok{eof}$}{
+			\While{$\topOf(S) \neq \bnfts{eof}$}{
 				$X$ \affect \topOf($S$) \;
 				\uIf{$X = a$}{
 					\pop($S$); $a$ \affect \nextInputSymbol\;
@@ -1384,7 +1384,7 @@
 	\end{columns}
 	\begin{tabularx}{.6\linewidth}[t]{|c|X|X|X|X|X|X|}
 		\hline
-		\tabularheading&\chead{$\bnfts{id}$}&\chead{$\bnfts{+}$}&\chead{$\bnfts{*}$}&\chead{$\bnfts{(}$}&\chead{$\bnfts{)}$}&\chead{\tok{eof}} \\
+		\tabularheading&\chead{$\bnfts{id}$}&\chead{$\bnfts{+}$}&\chead{$\bnfts{*}$}&\chead{$\bnfts{(}$}&\chead{$\bnfts{)}$}&\chead{\bnfts{eof}} \\
 		\hline
 		$E$ & \bnfmark{1} & & & \bnfmark{1} & & \\
 		\hline
@@ -1525,7 +1525,7 @@
 		\end{bnf}\end{minipage}\end{scriptsize}
 	}
 	\item A possible sequence of reductions is: \\
-		{$\bnfts{id}~\bnfts{*}~\bnfts{id} \reduce~F~\tok*~\tok{id} \reduce~F~\bnfts{*}~F \reduce~F~\bnfts{*}~F~\bnfes \reduce~F~\bnfts{*}~F~T' \reduce~F~T'$} \\
+		{$\bnfts{id}~\bnfts{*}~\bnfts{id} \reduce~F~\bnfts*~\bnfts{id} \reduce~F~\bnfts{*}~F \reduce~F~\bnfts{*}~F~\bnfes \reduce~F~\bnfts{*}~F~T' \reduce~F~T'$} \\
 		\mbox{\only<2>{$\reduce~T	\reduce~T~\bnfes \reduce~T~E' \reduce~E$}}
 	\end{itemize}
 	\end{small}
@@ -1642,13 +1642,11 @@
 	\vspace{.25cm}
 	\alertbox*{Every shift-reduce parser can reach a configuration in which the parser, knowing the entire stack and also the next $k$ input symbols}
 	\begin{center}
-		\simplebox*[.4\linewidth]{
-			\emph{Shift/reduce Conflict} \\
+		\titlebox*[.4\linewidth]{Shift/reduce Conflict}{
 			Cannot decide whether to shift or to reduce
 		}
 		\hspace{.5cm}
-		\simplebox*[.4\linewidth]{
-			\emph{Reduce/reduce Conflict} \\
+		\titlebox*[.4\linewidth]{Reduce/reduce Conflict}{
 			Cannot decide which of several reductions to make
 		}
 	\end{center}
@@ -1664,8 +1662,8 @@
 			\bnfalt*{\bnfts{if} \; \bnfpn{expression} \; \bnfts{then} \; \bnfpn{statement} \; \bnfts{else} \; \bnfpn{statement}} \\
 			\bnfalt*{\bnfts{id}}
 		\end{bnf}\end{footnotesize}
-	\item Consider the stack : $\tok{eof} \dots \bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement}$
-	\item Consider the input : $\bnfts{else} \dots \tok{eof}$
+	\item Consider the stack : $\bnfts{eof} \dots \bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement}$
+	\item Consider the input : $\bnfts{else} \dots \bnfts{eof}$
 	\vfill
 	\item We cannot tell whether $\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement}$ is the handle, no matter what appears below it on the stack. There is a shift/reduce conflict
 	\item Depending on what follows the $\bnfts{else}$ on the input, it might be correct to reduce if-then to $\bnfpn{statement}$, or it might be correct to shift $\bnfts{else}$ and then to look for another $\bnfpn{statement}$ to complete the if-then-else
@@ -1686,8 +1684,8 @@
 			\bnfalt*{\bnfpn{expression}}
 		\end{bnf}\end{footnotesize}
 	\vspace{-.75cm}
-	\item Consider the stack : $\tok{eof} \dots \bnfts{id} \bnfts{(} \bnfts{id} \bnfts{)}$
-	\item Consider the input : $\bnfts{,} \bnfts{id} \bnfts{)} \dots \tok{eof}$
+	\item Consider the stack : $\bnfts{eof} \dots \bnfts{id} \bnfts{(} \bnfts{id} \bnfts{)}$
+	\item Consider the input : $\bnfts{,} \bnfts{id} \bnfts{)} \dots \bnfts{eof}$
 	\item It is evident that the $\bnfts{id}$ on top of the stack should be reduced, but by which production?
 		\begin{enumerate}
 		\item $\bnfpn{parameters} \bnfopo \bnfts{id}$ if $p$ is a procedure
@@ -2004,7 +2002,7 @@
 
 \begin{frame}[background=9]{ACTION in the $LR$-Parsing Table}
 	\begin{itemize}
-	\item This function takes as arguments a state $s_i$ and a terminal $\bnfts{a}$ (or \tok{eof}).
+	\item This function takes as arguments a state $s_i$ and a terminal $\bnfts{a}$ (or \bnfts{eof}).
 	\vfill
 	\item The value of ACTION$[s_i,a]$ can have one of the four forms:
 		\begin{enumerate}
@@ -2355,15 +2353,15 @@
 
 \begin{frame}{Define the Regular Expression Productions}
 	\begin{definition}
-		\ccode{[{\textless}state\_list{\textgreater}] {\textless}kind{\textgreater} [\tok{IGNORE\_CASE}] \tok{:}} \\
+		\ccode{[{\textless}state\_list{\textgreater}] {\textless}kind{\textgreater} [\bnfts{IGNORE\_CASE}] \bnfts{:}} \\
 		\ccode{\{ {\textless}regexpr{\textgreater} $|$ {\textless}regexpr{\textgreater} $|$ \dots \}}
 	\end{definition}
 	\begin{itemize}
 	\item \ccode{{\textless}state\_list{\textgreater}} specifies the lexer states in which the rule is enabled (default is \ccode{DEFAULT})
-	\item \tok{IGNORE\_CASE} specifies, by its presence, that if the regular expression is case sensitive or case insensitive
+	\item \bnfts{IGNORE\_CASE} specifies, by its presence, that if the regular expression is case sensitive or case insensitive
 	\item The regular definitions are defined and used as follows, respectively (The \code{"\#"} before the id indicates that this definition exists solely for the purpose of defining other tokens): \\
-		\tok{\textless} [\tok{\#}]id \tok{:} regexpr \tok{\textgreater} \\
-		\tok{\textless}id\tok{\textgreater}
+		\bnfts{\textless} [\bnfts{\#}]id \bnfts{:} regexpr \bnfts{\textgreater} \\
+		\bnfts{\textless}id\bnfts{\textgreater}
 	\end{itemize}
 \end{frame}
 
@@ -2375,7 +2373,7 @@
 	\vfill
 	\item[SKIP] simply skipped (ignored) by the token manager
 	\vfill
-	\item[MORE] Sometimes it is useful to gradually build up a token to be passed on to the parser. Matches to this kind of regular expression are stored in a buffer until the next \tok{TOKEN} or \tok{SPECIAL\_TOKEN} match
+	\item[MORE] Sometimes it is useful to gradually build up a token to be passed on to the parser. Matches to this kind of regular expression are stored in a buffer until the next \bnfts{TOKEN} or \bnfts{SPECIAL\_TOKEN} match
 	\end{enumerate}
 \end{frame}
 
@@ -2409,9 +2407,9 @@
 \begin{frame}[t]{BNF Productions}
 	\begin{definition}\small
 		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
-		\ccode{{\textless}identifier{\textgreater} \tok( {\textless}parameters{\textgreater} \tok) \tok:} \\
+		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
 		\ccode{{\textless}java\_block{\textgreater}} \\
-		\ccode{\tok\{ {\textless}expansion\_choices{\textgreater} \tok\}}
+		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
 	\end{definition}
 	\begin{itemize}
 	\item The name of the non-terminal is the name of the method, and the parameters and return value declared are the means to pass values up and down the parse tree
@@ -2423,9 +2421,9 @@
 \begin{frame}[t]{Heads of the Productions}
 	\begin{definition}\small
 		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
-		\ccode{{\textless}identifier{\textgreater} \tok( {\textless}parameters{\textgreater} \tok) \tok:} \\
+		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
 		\ccode{{\textless}java\_block{\textgreater}} \\
-		\ccode{\tok\{ {\textless}expansion\_choices{\textgreater} \tok\}}
+		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
 	\end{definition}
 	\begin{itemize}
 	\item The name of the non-terminal is the name of the method, and the parameters and return value declared are the means to pass values up and down the parse tree
@@ -2437,9 +2435,9 @@
 \begin{frame}[t]{Bodies of the Productions}
 	\begin{definition}\small
 		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
-		\ccode{{\textless}identifier{\textgreater} \tok( {\textless}parameters{\textgreater} \tok) \tok:} \\
+		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
 		\ccode{{\textless}java\_block{\textgreater}} \\
-		\ccode{\tok\{ {\textless}expansion\_choices{\textgreater} \tok\}}
+		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
 	\end{definition}
 	\begin{description}
 	\item[Java block] arbitrary Java declarations and code put at the beginning of the method generated for the Java non-terminal

@@ -1,0 +1,19 @@
+\ProvidesPackage{da53bnf}[2021-07-19 BNF]
+
+\usepackage[epsilon,altpo]{backnaur}
+
+\newcommand{\bnfopo}{\ensuremath{\rightarrow}}
+
+\newcommand{\bnfmark}[1]{\textcolor{CIADmagenta}{\textmd{(#1)}}}
+
+\newcommand{\bnfindex}{\ensuremath{\bullet}\xspace}
+
+\renewcommand{\bnf@tsfont}[1]{{\text{\bfseries#1}}}
+
+\newcommand{\bnfalt}{\@ifstar{\bnf@altnn}{\bnf@altyn}}
+
+\newcommand{\bnf@altyn}[1]{ & \bnfpo & #1}
+
+\newcommand{\bnf@altnn}[1]{\nonumber & \bnfpo & #1}
+
+\endinput

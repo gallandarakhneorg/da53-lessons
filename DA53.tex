@@ -1,10 +1,8 @@
-\documentclass[english,partsectioncirclenumberstyle,noublogo,nocarnotlogo]{ciadbeamer}
+\documentclass[english,partsectioncirclenumberstyle,noublogo,noubfclogo,nocarnotlogo]{ciadbeamer}
 
 \usepackage[utf8]{inputenc}
 \usepackage{autolatex}
 \usepackage{tabularx}
-\usepackage{listings}
-\usepackage{algorithm2e}
 \usepackage{bibunits}
 
 \graphicspath{{./imgs/raw/}}
@@ -39,212 +37,11 @@
 \pgfdeclareimage[height=\paperheight]{frontpagecode}{\resolvedfilename}
 \settitlepageuserbackground{frontpagecode}
 
-%
-% Extension of the "algorithm" environment with predefined macros
-%
-\newenvironment{myalgorithm}{%
-	\begin{algorithm}[H]%
-		\renewcommand{\emph}[1]{\textit{##1}}%
-		%\SetLine%	
-		\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
-		\SetKwFunction{throw}{Throw}
-		\SetKwInOut{Input}{Input}%
-		\SetKwInOut{Inputs}{Inputs}%
-		\SetKwInOut{Output}{Output}%
-		\SetKwInOut{Outputs}{Outputs}%
-		\SetKwInOut{Behavior}{Behavior}%
-}{%
-	\end{algorithm}%
-}
-
-%
-% Extension of the "algorithm" environment with predefined macros
-% for procedures
-%
-\newenvironment{myprocedure}[2]{%
-	\begin{procedure}[H]%
-	\renewcommand{\emph}[1]{\textit{##1}}%
-	%\SetLine%
-	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
-	\SetKwFunction{throw}{Throw}%
-	\SetKwInOut{Input}{Input}%
-	\SetKwInOut{Inputs}{Inputs}%
-	\SetKwInOut{Output}{Output}%
-	\SetKwInOut{Outputs}{Outputs}%
-	\KwSty{Procedure} #1\ifthenelse{\equal{a#2}{a}}{}{(#2)} \\%
-}{%
-	\end{procedure}%
-}
-
 \input{./chapters/chapter0/preamble}
 \input{./chapters/chapter1/preamble}
 \input{./chapters/chapter2/preamble}
 \input{./chapters/chapter3/preamble}
-
-%
-
-%\newcommand{\concat}{\unskip\ \ensuremath{\|}\ \ignorespaces}
-%\newcommand{\alertconcat}{\unskip\ \ensuremath{\usebeamercolor[fg]{alerted text}\|}\ \ignorespaces}
-%
-%
-%
-%
-%
-%
-%\newenvironment{myfunction}[3]{%
-%	\begin{function}[H]%
-%	\renewcommand{\emph}[1]{\textit{##1}}%
-%	\SetLine%	
-%	\SetKwFunction{affect}{\ensuremath{\leftarrow}}%
-%	\SetKwFunction{throw}{Throw}%
-%	\SetKwInOut{Input}{Input}%
-%	\SetKwInOut{Output}{Output}%
-%	\KwSty{Function} #1\ifthenelse{\equal{a#2}{a}}{}{(#2)}\ifthenelse{\equal{a#3}{a}}{}{ : #3} \\%
-%}{%
-%	\end{function}%
-%}
-%
-%\makeatletter
-%\gdef\bnfstyle{\itshape}
-%\newcommand{\bnftext}[1]{{\bnfstyle#1}}
-%\gdef\bnfbody{\unskip\ \ensuremath{\rightarrow}\ \ignorespaces}
-%\gdef\bnfor{\unskip\ \ensuremath{|}\ \ignorespaces}
-%\gdef\bnf@sep#1{%
-%	\gdef\@tmp{a#1a}%
-%	\ifthenelse{\equal{\@tmp}{a a}\or\equal{\@tmp}{aa}}{%
-%		\bnfor%
-%	}{%
-%		\bnfbody%
-%	}%
-%}
-%\gdef\bnf@pp#1#2::=#3\;{%
-%	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & {\bnfstyle\ignorespaces#2} & \bnf@sep{#2} & {\bnfstyle\ignorespaces#3} \\%
-%}
-%\newcommand{\bnf@p}[2][]{%
-%	\bnf@pp{#1}#2\;%
-%}
-%
-%
-%
-%
-%\NewEnviron{bnf}[1][\linewidth]{%
-%	\global\let\bnf@old@p\p%
-%	\global\let\p\bnf@p%
-%	\newcommand{\pdots}{&\dots&&\\}%
-%	\begin{tabularx}{#1}{|c@{}lcX|}%
-%		\hline
-%		\BODY%
-%		\hline
-%	\end{tabularx}%
-%	\global\let\p\bnf@old@p%
-%}
-%
-%\gdef\sdd@pp#1#2#3::=#4\;{%
-%	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & {\bnfstyle\ignorespaces#3} & \bnf@sep{#3} & {\bnfstyle\ignorespaces#4} & #2 \\%
-%}
-%\newcommand{\sdd@p}[3][]{%
-%	\sdd@pp{#1}{#3}#2\;%
-%}
-%\newcommand{\sdd@pcont}[3][]{%
-%	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & & & {\bnfstyle\ignorespaces#2} & #3 \\
-%}
-%
-%\NewEnviron{sdd}[1][\linewidth]{%
-%	\global\let\bnf@old@p\p%
-%	\global\let\p\sdd@p%
-%	\global\let\bnf@old@pcont\p%
-%	\global\let\pcont\sdd@pcont%
-%	\smaller%
-%	\newcommand{\pdots}{&\dots&&&\dots\\}%
-%	\newcommand{\ptitle}[2]{\multicolumn{4}{c}{##1}&\multicolumn{1}{c}{##2}\\\hline}%
-%	\newcommand{\newl}{\\&&&&}%
-%	\begin{tabularx}{#1}{|c@{}lcX||l|}%
-%		\hline
-%		\BODY%
-%		\hline
-%	\end{tabularx}%
-%	\global\let\p\bnf@old@p%
-%	\global\let\pcont\bnf@old@pcont%
-%}
-%\makeatother
-%
-%\makeatletter
-%\newcommand{\tac@a}[3][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
-%	\texttt{\ignorespaces#2} \texttt{=} \texttt{\ignorespaces#3} \\%
-%}
-%\newcommand{\tac@t}[1]{%
-%	\texttt{t}\ensuremath{_{\texttt{#1}}}%
-%}
-%\newcommand{\tac@dots}[1][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} & \dots \\%
-%}
-%\newcommand{\tac@param}[2][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
-%	\texttt{\tok{param} \ignorespaces#2} \\%
-%}
-%\newcommand{\tac@callp}[2][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} & %
-%	\texttt{\tok{call} \ignorespaces#2} \\%
-%}
-%\newcommand{\tac@callf}[3][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
-%	\texttt{\ignorespaces#2 = \tok{call} \ignorespaces#3} \\%
-%}
-%\newcommand{\tac@ifgoto}[3][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
-%	\texttt{\tok{if} \ignorespaces#2\ \tok{then} \tok{goto} \ignorespaces#3} \\%
-%}
-%\newcommand{\tac@ifnotgoto}[3][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
-%	\texttt{\tok{ifFalse} \ignorespaces#2\ \tok{then} \tok{goto} \ignorespaces#3} \\%
-%}
-%\newcommand{\tac@goto}[2][]{%
-%	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
-%	\texttt{\tok{goto} \ignorespaces#2} \\%
-%}
-%\newcommand{\tactext}[1]{%
-%	\global\let\bnf@old@t\t%
-%	\global\let\t\tac@t%
-%	\texttt{#1}%
-%	\global\let\t\bnf@old@t%
-%}
-%\NewEnviron{tac}[1][\linewidth]{%
-%	\global\let\tac@old@p\i%
-%	\global\let\a\tac@a%
-%	\global\let\tac@old@t\t%
-%	\global\let\t\tac@t%
-%	\global\let\tac@old@ifgoto\ifgoto%
-%	\global\let\ifgoto\tac@ifgoto%
-%	\global\let\tac@old@ifnotgoto\ifnotgoto%
-%	\global\let\ifnotgoto\tac@ifnotgoto%
-%	\global\let\tac@old@goto\goto%
-%	\global\let\goto\tac@goto%
-%	\global\let\tac@old@callp\callproc%
-%	\global\let\callproc\tac@callp%
-%	\global\let\tac@old@callf\callfunc%
-%	\global\let\callfunc\tac@callf%
-%	\global\let\tac@old@param\param%
-%	\global\let\param\tac@param%
-%	\global\let\tac@old@dots\tacdots%
-%	\global\let\tacdots\tac@dots%
-%	\smaller%
-%	\begin{tabularx}{#1}{|c@{}X|}%
-%		\hline
-%		\BODY%
-%		\hline
-%	\end{tabularx}%
-%	\global\let\i\tac@old@i%
-%	\global\let\t\tac@old@t%
-%	\global\let\ifgoto\tac@old@ifgoto%
-%	\global\let\ifnotgoto\tac@old@ifnotgoto%
-%	\global\let\goto\tac@old@goto%
-%	\global\let\callproc\tac@old@callp%
-%	\global\let\callfunc\tac@old@callf%
-%	\global\let\param\tac@old@param%
-%	\global\let\tacdots\tac@old@dots%
-%}
-%\makeatother
+\input{./chapters/chapter4/preamble}
 
 \begin{document}
 
@@ -256,7 +53,7 @@
 
 \input{chapters/chapter3/content}
 
-%\input{chapters/chapter4}
+\input{chapters/chapter4/content}
 
 %\input{chapters/chapter5}
 

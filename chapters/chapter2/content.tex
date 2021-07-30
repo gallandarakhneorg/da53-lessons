@@ -67,14 +67,14 @@
 		\begin{itemize}
 			\item name: abstract symbol representing a kind of lexical unit
 			\item token names are the input symbols that the parser processes
-			\item token name is written in \tok{bold-face}
+			\item token name is written in \token{bold-face}
 		\end{itemize}
 	\end{definition}
 	\vfill
 	\begin{example}
 		\begin{itemize}
 		\item Let the statement: \code{printf("Total = \%d\n", score);}
-		\item both \code{printf} and \code{score} are lexemes matching the pattern for token \tok{id}
+		\item both \code{printf} and \code{score} are lexemes matching the pattern for token \token{id}
 		\end{itemize}
 	\end{example}
 \end{frame}
@@ -102,15 +102,15 @@
 		\hline
 		\tabularheading\chead{Class} & \chead{Description} \\
 		\hline
-		\tok{keyword} & Pattern is the name of the token itself \\
+		\token{keyword} & Pattern is the name of the token itself \\
 		\hline
-		\tok{operator} & Individually or in classes, e.g., class \tok{comparison} \\
+		\token{operator} & Individually or in classes, e.g., class \token{comparison} \\
 		\hline
-		\tok{identifier} & One token per identifier \\
+		\token{identifier} & One token per identifier \\
 		\hline
-		\tok{constant} & One token per type of constant, e.g. number or string literal \\
+		\token{constant} & One token per type of constant, e.g. number or string literal \\
 		\hline
-		\tok{punctuation} & One token per punctuation symbol, e.g. left and right parentheses, comma, and semicolon \\
+		\token{punctuation} & One token per punctuation symbol, e.g. left and right parentheses, comma, and semicolon \\
 		\hline
 	\end{tabularx}
 \end{frame}
@@ -122,8 +122,8 @@
 	\vspace{.5cm}
 	\begin{examples}
 		\begin{itemize}
-		\item value of the parsed number (lexeme) for token \tok{number}
-		\item position of the identifier into the symbol table for token \tok{id}
+		\item value of the parsed number (lexeme) for token \token{number}
+		\item position of the identifier into the symbol table for token \token{id}
 		\end{itemize}
 	\end{examples}
 	\vspace{.5cm}
@@ -199,7 +199,7 @@
 	\end{rightarrowsequence}
 	\vspace{.25cm}
 	\begin{example}
-		To be sure that a character is the last of an identifier, the next character must be read, and it is not part of the lexeme for \tok{id}
+		To be sure that a character is the last of an identifier, the next character must be read, and it is not part of the lexeme for \token{id}
 	\end{example}
 \end{frame}
 
@@ -212,7 +212,7 @@
 	\begin{description}
 		\item[Assumption] the larger lexeme has a size lower or equals to $N$
 		\item $N$ is usually the size of the disk block
-		\item \tok{eof} character is put in the buffer when there is not enough characters in the input
+		\item \token{eof} character is put in the buffer when there is not enough characters in the input
 	\end{description}
 	\vspace{1cm}
 	\simplebox{\Emph{How to be efficient?} By invoking the \code{read} system function for $N$ characters rather than a call per character}
@@ -248,7 +248,7 @@
 		\end{enumerate}
 	\end{alertblock}
 	\vspace{.5cm}
-	$\Rightarrow$ To improve the speed of the treatment, we can combine the two tests by extending each buffer with a \emph{sentinel character} (usually \tok{eof}) \\
+	$\Rightarrow$ To improve the speed of the treatment, we can combine the two tests by extending each buffer with a \emph{sentinel character} (usually \token{eof}) \\
 	\vspace{.5cm}
 	\begin{center}
 		\pgfuseimage{buffer_pair_sentinel_example}
@@ -268,7 +268,7 @@
 			Add a dynamic buffer scheme for large lexeme
 		}
 		\arrow[bg=CIADgreen, decoration=icon-solution]{
-			Reply a sequence of \tok{str} tokens, one for each of the shorter strings (see example)
+			Reply a sequence of \token{str} tokens, one for each of the shorter strings (see example)
 		}
 	\end{rightarrowsequence}
 	\begin{example}
@@ -548,27 +548,27 @@
 		\hline
 		ws & $[\ {\backslash}n{\backslash}t{\backslash}r]+$ & - & - \\
 		\hline
-		if & $if$ & \tok{if} & - \\
+		if & $if$ & \token{if} & - \\
 		\hline
-		then & $then$ & \tok{then} & - \\
+		then & $then$ & \token{then} & - \\
 		\hline
-		else & $else$ & \tok{else} & - \\
+		else & $else$ & \token{else} & - \\
 		\hline
-		id & $\regex{letter\_}\ (\regex{letter\_}|\regex{digit})*$ & \tok{id} & pointer to symbol table's entry \\
+		id & $\regex{letter\_}\ (\regex{letter\_}|\regex{digit})*$ & \token{id} & pointer to symbol table's entry \\
 		\hline
-		number & $\regex{digits}(.\ \regex{digits})?$ & \tok{number} & pointer to symbol table's entry \\
+		number & $\regex{digits}(.\ \regex{digits})?$ & \token{number} & pointer to symbol table's entry \\
 		\hline
-		= & $=$ & \tok{relop} & \ccode{EQ} \\
+		= & $=$ & \token{relop} & \ccode{EQ} \\
 		\hline
-		{\textless}{\textgreater} & $<>$ & \tok{relop} & \ccode{NE} \\
+		{\textless}{\textgreater} & $<>$ & \token{relop} & \ccode{NE} \\
 		\hline
-		{\textless} & $<$ & \tok{relop} & \ccode{LT} \\
+		{\textless} & $<$ & \token{relop} & \ccode{LT} \\
 		\hline
-		{\textgreater} & $>$ & \tok{relop} & \ccode{GT} \\
+		{\textgreater} & $>$ & \token{relop} & \ccode{GT} \\
 		\hline
-		{\textless}= & $<=$ & \tok{relop} & \ccode{LE} \\
+		{\textless}= & $<=$ & \token{relop} & \ccode{LE} \\
 		\hline
-		{\textgreater}= & $>=$ & \tok{relop} & \code{GE} \\
+		{\textgreater}= & $>=$ & \token{relop} & \code{GE} \\
 		\hline
 	\end{tabularx}
 	\end{small}
@@ -611,7 +611,7 @@
 	\end{small}
 \end{frame}
 
-\figureslide{Example of a Transition Diagram for \tok{relop}}{transition_diagram_relop}
+\figureslide{Example of a Transition Diagram for \token{relop}}{transition_diagram_relop}
 
 \begin{frame}{Problem with Identifiers and Keywords}
 	\begin{itemize}
@@ -634,7 +634,7 @@ keywords are not identifiers even though they look like identifiers.}
 		A field of the symbol-table entry indicates that the string are never ordinary identifier
 			\begin{itemize}
 			\item \code{installID()} places the identifier in the symbol table if it is not already there and returns a pointer to the symbol-table entry.
-			\item \code{getToken()} replies the token that is corresponding to the lexeme, or \tok{id} otherwise.
+			\item \code{getToken()} replies the token that is corresponding to the lexeme, or \token{id} otherwise.
 			\end{itemize}
 		\end{tabularx}
 	}
@@ -648,7 +648,7 @@ keywords are not identifiers even though they look like identifiers.}
 			\textcircled{2}&
 			Create a separate transition diagram for each keyword
 			\begin{itemize}
-				\item tokens must be prioritized so that the reserved-word tokens are recognized in preference to \tok{id}
+				\item tokens must be prioritized so that the reserved-word tokens are recognized in preference to \token{id}
 				\item Approach less used than the previous approach when the lexical analyzer is written by hand
 			\end{itemize}
 		\end{tabularx}
@@ -669,7 +669,7 @@ keywords are not identifiers even though they look like identifiers.}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t,fragile]{Example of Code for the Token \tok{relop}}
+\begin{frame}[t,fragile]{Example of Code for the Token \token{relop}}
 	\begin{lstlisting}[style=lststyle-java]
 Token getRelop() { /* return null on failure */
   char c;
@@ -706,7 +706,7 @@ Token getRelop() { /* return null on failure */
 			\begin{itemize}
 				\item When the function is replying \code{null} (failure), the pointer \code{forward} is reset and the next transition diagram is started
 				\item This approach allows us to use the \emph{transition diagrams for the individual keywords}
-				\item We have only to use them \emph{before} we use the diagram for \tok{id}, in order the keywords to be reserved words
+				\item We have only to use them \emph{before} we use the diagram for \token{id}, in order the keywords to be reserved words
 			\end{itemize}
 		\end{tabularx}
 	}

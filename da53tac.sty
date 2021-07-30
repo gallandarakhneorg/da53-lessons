@@ -1,0 +1,84 @@
+\ProvidesPackage{da53tac}[2021-07-27 TAC]
+
+\RequirePackage{da53bnf}
+
+\let\tacts\bnfts
+
+\newcommand{\tac@a}[3][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+	\texttt{\ignorespaces#2} \texttt{=} \texttt{\ignorespaces#3} \\%
+}
+\newcommand{\tac@t}[1]{%
+	\texttt{t}\ensuremath{_{\texttt{#1}}}%
+}
+\newcommand{\tac@dots}[1][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} & \dots \\%
+}
+\newcommand{\tac@param}[2][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+	\texttt{\tacts{param} \ignorespaces#2} \\%
+}
+\newcommand{\tac@callp}[2][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} & %
+	\texttt{\tacts{call} \ignorespaces#2} \\%
+}
+\newcommand{\tac@callf}[3][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+	\texttt{\ignorespaces#2 = \tacts{call} \ignorespaces#3} \\%
+}
+\newcommand{\tac@ifgoto}[3][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+	\texttt{\tacts{if} \ignorespaces#2\ \tacts{then} \tacts{goto} \ignorespaces#3} \\%
+}
+\newcommand{\tac@ifnotgoto}[3][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+	\texttt{\tacts{ifFalse} \ignorespaces#2\ \tacts{then} \tacts{goto} \ignorespaces#3} \\%
+}
+\newcommand{\tac@goto}[2][]{%
+	\texttt{\ifthenelse{\equal{a#1}{a}}{}{#1:}} &%
+	\texttt{\tacts{goto} \ignorespaces#2} \\%
+}
+\newcommand{\tactext}[1]{%
+	\global\let\bnf@old@t\t%
+	\global\let\t\tac@t%
+	\texttt{#1}%
+	\global\let\t\bnf@old@t%
+}
+\NewEnviron{tac}[1][\linewidth]{%
+	\global\let\tac@old@p\i%
+	\global\let\tac@old@t\t%
+	\global\let\tac@old@ifgoto\ifgoto%
+	\global\let\tac@old@ifnotgoto\ifnotgoto%
+	\global\let\tac@old@goto\goto%
+	\global\let\tac@old@callp\callproc%
+	\global\let\tac@old@callf\callfunc%
+	\global\let\tac@old@param\param%
+	\global\let\tac@old@dots\tacdots%
+	%
+	\global\let\a\tac@a%
+	\global\let\t\tac@t%
+	\global\let\ifgoto\tac@ifgoto%
+	\global\let\ifnotgoto\tac@ifnotgoto%
+	\global\let\goto\tac@goto%
+	\global\let\callproc\tac@callp%
+	\global\let\callfunc\tac@callf%
+	\global\let\param\tac@param%
+	\global\let\tacdots\tac@dots%
+	\smaller%
+	\begin{tabularx}{#1}{|c@{}X|}%
+		\hline
+		\BODY%
+		\hline
+	\end{tabularx}%
+	\global\let\i\tac@old@i%
+	\global\let\t\tac@old@t%
+	\global\let\ifgoto\tac@old@ifgoto%
+	\global\let\ifnotgoto\tac@old@ifnotgoto%
+	\global\let\goto\tac@old@goto%
+	\global\let\callproc\tac@old@callp%
+	\global\let\callfunc\tac@old@callf%
+	\global\let\param\tac@old@param%
+	\global\let\tacdots\tac@old@dots%
+}
+
+\endinput

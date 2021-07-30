@@ -1,3 +1,5 @@
+\RequirePackage{da53algo}
+
 \begin{graphicspathcontext}{{./chapters/chapter2/imgs/auto/},{./chapters/chapter2/imgs/raw/}}
 
 \resolvepicturename{lexical_analyzer_intro}
@@ -110,13 +112,11 @@
 
 \end{graphicspathcontext}
 
-\newcommand{\tok}[1]{{\textbf{#1}}\xspace}
+\newcommand{\token}[1]{{\text{\bfseries#1}}}
 
-\newcommand{\kw}[1]{{\textbf{#1}}\xspace}
-
-\newcommand{\powerset}{\ensuremath{\mathcal{P}}}
+\providecommand{\powerset}{\ensuremath{\mathcal{P}}}
 \newcommand{\permut}{\ensuremath{\mathcal{S}}}
 
-\newcommand{\regex}[1]{{\textbf{#1}}\xspace}
+\providecommand{\regex}[1]{{\textbf{#1}}\xspace}
 
 \endinput

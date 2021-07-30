@@ -1,0 +1,69 @@
+\ProvidesPackage{da53sdd}[2021-07-19 SDD]
+
+\RequirePackage{da53bnf}
+
+\newcommand{\concat}{\unskip\ensuremath{\;|\;}\ignorespaces}
+
+%\newcommand{\alertconcat}{\unskip\ensuremath{\;\usebeamercolor[fg]{alerted text}\|\;}\ignorespaces}
+
+\let\sddts\bnfts
+\let\sddpn\bnfpn
+\let\sddpo\bnfopo
+\let\sddor\bnfor
+\let\sddes\bnfes
+\let\sddcode\bnfts
+
+\gdef\sdd@sep#1{%
+	\gdef\@tmp{a#1a}%
+	\ifthenelse{\equal{\@tmp}{a a}\or\equal{\@tmp}{aa}}{%
+		\ensuremath{\bnfor}%
+	}{%
+		\ensuremath{\bnfpo}%
+	}%
+}
+
+\gdef\sdd@pp#1#2#3#4#5{%
+	{\ifthenelse{\equal{a#1}{a}}{}{\bnfmark{#1}~}} & {\ensuremath{#3}} & #5 & {\ensuremath{#4}} & #2 \\%
+}
+
+% [#1]: rule number
+% #2: production head
+% #3: production body
+% #4: generation code
+\newcommand{\sddprod}[4][]{%
+	\sdd@pp{#1}{#4}{#2}{#3}{\sdd@sep{#2}}%
+}
+
+% [#1]: rule number
+% #2: production body
+% #3: generation code
+\newcommand{\sddalt}[3][]{%
+	\sdd@pp{#1}{#3}{}{#2}{\sdd@sep{}}%
+}
+
+% [#1]: rule number
+% #2: production body
+% #3: generation code
+\newcommand{\sddmore}[3][]{%
+	\sdd@pp{#1}{#3}{}{#2}{}%
+}
+
+\newcommand{\sdddots}{&\dots&&&\dots\\}%
+
+% #1: Grammar title
+% #2: semantic rules' title
+\newcommand{\sddtitle}[2]{%
+	\multicolumn{4}{c}{#1}&\multicolumn{1}{c}{#2}\\\hline%
+}
+
+\NewEnviron{sdd}[1][\linewidth]{%
+	{\smaller%
+	\newcommand{\newl}{\\&&&&}%
+	\begin{tabularx}{#1}{|c@{}lcX||l|}%
+		\hline
+		\BODY%
+		\hline
+	\end{tabularx}}%
+}
+
+\endinput

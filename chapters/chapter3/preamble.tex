@@ -1,17 +1,8 @@
 \definecolor{DA53yellow}{RGB}{255,255,204}
 \definecolor{DA53darkyellow}{RGB}{255,211,32}
 
-\usepackage[epsilon,altpo]{backnaur}
-
-\newcommand{\bnfopo}{\ensuremath{\rightarrow}}
-\newcommand{\bnfmark}[1]{\textcolor{CIADmagenta}{\textmd{(#1)}}}
-\newcommand{\bnfindex}{\ensuremath{\bullet}\xspace}
-\makeatletter
-\renewcommand{\bnf@tsfont}[1]{{\text{\bfseries#1}}}
-\newcommand{\bnfalt}{\@ifstar{\bnf@altnn}{\bnf@altyn}}
-\newcommand{\bnf@altyn}[1]{ & \bnfpo & #1}
-\newcommand{\bnf@altnn}[1]{\nonumber & \bnfpo & #1}
-\makeatother
+\RequirePackage{da53algo}
+\RequirePackage{da53bnf}
 
 \newcommand{\deriv}{\ensuremath{\Rightarrow}\xspace}
 \newcommand{\reduce}{\ensuremath{\Leftarrow}\xspace}
@@ -111,5 +102,7 @@
 \pgfdeclareimage[width=.8\linewidth]{parser-tool}{\resolvedfilename}
 
 \end{graphicspathcontext}
+
+\providecommand{\regex}[1]{{\textbf{#1}}\xspace}
 
 \endinput
