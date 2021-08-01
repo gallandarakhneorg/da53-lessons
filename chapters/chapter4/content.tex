@@ -1,7 +1,5 @@
 \part[author={\protect\insertauthor},label={chap:intermediate_code_generation}]{Semantic Analysis and Intermediate Code Generation}
 
-%\setbeamertemplate{headline text style}{\Tiny}%
-
 \begin{graphicspathcontext}{{./chapters/chapter4/imgs/auto/},{./chapters/chapter1/imgs/auto/}}
 	\begin{bibunit}[apalike]
 
@@ -1875,10 +1873,10 @@ do {
 			\uElseIf{t$_{in}$ = \kw{int} and t$_{out}$ = \kw{float}}{
 				t \affect \kw{new} TemporaryVariable()\;
 				\kw{quadruple}("(float)", a, $\emptyset$, t)\;
-				\Return t\;
+				\Return t
 			}
 			\Else{
-				\throw~"Cannot widen the variable"\;
+				\throw{"Cannot widen the variable"}
 			}
 		}
 	\end{myfunction}
@@ -1904,15 +1902,15 @@ do {
 	\begin{myfunction}{narrowVar}{a : $\mathbb{A}$, t$_{out}$ : $\mathbb{T}$, t$_{in}$ : $\mathbb{T}$}{$\mathbb{A}$}
 		\Begin{
 			\uIf{t$_{out}$ $\neq$ \kw{int} or t$_{in}$ $\neq$ \kw{float}}{
-				\throw~"Cannot narrow the variable"\;
+				\throw{"Cannot narrow the variable"}
 			}
 			\uElseIf{t$_{out}$ = \kw{int} and t$_{in}$ = \kw{float}}{
 				t \affect \kw{new} TemporaryVariable()\;
 				\kw{quadruple}("(float)", a, $\emptyset$, t)\;
-				\Return t\;
+				\Return t
 			}
 			\Else{
-				\Return a\;
+				\Return a
 			}
 		}
 	\end{myfunction}
@@ -2623,19 +2621,19 @@ if ( x < 100 || x > 200 && x != y ) x = 0;
 		\ForEach{$a \in list$}{
 			q \affect $\mathbb{Q}[a]$\;
 			\uIf{q.op = "goto"}{
-				\lIf{q.arg$_1$ $\neq$ \kw{?}}{\throw~"Cannot backpatch"}
+				\lIf{q.arg$_1$ $\neq$ \kw{?}}{\throw{"Cannot backpatch"}}
 				q.arg$_1$ \affect address\;
 			}
 			\uElseIf{q.op = "if"}{
-				\lIf{q.arg$_2$ $\neq$ \kw{?}}{\throw~"Cannot backpatch"}
+				\lIf{q.arg$_2$ $\neq$ \kw{?}}{\throw{"Cannot backpatch"}}
 				q.arg$_2$ \affect address\;
 			}
 			\uElseIf{q.op = "ifFalse"}{
-				\lIf{q.arg$_2$ $\neq$ \kw{?}}{\throw~"Cannot backpatch"}
+				\lIf{q.arg$_2$ $\neq$ \kw{?}}{\throw{"Cannot backpatch"}}
 				q.arg$_2$ \affect address\;
 			}
 			\Else{
-				\throw~"Instruction to backpatch not found"\;
+				\throw{"Instruction to backpatch not found"}
 			}
 		}
 	}
@@ -2685,8 +2683,5 @@ if ( x < 100 || x > 200 && x != y ) x = 0;
 
 \end{bibunit}
 \end{graphicspathcontext}
-
-% Reset the style of the navigation box
-%\setbeamertemplate{headline text style}{}
 
 \endinput

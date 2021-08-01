@@ -25,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="-93.64056"
-     inkscape:cy="160.47083"
+     inkscape:cx="-52.224306"
+     inkscape:cy="136.22716"
      inkscape:document-units="px"
-     inkscape:current-layer="g3111"
+     inkscape:current-layer="g3158"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
@@ -412,7 +412,7 @@
   </g>
   <g
      style="display:inline"
-     inkscape:label="Analysis - ICG &lt;5,9,12&gt;"
+     inkscape:label="Analysis - ICG &lt;5,9,12,13&gt;"
      id="g3158"
      inkscape:groupmode="layer"
      sodipodi:insensitive="true">
@@ -481,7 +481,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Synthesis - CG &lt;7,10&gt;"
+     inkscape:label="Synthesis - CG &lt;7,10,13&gt;"
      style="display:inline"
      sodipodi:insensitive="true">
     <g

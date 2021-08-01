@@ -554,7 +554,7 @@
 				}
 			}
 		}
-		\Return $r$ \;
+		\Return $r$
 	}
 	\end{myalgorithm}
 	\end{scriptsize}
@@ -1579,11 +1579,11 @@
 						$d \affect [(\alpha\;h\;\beta)].d$\;
 					}
 					\Else{
-						\throw{\ccode{"Cannot find a production for reduction"}}\;
+						\throw{"Cannot find a production for reduction"}
 					}
 				}
 				\Else{
-					\throw{\ccode{"Cannot find a handle"}}\;
+					\throw{"Cannot find a handle"}
 				}
 			}
 			\Return $d$\;
@@ -2060,7 +2060,7 @@
 				$stopParser$ \affect \code{true} \;
 			}
 			\Else{
-				\throw~\ccode{"No production found"} \;
+				\throw{"No production found"}
 			}
 		}
 	}
@@ -2106,7 +2106,7 @@
 					ACTION[$i,\bnfts{a}$] \affect "Accept" \;
 				}
 				\Else{
-					\throw~\ccode{"G is not SLR(1)"} \;
+					\throw{"G is not SLR(1)"}
 				}
 				\ForEach{nonterminal $A$}{
 					\If{GOTO($I_i,A$) $= I_j$}{
