@@ -2095,22 +2095,22 @@
 			$C$ \affect $\{ I_0, I_1, \dots, I_n \}$ \tcp*[f]{Sets of $LR(0)$ items for $G'$} \;
 			\For{$i$ \affect $1$ \KwTo $n$} {
 				\uIf{$\left(\bnfpn{A} \bnfopo \alpha \; \bnfindex \; \alpha \; \beta\right) \in I_i$ and GOTO($I_i, \bnfts{a}$)$=I_j$}{
-					ACTION[$i,a$] \affect "Shift $j$" \;
+					ACTION[$i,a$] \affect "Shift $j$"
 				}
 				\uElseIf{$\left(\bnfpn{A} \bnfopo \alpha \; \bnfindex \; \alpha\right) \in I_i$}{
 					\ForEach{$\bnfts{a} \in$ FOLLOW($A$) and $A \neq S'$}{
-						ACTION[$i,\bnfts{a}$] \affect "Reduce $\bnfpn{A} \bnfopo \alpha$" \;
+						ACTION[$i,\bnfts{a}$] \affect "Reduce $\bnfpn{A} \bnfopo \alpha$"
 					}
 				}
 				\uElseIf{$\left(\bnfpn{S'} \bnfopo \bnfpn{S}\right) \in I_i$}{
-					ACTION[$i,\bnfts{a}$] \affect "Accept" \;
+					ACTION[$i,\bnfts{a}$] \affect "Accept"
 				}
 				\Else{
 					\throw{"G is not SLR(1)"}
 				}
 				\ForEach{nonterminal $A$}{
 					\If{GOTO($I_i,A$) $= I_j$}{
-						GOTO($s_i,A$) \affect $s_j$ \;
+						GOTO($s_i,A$) \affect $s_j$
 					}
 				}
 			}
@@ -2135,7 +2135,7 @@
 \end{frame}
 
 \section[Parser Generators]{Generate a syntactic parser with Yacc or JavaCC}
-\sectiontableofcontentslide*
+\sectiontableofcontentslide
 
 \subsection{Overview}
 
@@ -2571,29 +2571,36 @@
 \end{frame}
 
 \begin{frame}[t,fragile]{Deep Error Recovery}
-	When error occurs (even deeper in the parse tree), we want to recover \\
-	\begin{lstlisting}[style=lststyle-java]
-	TOKEN : { <SEMICOLON: ";"> }
-	private void stm() :
-	{}
-	{ ifStm()
-	  | whileStm()
-	}
-	\end{lstlisting}
-	\mbox{}\hfill\pgfuseimage{bottom-arrow}\hfill\mbox{}
-	\begin{lstlisting}[style=lststyle-java]
-	TOKEN : { <SEMICOLON: ";"> }
-	private void stm() :
-	{}
-	{ try {
-	      ifStm()
-	      | whileStm()
-	      | whileStm()
-	  } catch(ParseException e) {
-	      error_skipto(e, SEMICOLON);
-	  }
-	}
-	\end{lstlisting}
+	\begin{columns}
+		\begin{column}{.3\linewidth}
+			When error occurs (even deeper in the parse tree), we want to recover
+		\end{column}
+		\begin{column}{.7\linewidth}
+			\vspace{-.5cm}
+			\begin{lstlisting}[style=lststyle-java]
+TOKEN : { <SEMICOLON: ";"> }
+private void stm() :
+{}
+{ ifStm()
+  | whileStm()
+}
+			\end{lstlisting}
+			\mbox{}\hfill\pgfuseimage{bottom-arrow}\hfill\mbox{}
+			\begin{lstlisting}[style=lststyle-java]
+TOKEN : { <SEMICOLON: ";"> }
+private void stm() :
+{}
+{ try {
+      ifStm()
+      | whileStm()
+      | whileStm()
+  } catch(ParseException e) {
+      error_skipto(e, SEMICOLON);
+  }
+}
+			\end{lstlisting}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Definition of the function \ccode{error\_skipto()}}
