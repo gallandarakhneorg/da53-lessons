@@ -1670,7 +1670,7 @@ Translation rules
 \begin{frame}{Running the DFA Automaton}
 	\begin{rightarrowsequence}
 		\arrow{Lexical analyzer reads the input from \ccode{lexemeBegin}}
-		\arrow{NFA is evaluated according to the input pointed by the \ccode{forward} pointer}
+		\arrow{DFA is evaluated according to the input pointed by the \ccode{forward} pointer}
 		\arrow{Run until no next state or next state is $\emptyset$}
 		\arrow{Go back through the sequence of states}
 		\arrow{When DFA state is encountered, positive stop}
