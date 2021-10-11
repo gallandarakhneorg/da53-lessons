@@ -802,7 +802,7 @@
 				\bnfalt*{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement} \bnfts{else} \bnfpn{statement}} \\
 				\bnfalt*{\bnfts{other}}
 			\end{bnf}
-	\item[Input] \bnfts{if} $E_1$ \bnfts{then} \bnfts{if} $E_2$ \bnfts{else} $S_1$ \bnfts{else} $S_2$
+	\item[Input] \bnfts{if} $E_1$ \bnfts{then} \bnfts{if} $E_2$ \bnfts{then} $S_1$ \bnfts{else} $S_2$
 	\end{description}
 	\pgfuseimage{ambiguity-3}\hfill
 	\pgfuseimage{ambiguity-4}
@@ -812,7 +812,7 @@
 	\end{small}
 \end{frame}
 
-\begin{frame}[t]{{Solving Ambiguity:} ``dangling else''}
+\begin{frame}[t]{{Solving Ambiguity:} ``dangling else'' --- Complex}
 	\begin{footnotesize}
 	The disambiguation of this ``if-then-else'' problem may be included into a new grammar
 	\begin{bnf}
@@ -829,6 +829,24 @@
 		\bnfalt*{\bnfts{id}} \\
 		\bnfprod*{open\_statement}{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement}} \\
 		\bnfalt*{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{matched\_statement} \bnfts{else} \bnfpn{open\_statement}}
+	\end{bnf}
+	\end{footnotesize}
+\end{frame}
+
+\begin{frame}[t]{{Solving Ambiguity:} ``dangling else'' --- Simple}
+	\begin{footnotesize}
+	The disambiguation of this ``if-then-else'' problem may be included into a new grammar
+	\begin{bnf}
+		\bnfprod*{statement}{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement}} \\
+		\bnfalt*{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement} \bnfts{else} \bnfpn{statement}} \\
+		\bnfalt*{\bnfts{id}}
+	\end{bnf}
+	\begin{center}\pgfuseimage{bottom-arrow}\end{center}
+	\begin{bnf}
+		\bnfprod*{statement}{\bnfts{if} \bnfpn{expression} \bnfts{then} \bnfpn{statement} \bnfpn{else\_statement}} \\
+		\bnfalt*{\bnfts{id}} \\
+		\bnfprod*{else\_statement}{\bnfts{else} \bnfpn{statement}} \\
+		\bnfalt*{\bnfes}
 	\end{bnf}
 	\end{footnotesize}
 \end{frame}
@@ -871,7 +889,7 @@
 	\end{minipage}
 \end{frame}
 
-\begin{frame}{Eliminating Left Recursion}
+\begin{frame}[t]{Eliminating Left Recursion}
 	\begin{myalgorithm}
 	\Input{Grammar $G = \langle N, \Sigma, P, S\rangle$}
 	\Output{An equivalent grammar without left recursion}
@@ -2418,19 +2436,19 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Heads of the Productions}
-	\begin{definition}\small
-		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
-		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
-		\ccode{{\textless}java\_block{\textgreater}} \\
-		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
-	\end{definition}
-	\begin{itemize}
-	\item The name of the non-terminal is the name of the method, and the parameters and return value declared are the means to pass values up and down the parse tree
-	\item Non-terminals on the right hand sides of productions are written as method calls, so the passing of values up and down the tree are done using exactly the same paradigm as method call and return
-	\item The default access modifier for BNF productions is public
-	\end{itemize}
-\end{frame}
+%\begin{frame}[t]{Heads of the Productions}
+%	\begin{definition}\small
+%		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
+%		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
+%		\ccode{{\textless}java\_block{\textgreater}} \\
+%		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
+%	\end{definition}
+%	\begin{itemize}
+%	\item The name of the non-terminal is the name of the method, and the parameters and return value declared are the means to pass values up and down the parse tree
+%	\item Non-terminals on the right hand sides of productions are written as method calls, so the passing of values up and down the tree are done using exactly the same paradigm as method call and return
+%	\item The default access modifier for BNF productions is public
+%	\end{itemize}
+%\end{frame}
 
 \begin{frame}[t]{Bodies of the Productions}
 	\begin{definition}\small
@@ -2545,7 +2563,6 @@
 	{}
 	{ ifStm()
 	  | whileStm()
-	  | whileStm()
 	  | error_skipto(SEMICOLON)
 	}
 	\end{lstlisting}
@@ -2592,7 +2609,6 @@ private void stm() :
 {}
 { try {
       ifStm()
-      | whileStm()
       | whileStm()
   } catch(ParseException e) {
       error_skipto(e, SEMICOLON);
