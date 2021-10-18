@@ -41,14 +41,14 @@
 		\arrow{Construct a parse tree}
 		\arrow{Compute the attributes' values of the tree nodes}
 	\end{rightarrowsequence}
+	\vspace{.25cm}
+	\alertbox*{In many cases, translation can be done during parsing, without building an explicit tree in memory}
 	\vspace{.2cm}
 	\begin{center}
 		\titlebox*[.3\linewidth]{L-attributed Translations}{L=left}
 		\hspace{1cm}
 		\titlebox*[.3\linewidth]{S-attributed Translations}{S=synthesized}
 	\end{center}
-	\vspace{.25cm}
-	\alertbox*{In many cases, translation can be done during parsing, without building an explicit tree in memory}
 \end{frame}
 
 \begin{frame}{Program Checking}
@@ -159,10 +159,12 @@
 	\begin{definitionblock}{Synthesized Attribute}
 		Attribute for a nonterminal $A$ \emph{head} at a parse-tree node $N$, defined in a semantic rule associated with the production at $N$
 	\end{definitionblock}
+	\alertbox{Synthetized attribute is defined by a semantic rule}
 	\vspace{.5cm}
 	\begin{definitionblock}{Inherited Attribute}
 		Attribute for a nonterminal $B$ in the \emph{body} at a parse-tree node $N$, defined in a semantic rule associated with the production at the \emph{parent} of $N$
 	\end{definitionblock}
+	\alertbox{Inherited attribute is read in a semantic rule}
 \end{frame}
 
 \subsection{Evaluating a SDD with a parse tree}
@@ -201,9 +203,9 @@
 	\putat*(70,-200){
 		\includeanimatedfigure[height=.5\paperheight]{sdd_evaluation}
 	}
-	\only<5,10>{\putat*(340,-52){\pgfuseimage{leftarrow-in-code}}}
-	\only<6>{\putat*(340,-4){\pgfuseimage{leftarrow-in-code}}}
-	\only<11>{\putat*(340,-23){\pgfuseimage{leftarrow-in-code}}}
+	\only<4,5,9,10>{\putat*(340,-52){\pgfuseimage{leftarrow-in-code}}}
+	\only<6,7>{\putat*(340,-4){\pgfuseimage{leftarrow-in-code}}}
+	\only<8,11>{\putat*(340,-23){\pgfuseimage{leftarrow-in-code}}}
 	\only<12>{\putat*(340,-42){\pgfuseimage{leftarrow-in-code}}}
 	\only<13>{\putat*(340,-32){\pgfuseimage{leftarrow-in-code}}}
 	\only<14>{\putat*(340,-12){\pgfuseimage{leftarrow-in-code}}}
@@ -848,7 +850,7 @@
 \begin{frame}[fragile,background=6]{Example of Three-Address Code}
 	\larger\larger
 	\begin{columns}
-		\begin{column}{.45\linewidth}
+		\begin{column}{.4\linewidth}
 			\centering
 			\begin{lstlisting}[style=lststyle-java,basicstyle=\normalsize]
 byte v;
@@ -860,11 +862,11 @@ do {
 } while (a[i] < v)
 			\end{lstlisting}
 		\end{column}
-		\begin{column}{.1\linewidth}
+		\begin{column}{.05\linewidth}
 			\centering
 			\pgfuseimage{right-arrow}
 		\end{column}
-		\begin{column}{.45\linewidth}
+		\begin{column}{.4\linewidth}
 			\centering
 			\begin{tac}[.5\linewidth]
 				\a[L]{\t1}{i + 1}
@@ -895,9 +897,9 @@ do {
 \begin{frame}{Implementation of Three-Address Code}
 	\alertbox*{Three-address instructions could be implemented in a compiler as objects or as records following one of:}
 	\vspace{.25cm}
-	\fancybox{Quadruple}{Reprensetation with four fields}{quadruple-icon}{01}
+	\fancybox{Quadruple}{Representation with four fields}{quadruple-icon}{01}
 	\hfill
-	\fancybox{Triple}{Reprensetation with three fields}{triple-icon}{02}
+	\fancybox{Triple}{Representation with three fields}{triple-icon}{02}
 	\hfill
 	\fancybox{Indirect Triple}{References to triples}{indirect-triple-icon}{03}
 \end{frame}

@@ -2343,7 +2343,7 @@
 		\item JavaCC options permits to control the behavior of the parser
 		\end{itemize}
 	\end{block}}
-	\only<3>{\begin{block}{Translation rules}
+	\only<3>{\begin{block}{Java compilation unit}
 		The Java compilation unit is a Java code that must contain at least the declaration of the class of the parser: \\
 		\dots \\
 		\code{public class} \ccode{{\textless}parser\_name{\textgreater} \{} \\
@@ -2351,7 +2351,7 @@
 		\ccode{\}} \\
 		\dots
 	\end{block}}
-	\only<4>{\begin{block}{Predefined functions}
+	\only<4>{\begin{block}{Predefined functions in the \ccode{parser\_name} class}
 		Two functions are automatically generated inside the parser class:
 		\begin{itemize}
 		\item \code{Token getNextToken()}: returns the next available token
@@ -2361,15 +2361,14 @@
 	\only<5>{\begin{block}{Translation rules}
 		\begin{itemize}
 		\item Java code production (see error recovery for an example)
-		\item Regular expression production
-		\item BNF production
-		\item Token manager declarations (not treated in this lecture)
+		\item Regular expression definitions for tokens
+		\item Grammar (BNF-like) productions
 		\end{itemize}
 	\end{block}}
 	\end{small}
 \end{frame}
 
-\begin{frame}{Define the Regular Expression Productions}
+\begin{frame}{Define Regular Expressions for Tokens}
 	\begin{definition}
 		\ccode{[{\textless}state\_list{\textgreater}] {\textless}kind{\textgreater} [\bnfts{IGNORE\_CASE}] \bnfts{:}} \\
 		\ccode{\{ {\textless}regexpr{\textgreater} $|$ {\textless}regexpr{\textgreater} $|$ \dots \}}
@@ -2383,7 +2382,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Types of Regular Expression Productions \ccode{{\textless}kind{\textgreater}}}
+\begin{frame}{Types of Regular Expression Definitions \ccode{{\textless}kind{\textgreater}}}
 	\begin{enumerate}
 	\item[TOKEN] describes tokens in the grammar. The token manager creates a Token object for each match of such a regular expression and returns it to the parser
 	\vfill
@@ -2422,17 +2421,19 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[t]{BNF Productions}
+\begin{frame}[t]{Grammar Productions}
 	\begin{definition}\small
-		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
-		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
+		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater} {\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
 		\ccode{{\textless}java\_block{\textgreater}} \\
 		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
 	\end{definition}
 	\begin{itemize}
-	\item The name of the non-terminal is the name of the method, and the parameters and return value declared are the means to pass values up and down the parse tree
-	\item Non-terminals on the right hand sides of productions are written as method calls, so the passing of values up and down the tree are done using exactly the same paradigm as method call and return
-	\item The default access modifier for BNF productions is public
+	\item Name of the non-terminal $\Rightarrow$ name of the method
+		\begin{itemize}
+		\item parameters and return value depends on the goal of the compiler
+		\end{itemize}
+	\item Calls to non-terminals $\Rightarrow$ function calls
+	\item Default access modifier: \code{public}
 	\end{itemize}
 \end{frame}
 
@@ -2452,8 +2453,7 @@
 
 \begin{frame}[t]{Bodies of the Productions}
 	\begin{definition}\small
-		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater}} \\
-		\ccode{{\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
+		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater} {\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
 		\ccode{{\textless}java\_block{\textgreater}} \\
 		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
 	\end{definition}
@@ -2485,22 +2485,37 @@
 \end{frame}
 
 \begin{frame}[fragile]{Example of JavaCC File \insertcontinuationwith{2}}
-	\begin{lstlisting}[style=lststyle-java]
-	private void line() :
-	{
-	    int e;
-	}
-	{ e = expr()       { System.out.println(e); }
-	}
+	\begin{columns}
+		\begin{column}{.35\linewidth}\smaller
+\begin{bnf}
+	\bnfprod*{line}{\bnfpn{expr}} \\
+	\bnfprod*{expr}{\bnfpn{expr} \bnfts{+} \bnfpn{term}} \\
+	\bnfalt*{\bnfpn{term}} \\
+	\bnfprod*{term}{\bnfpn{term} \bnfts{*} \bnfpn{factor}} \\
+	\bnfalt*{\bnfpn{factor}} \\
+	\bnfprod*{factor}{\bnfts{(} \bnfpn{expr} \bnfts{)}} \\
+	\bnfalt*{\bnfts{digit}}
+\end{bnf}
+		\end{column}
+		\begin{column}{.65\linewidth}
+\begin{lstlisting}[style=lststyle-java]
+private void line() :
+{
+  int e;
+}
+{ e = expr()       { System.out.println(e); }
+}
 
-	private int expr() :
-	{
-	    int e, t;
-	}
-	{ e = expr() "+" t = term()   { return e+t; }
-	  | t = term()                { return v; }
-	}
-	\end{lstlisting}
+private int expr() :
+{
+	int e, t;
+}
+{ e = expr() "+" t = term()   { return e+t; }
+  | t = term()                { return v; }
+}
+\end{lstlisting}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Example of JavaCC File \insertcontinuationwith{3}}
@@ -2621,7 +2636,7 @@ private void stm() :
 
 \begin{frame}[fragile]{Definition of the function \ccode{error\_skipto()}}
 	\begin{lstlisting}[style=lststyle-java]
-	JAVACODE
+	//JAVACODE
 	void error_skipto(ParseException e, int kind) {
 	    System.out.println(e);
 	    Token t;
