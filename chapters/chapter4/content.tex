@@ -82,8 +82,8 @@
 		Context-free grammar together with attributes and semantic rules
 	\end{definitionblock}
 	\begin{description}
-	\item[Attribute] is associated with grammar symbol
-	\item[Semantic Rule] is associated with production
+	\item[Attribute] is associated with a nonterminal or terminal
+	\item[Semantic Rule] is associated with production, and a production could be associated to $[0;n]$ rules
 	\end{description}
 	\vfill
 	\begin{sdd}
@@ -104,7 +104,7 @@
 		\begin{sdd}
 		\sddtitle{Productions}{Semantic Rules}
 		\sddprod{A}{\sddpn{B} \; \sddpn{C}}{First part of Rule 1}
-		\sddmore{D \; E}{Second part of Rule 1}
+		\sddmore{\sddpn{D} \; \sddpn{E}}{Second part of Rule 1}
 		\sddalt{\sddpn{F}}{Rule 2}
 		\sddprod{G}{\sddpn{H} \; \sddpn{I} \; \sddpn{J}}{Rule 3}
 		\end{sdd}
@@ -125,10 +125,10 @@
 
 \begin{frame}{Attributes}
 	\begin{definitionblock}{Attribute}
-		Any quantity associated with a programming construct \\[.5cm]
-		Since we use grammar symbols (terminals and nonterminals) to represent programming constructs, notion of attribute is extended from constructs to the symbols that represent them
+		Any quantity associated with a programming construct (nonterminal or terminal)
+		%Since we use grammar symbols (terminals and nonterminals) to represent programming constructs, notion of attribute is extended from constructs to the symbols that represent them
 	\end{definitionblock}
-	\vspace{.5cm}
+	\vspace{1cm}
 	\begin{examples}
 		Data types, number of instructions, line of the first occurrence of an identifier\dots
 	\end{examples}
@@ -140,22 +140,22 @@
 			\simplebox{\texttt{{\textless}terminal{\textgreater}.{\textless}attribute name{\textgreater}}}
 			\simplebox{\texttt{{\textless}nonterminal{\textgreater}.{\textless}attribute name{\textgreater}}}
 		\item Keyword ``\texttt{head}'' represents the nonterminal in the production's head
-		\item If the same nonterminal is present many times in the body, the attribute's prefix is indexed by the position of the nonterminal in this body
+		\item If the same nonterminal is present many times in the body, the attribute's prefix is indexed by the position of the nonterminal in this body (see green example below)
 	\end{itemize}
 	\vspace{.5cm}
 	\begin{sdd}
-		\sddprod{\textcolor{CIADmagenta}{expr}}{\sddpn{expr} \; \sddts{+} \; \sddpn{expr}}{\textcolor{CIADmagenta}{head.t} = expr$_1$.t \concat expr$_2$.t \concat '+'}
-		\sddalt{\textcolor{CIADgreen}{\sddpn{expr}} \; \sddts{-} \; \sddpn{expr}}{head.t = \textcolor{CIADgreen}{expr$_1$.t} \concat expr$_2$.t \concat '-'}
+		\sddprod{\textcolor{CIADmagenta}{expr}}{\sddpn{expr} \; \sddts{+} \; \sddpn{expr}}{\textcolor{CIADmagenta}{head.t} = expr$_1$.t + expr$_2$.t}
+		\sddalt{\textcolor{CIADgreen}{\sddpn{expr}} \; \sddts{-} \; \sddpn{expr}}{head.t = \textcolor{CIADgreen}{expr$_1$.t} - expr$_2$.t}
 		\sddalt{\textcolor{CIADblue}{\sddpn{term}}}{head.t = \textcolor{CIADblue}{term.t}}
-		\sddprod{term}{\sddts{0}}{head.t = '0'}
-		\sddalt{\sddts{1}}{head.t = '1'}
+		\sddprod{term}{\sddts{0}}{head.t = 0}
+		\sddalt{\sddts{1}}{head.t = 1}
 		\sdddots
-		\sddalt{\sddts{9}}{head.t = '9'}
+		\sddalt{\sddts{9}}{head.t = 9}
 	\end{sdd}
 \end{frame}
 
 \sidecite{Knuth.1968}
-\begin{frame}{Synthetized or Inherited Attribute}
+\begin{frame}{Synthetized and Inherited Attributes}
 	\begin{definitionblock}{Synthesized Attribute}
 		Attribute for a nonterminal $A$ \emph{head} at a parse-tree node $N$, defined in a semantic rule associated with the production at $N$
 	\end{definitionblock}
@@ -172,14 +172,15 @@
 
 \begin{frame}{Evaluating a SDD with a Parse Tree}
 	\alertbox*{To visualize the translation specified by an SDD, it helps to work with parse trees}
-	\vfill
-	\begin{itemize}
-		\item A parse tree, showing the value(s) of its attribute(s) is called an \emph{annotated parse tree}
-		\vspace{1cm}
-		\item Before we can evaluate an attribute at a node of a parse tree, we must evaluate all the attributes upon which its value depends
-		\vspace{1cm}
-		\item With synthesized attributes, we can evaluate attributes in any bottom-up order, such that of a postorder traversal of the parse tree
-	\end{itemize}
+	\vspace{.5cm}
+	\begin{description}
+	\item[Parse tree] representation of the grammar derivations
+	\item[Annotated Parse Tree] parse tree with attributes
+	\end{description}
+	\vspace{.5cm}
+	\hiconbox{Parse tree $\neq$ Syntax tree (source program representation, see slides later)}{problem-icon}
+	\vspace{.5cm}
+	\alertbox*{Depth-first iteration on the parse tree enables to execute the semantic rules in the right order, i.e., based on attributes' dependencies (see later)}
 \end{frame}
 
 \begin{frame}[t]{Example of Evaluation}
@@ -287,7 +288,7 @@
 \begin{frame}[t]{{Problem to Determine the Order} of the Attributes}
 	\hiconbox{If there is any cycle in the graph, then there are no topological sorts, i.e., there is no way to evaluate the SDD on the parse tree}{problem-icon}
 	\vspace{.25cm}
-	\hiconbox{Given a SDD, it is very hard to tell whether there exist any parse tree whose dependency graph has cycle}{information-icon}
+	\hiconbox{Given a SDD, it is very hard to cycle}{information-icon}
 	\vspace{.25cm}
 	\hiconbox{
 		Translations can be implemented using classes of SDD that guarantee an evaluation order, i.e., without cycle \newline
@@ -662,7 +663,7 @@
 	\vspace{.25cm}
 	\smaller
 	\hiconbox{
-		Rest of this lecture focuses on the generation of code with three-address code \newline
+		Rest of this lecture focuses on the generation of code with three-address code. \newline
 		Syntax tree may also be used as a basis of the generation}{information-icon}
 \end{frame}
 
@@ -709,8 +710,8 @@
 		Compiler must deal with many different types of constants and variables}
 	\hfill
 	\titlebox*[.3\linewidth]{Name}{
-		Source-program name for convenience. \newline
-		In implementation, it is replaced by a pointer to its symbol-table entry}
+		Source-program name. \newline
+		In implementation, it is replaced by a pointer to a symbol-table entry}
 	\hfill
 	\titlebox*[.3\linewidth]{Temporary Name}{
 		Created by the compiler. \newline
@@ -756,31 +757,31 @@
 
 \begin{frame}{Assignment Instructions}
 	\begin{definitionblock}{Copy}
-		Has the form: \emph{\tactext{x = y}} \\
-		where the value of \tactext{y} is copied at the address of \tactext{x}
+		\emph{\tactext{x = y}} \\
+		The value of \tactext{y} is copied at the address of \tactext{x}
 	\end{definitionblock}
 	\begin{definitionblock}{Assignment after Binary Operation}
-		Has the form: \emph{\tactext{x = y {\textless}op{\textgreater} z}} \\
-		where \tactext{{\textless}op{\textgreater}} is a binary arithmetic or logical operation, \tactext{y} and \tactext{z} are operands, and \tactext{x} receives the result
+		\emph{\tactext{x = y {\textless}op{\textgreater} z}} \\
+		\tactext{{\textless}op{\textgreater}} is a binary arithmetic or logical operation, \tactext{y} and \tactext{z} are operands, and \tactext{x} receives the result
 	\end{definitionblock}
 	\begin{definitionblock}{Assignment after Unary Operation}
-		Has the form: \emph{\tactext{x = {\textless}op{\textgreater} y}} \\
-		where \tactext{{\textless}op{\textgreater}} is an unary operation, e.g., unary minus, logical negation, conversion operators, and \tactext{y} is operand, and \tactext{x} receives the result
+		\emph{\tactext{x = {\textless}op{\textgreater} y}} \\
+		\tactext{{\textless}op{\textgreater}} is an unary operation, e.g., unary minus, logical negation, conversion operators, and \tactext{y} is operand, and \tactext{x} receives the result
 	\end{definitionblock}
 \end{frame}
 
 \begin{frame}[t]{Jumping Instructions}
 	\begin{definitionblock}{Unconditional Jump}
-		Has the form: \emph{\tactext{\kw{goto} L}} \\
+		\emph{\tactext{\kw{goto} L}} \\
 		The three-address instruction with label \tactext{L} is the next to be executed
 	\end{definitionblock}
 	\begin{definitionblock}{Relational Condition Jump}
-		Has the form: \emph{\tactext{\kw{if} x {\textless}relop{\textgreater} y \kw{goto} L}} \\
+		\emph{\tactext{\kw{if} x {\textless}relop{\textgreater} y \kw{goto} L}} \\
 		The three-address instruction with label \tactext{L} is the next to be executed \emph{if, and only if}, the relational operator \tactext{{\textless}relop{\textgreater}}, e.g., $<$, $<=$, $>$\dots, applied to \tactext{x} and \tactext{y} is evaluated to true \\
 		Otherwise, the instruction following the conditional jump instruction in sequence is executed next
 	\end{definitionblock}
 	\begin{definitionblock}{Boolean Condition Jump}
-		Has the form: \emph{\tactext{\kw{if} x \kw{goto} L}}, or: \emph{\tactext{\kw{ifFalse} x \kw{goto} L}} \\
+		\emph{\tactext{\kw{if} x \kw{goto} L}}, or: \emph{\tactext{\kw{ifFalse} x \kw{goto} L}} \\
 		Equivalent to: \tactext{\kw{if} x = \kw{true} \kw{goto} L}, and: \tactext{\kw{if} x = \kw{false} \kw{goto} L}, respectively
 	\end{definitionblock}
 \end{frame}
@@ -820,29 +821,29 @@
 
 \begin{frame}{{Index Copy} Instructions}
 	\begin{definitionblock}{Reading}
-		Has the form: \emph{\tactext{x = y[i]}} \\
+		\emph{\tactext{x = y[i]}} \\
 		Copy the value of the i$^{\text{th}}$ memory unit beyond \tactext{y} at the address of \tactext{x}
 	\end{definitionblock}
 	\vspace{1cm}
 	\begin{definitionblock}{Writing}
-	Has the form: \emph{\tactext{x[i] = y}} \\
+	\emph{\tactext{x[i] = y}} \\
 	Copy the value \tactext{x} at the i$^{\text{th}}$ memory unit beyond \tactext{x}
 	\end{definitionblock}
 \end{frame}
 
 \begin{frame}{{Address and Pointer} Assignment Instructions}
 	\begin{definitionblock}{Refencing of a value}
-		Has the form: \emph{\tactext{x = \&y}} \\
+		\emph{\tactext{x = \&y}} \\
 		Copy the location of \tactext{y} in memory at the address of \tactext{x}
 	\end{definitionblock}
 	\vspace{.5cm}
 	\begin{definitionblock}{Derefencing of an address}
-		Has the form: \emph{\tactext{x = *y}} \\
+		\emph{\tactext{x = *y}} \\
 		Copy the value at the address \tactext{y} in memory at the address of \tactext{x}
 	\end{definitionblock}
 	\vspace{.5cm}
 	\begin{definitionblock}{Indirect Copy}
-		Has the form: \emph{\tactext{*x = y}} \\
+		\emph{\tactext{*x = y}} \\
 		Copy the value of \tactext{y} at the address stored into \tactext{x}
 	\end{definitionblock}
 \end{frame}
@@ -850,7 +851,7 @@
 \begin{frame}[fragile,background=6]{Example of Three-Address Code}
 	\larger\larger
 	\begin{columns}
-		\begin{column}{.4\linewidth}
+		\begin{column}{.3\linewidth}
 			\centering
 			\begin{lstlisting}[style=lststyle-java,basicstyle=\normalsize]
 byte v;
@@ -862,24 +863,23 @@ do {
 } while (a[i] < v)
 			\end{lstlisting}
 		\end{column}
-		\begin{column}{.05\linewidth}
+		\begin{column}{.1\linewidth}
 			\centering
 			\pgfuseimage{right-arrow}
 		\end{column}
-		\begin{column}{.4\linewidth}
-			\centering
-			\begin{tac}[.5\linewidth]
+		\begin{column}{.6\linewidth}
+			\begin{tac}[.7\linewidth]
 				\a[L]{\t1}{i + 1}
 				\a{i}{\t1}
 				\a{\t2}{i * 8}
-				\a{\t3}{a[\t1]}
-				\ifgoto{\t2 $<$ v}{L}
+				\a{\t3}{a[\t2]}
+				\ifgoto{\t3 $<$ v}{L}
 			\end{tac}
 		\end{column}
 	\end{columns}
 \end{frame}
 
-\begin{frame}{More Three-Address Instructions?}
+\begin{frame}{{Do we need more} Three-Address Instructions?}
 	\begin{rightarrowsequence}
 		\arrow[bg=CIADlightgray,fg=black]{
 			Available operators is an important issue in the design of an intermediate form \\[.25cm]
@@ -895,7 +895,7 @@ do {
 \end{frame}
 
 \begin{frame}{Implementation of Three-Address Code}
-	\alertbox*{Three-address instructions could be implemented in a compiler as objects or as records following one of:}
+	\alertbox*{Three-address instructions could be implemented in a compiler as \emph{objects} or as \emph{records} following one of:}
 	\vspace{.25cm}
 	\fancybox{Quadruple}{Representation with four fields}{quadruple-icon}{01}
 	\hfill
@@ -977,6 +977,9 @@ do {
 	   Value arg2;
 	   Value result;
 	} Quadruple;
+
+	/* Instruction sequence */
+	Quadruple[] code;
 	\end{lstlisting}
 \end{frame}
 
@@ -1055,6 +1058,9 @@ do {
 	   Value arg1;
 	   Value arg2;
 	} Triple;
+
+	/* Instruction sequence */
+	Triple[] code;
 	\end{lstlisting}
 \end{frame}
 
@@ -1067,10 +1073,10 @@ do {
 	\vspace{.25cm}
 	\hiconbox{
 		\emph{TRIPLE}\newline\newline
-		Result of an operation is referred to by its position, so moving may require to change all references to that result
+		Result of an operation is referred by its position, so moving may require to change all references to that result
 	}{triple-icon}
 	\vspace{.25cm}
-	\alertbox*{This last problem does not occur with indirect triples}
+	\alertbox{This last problem does not occur with indirect triples}
 \end{frame}
 
 \subsection{Indirect triple form}
@@ -1132,10 +1138,11 @@ do {
 
 \begin{frame}{{Static-Single Assignment} Form}
 	\begin{definitionblock}{Static Single-Assignment form (SSA)}
-		 Intermediate representation that facilitates certain code optimizations
+		Evolution of three-address form. \newline
+		Intermediate representation that facilitates certain code optimizations
 	\end{definitionblock}
 	\vspace{3em}
-	Two distinctive aspects distinguish SSA from the standard form of the three-address code:
+	Two differences between SSA and the standard form of the three-address code:
 	\begin{enumerate}
 	\item All assignments in SSA are to variables with distinct names
 	\item Introduction of the $\phi$-function
@@ -1200,7 +1207,8 @@ do {
 			\end{column}
 		\end{columns}
 	\end{example}
-	\alertbox{Impossible to determine which \tactext{x} value is used for \tactext{x * a}}
+	\alertbox{Impossible to determine which \tactext{x} value is used for \tactext{x * a} \newline
+		$\Rightarrow$ harder to optimize the target code}
 	\alertbox*{$\phi$-function replies the ``defined'' value in its arguments}
 \end{frame}
 
@@ -1251,7 +1259,7 @@ do {
 	\alertbox{
 		We must define how to convert a value from one type to others \newline
 		Many type-checking rules have the form: \newline
-		``if two type expressions are equal then return a certain type else error''}
+		``if two type expressions are equivalent then return a certain type else error''}
 	\vspace{.25cm}
 	\begin{definitionblock}{Type Equivalence}
 		Two types are structurally equivalent when:
@@ -1276,20 +1284,20 @@ do {
 		\begin{minipage}[t]{.6\linewidth}
 			\vspace{-.75cm}
 			\begin{bnf}
-				\bnfprod*{D}{\bnfpn{T} \; \bnfts{id} \; \bnfts{;} \; \bnfpn{D}} \\
+				\bnfprod*{decls}{\bnfpn{type} \; \bnfts{id} \; \bnfts{;} \; \bnfpn{decls}} \\
 				\bnfalt*{\bnfes} \\
-				\bnfprod*{T}{\bnfpn{B} \; \bnfpn{C}} \\
-				\bnfalt*{\bnfts{record} \; \bnfts{\{} \; \bnfpn{D} \; \bnfts{\}}} \\
-				\bnfprod*{B}{\bnfts{int} \; \bnfor \; \bnfts{float}} \\
-				\bnfprod*{C}{\bnfts{[} \; \bnfts{num} \; \bnfts{]} \; \bnfpn{C}} \\
+				\bnfprod*{type}{\bnfpn{base\_type} \; \bnfpn{array\_decls}} \\
+				\bnfalt*{\bnfts{record} \; \bnfts{\{} \; \bnfpn{decls} \; \bnfts{\}}} \\
+				\bnfprod*{base\_type}{\bnfts{int} \; \bnfor \; \bnfts{float}} \\
+				\bnfprod*{array\_decls}{\bnfts{[} \; \bnfts{num} \; \bnfts{]} \; \bnfpn{array\_decls}} \\
 				\bnfalt*{\bnfes}
 			\end{bnf}
 		\end{minipage}
 	\item This grammar supports basic types, arrays and records:
 		\begin{itemize}
-		\item \kw{float}
-		\item \kw{int}[3][4]
-		\item \kw{record} \{ \kw{float} name1; \kw{record} \{ \kw{int} name2; \} \}
+		\item \kw{float} name0
+		\item \kw{int}[3][4] name0
+		\item \kw{record} \{ \kw{float} name1; \kw{record} \{ \kw{int} name2; \} \} name0
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -1304,14 +1312,14 @@ do {
 		}
 		\begin{block}{Size Determination}
 			\begin{itemize}
-				\item \emph{Width of a type} (and not of a variable) is the number of storage units (usually bytes) needed for variables of that type
+				\item \emph{Width of a type} (and not of a variable) is the number of storage units (usually bytes) needed for values of that type
 				\item Basic type requires an integral number of storage units
-				\item Data of varying length (string, dynamic array\dots) is handled by reserving a known fixed amount of storage units for a pointer to the data
+				\item Data of varying length (string, dynamic array\dots) is handled by reserving a known fixed amount of storage units for a pointer to the data (usually 64 or 128 bits)
 			\end{itemize}
 		\end{block}
-		\begin{block}{Address (Location) Determination \Emph{Run-Time}}
+		\begin{block}{Address (Location) Determination for Run-time}
 			\begin{itemize}
-				\item Relative address of each name could be determined based on their size
+				\item \emph{Relative address} of each name could be determined based on their size
 				\item For easy access, aggregated data (array, class\dots) is allocated in contiguous block
 			\end{itemize}
 		\end{block}
@@ -1344,18 +1352,28 @@ do {
 \begin{frame}{Example of Type and Width Determination}
 	\alertbox*{
 		SDD below computes types and their widths for basic and array types \\
-		Records will be discussed later
+		(records will be discussed later)
 	}
 	\vspace{.25cm}
 	\begin{sdd}
-		\sddprod{T}{\sddpn{B}}{t = B.type; w = B.width}
-		\sddalt{\sddpn{C}}{T.type = C.type; T.width = C.width}
-		\sddprod{B}{\sddts{int}}{B.type = integer; B.width = 4}
-		\sddalt{\sddts{float}}{B.type = float; B.width = 8}
-		\sddprod{C}{\sddts{[} \; \sddts{num} \; \sddts{]} \; \sddpn{C}}{
-			head.type = \kw{array}(num.value,C.type); \newl
-			head.width = num.value * C.width}
-		\sddalt{\sddes}{head.type = t; head.width = w}
+		\sddprod{Type}{\sddpn{Base}}{
+			t = Base.type \newl
+			w = Base.width}
+		\sddmore{\sddpn{Arrays}}{
+			head.type = Arrays.type \newl
+			head.width = Arrays.width}
+		\sddprod{Base}{\sddts{int}}{
+			Base.type = integer \newl
+			Base.width = 4}
+		\sddalt{\sddts{float}}{
+			Base.type = float \newl
+			Base.width = 8}
+		\sddprod{Arrays}{\sddts{[} \; \sddts{num} \; \sddts{]} \; \sddpn{Arrays}}{
+			head.type = \kw{array}(num.value, Arrays.type) \newl
+			head.width = num.value * Arrays.width}
+		\sddalt{\sddes}{
+			head.type = t \newl
+			head.width = w}
 	\end{sdd}
 \end{frame}
 
@@ -1378,25 +1396,26 @@ do {
 
 \begin{frame}{Example of Declaration Sequence and Offset Usage}
 	\begin{sdd}
-		\sddprod{P}{}{offset = 0}
-		\sddmore{\sddpn{D}}{}
-		\sddprod{D}{\sddpn{T} \; \sddts{id}}{
+		\sddprod{Program}{}{offset = 0}
+		\sddmore{\sddpn{Decls}}{}
+		\sddprod{Decls}{\sddpn{Type} \; \sddts{id}}{
 			s = \kw{new} Symbol(\sddts{id}.lexeme) \newl
-			s.offset = offset ; s.type = T.type \newl
+			s.offset = offset \newl
+			s.type = Type.type \newl
 			SymbolTable.current.declare(\sddts{id}.lexeme, s) \newl
-			offset = offset + T.width}
-		\sddmore{\sddpn{D}}{}
+			offset = offset + Type.width}
+		\sddmore{\sddpn{Decls}}{}
 		\sddalt{\sddes}{}
 	\end{sdd}
 	\vspace{.5cm}
 	\begin{rightarrowsequence}
 		\arrow[bg=CIADlightgray,fg=black]{
-			Semantic action of $\sddpn{D}$ creates a symbol table's entry
+			Semantic action of $\sddpn{Decls}$ creates a symbol table's entry
 		}
 		\arrow[bg=CIADdarkgray]{
 			Symbol table takes: \\
 			$-$ name of the variable (its lexeme) \\
-			$-$ type of the variable \\
+			$-$ type of the variable (implicit size) \\
 			$-$ storage position of the variable
 		}
 	\end{rightarrowsequence}
@@ -1405,16 +1424,23 @@ do {
 \subsubsection{Fields in record or class}
 \subsubsectiontableofcontentslide
 
-\begin{frame}{Definition of Records or Classes}
+\begin{frame}[t]{Definition of Records or Classes}
 	\alertbox*{Extension of the previous grammar with $T$-production}
 	\vspace{.5cm}
 	\begin{sdd}
-		\sddprod{T}{\sddpn{B}}{t = B.type, w = B.width}
-		\sddmore{\sddpn{C}}{T.type = C.type; T.width = C.width}
-		\sddalt{\sddts{record} \; \sddts{\{} \; \sddpn{T} \; \sddts{\}}}{}
-		\sddprod{B}{\sddts{int}}{B.type = integer; B.width = 4}
-		\sddalt{\sddts{float}}{B.type = float; B.width = 8}
-		\sddprod{C}{\sddts{[} \; \sddts{num} \; \sddts{]} \; \sddpn{C}}{
+		\sddprod{Type}{\sddpn{Base}}{
+			t = Base.type; w = Base.width}
+		\sddmore{\sddpn{Arrays}}{
+			head.type = Arrays.type; head.width = Arrays.width}
+		\sddalt{\sddts{record} \; \sddts{\{} \; \sddpn{Types} \; \sddts{\}}}{
+			head.type = record; head.with = Types.width}
+		\sddprod{Types}{\sddpn{Type} \sddpn{Types}}{
+			head.width = Type.width + Types.width}
+		\sddalt{\sddes}{
+			head.width = 0}
+		\sddprod{Base}{\sddts{int}}{head.type = integer; head.width = 4}
+		\sddalt{\sddts{float}}{head.type = float; head.width = 8}
+		\sddprod{Arrays}{\sddts{[} \; \sddts{num} \; \sddts{]} \; \sddpn{Arrays}}{
 			head.type = \kw{array}(num.value,C.type) \newl
 			head.width = num.value * C.width}
 		\sddalt{\sddes}{head.type = t; head.width = w}
@@ -1434,14 +1460,14 @@ do {
 	\alertbox*{For convenience, record is defined with a specific symbol table, or \emph{environment}}
 	\vspace{.25cm}
 	\begin{sdd}
-		\sddprod{T}{\sddts{record} \; \sddts{\{}}{
+		\sddprod{Type}{\sddts{record} \; \sddts{\{}}{
 			SymbolTable.current.offset = offset \newl
-			SymbolTable.openContext() \newl
+			SymbolTable.current = SymbolTable.openContext() \newl
 			offset = 0}
-		\sddmore{\sddpn{T} \; \sddts{\}}}{
-			T.type = \kw{record}(SymbolTable.current) \newl
-			T.width = offset \newl
-			SymbolTable.closeContext() \newl
+		\sddmore{\sddpn{Types} \; \sddts{\}}}{
+			head.type = \kw{record}(SymbolTable.current) \newl
+			head.width = offset \newl
+			SymbolTable.current = SymbolTable.closeContext() \newl
 			offset = SymbolTable.current.offset}
 	\end{sdd}
 	\vspace{.25cm}
@@ -1467,13 +1493,7 @@ do {
 \subsubsectiontableofcontentslide
 
 \begin{frame}[t]{Translation of the Expressions}
-	\alertbox*{Each operation in the expression are translated to its equivalent three-address code}
-	\vspace{.2cm}
-	\begin{center}
-		\simplebox*[.3\linewidth]{Assignment operator}
-		\hspace{1cm}
-		\simplebox*[.3\linewidth]{Arithmetic operators}
-	\end{center}
+	\alertbox*{Each operation in the source expression are translated to its equivalent three-address code, e.g., assignment and arithmetic operators}
 	\vspace{.2cm}
 	\begin{sdd}
 		\sddprod{S}{\sddts{id} \; \sddts{=} \; \sddpn{E} \; \sddts{;}}{
@@ -1498,12 +1518,15 @@ do {
 			head.code = ""
 		}
 	\end{sdd}
-	\vspace{.15cm}
-	\only<2>{\textcircled{1}: \emph{$\concat$} is the operator for string concatenation}
-	\only<3>{\textcircled{2}: \emph{\kw{quadruple}} creates a quadruple form of three-address code}
-	\only<4>{\textcircled{3}: Attribute \emph{\ccode{code}} represents the generated three-address code for each nonterminal}
-	\only<5>{\textcircled{4}: \emph{\ccode{TemporaryVariable}} creates a temporary variable with specific index}
-	\only<6>{\textcircled{5}: Attribute \emph{\code{address}} is address of the expression symbol's value}
+	\vspace{.25cm}
+	\only<2>{
+		\textcircled{1}: \emph{$\concat$} is the operator for string concatenation \\
+		\textcircled{2}: \emph{\kw{quadruple}} creates a quadruple form of three-address code \\
+		\textcircled{3}: Attribute \emph{\ccode{code}} represents the generated three-address code for each nonterminal
+	}
+	\only<3>{
+		\textcircled{4}: \emph{\ccode{TemporaryVariable}} creates a temporary variable with specific index \\
+		\textcircled{5}: Attribute \emph{\code{address}} is address of the expression symbol's value}
 \end{frame}
 
 \begin{frame}[t]{Example of Translation of an Expression}
@@ -1549,6 +1572,7 @@ do {
 	\alertbox{Code attributes can be long string, so they are usually generated incrementally}
 	\begin{itemize}
 	\item Instead of building up \ccode{E.code} as previously, we can modify \kw{quadruple} to output the new three-address instructions in a \emph{external data structure}
+	\item The \ccode{code} attribute is removed
 	\end{itemize}
 	\vspace{1cm}
 	\begin{footnotesize}
@@ -1581,13 +1605,14 @@ do {
 \begin{frame}{Addresses of Array Elements}
 	\smaller
 	\alertbox*{Array elements can be accessed quickly if they are stored in a block of consecutive locations}
+	\vspace{.5cm}
 	\begin{definitionblock}{Position of the element at index $i$ in 1-dimension array (zero-base indexing)}
-		\[ base + i \times w \]
+		\[ base + w \times i \]
 		where $w$ is the width of each array element, $base$ is the relative address of the storage allocated for the array
 	\end{definitionblock}
-	\begin{definitionblock}{Position of the element at index $(i_1,\dots,i_k)$ in $k$-dimension array (zero-base indexing)}
-		\[ base + w \times \sum_{1 \le j \le k} \left[ s_j * i_j \right] \]
-		where $s_n$ the number of cells at the n$^{\text{th}}$ dimension
+	\begin{definitionblock}{Position of the element at index $(i_1,\dots,i_k)$ in $k$-dimension array (zero-base indexing, row major)}
+		\[ base + w \times \left[ \sum_{0 \le j \le k-1} \left( s_j * i_{j+1} \right) + s_k \right] \]
+		where $s_n$ is the number of cells at the n$^{\text{th}}$ dimension
 	\end{definitionblock}
 \end{frame}
 
@@ -1761,7 +1786,7 @@ do {
 	}{synthesis-type-checking}
 	\begin{itemize}
 	\item It requires names and their types to be declared before they are used
-	\item Relationship between types must be defined, e.g., $T_1 \subset T_2$
+	\item Relationship between types must be defined, e.g., $T_1 \subset T_2$ for value set of $T_A$ are included in value set of $T_2$
 	\end{itemize}
 	\vspace{.5cm}
 	\begin{example}
@@ -1781,7 +1806,7 @@ do {
 		\end{minipage}
 	}{inference-type-checking}
 	\begin{itemize}
-	\item Type inference is needed for languages like ML, which check types, but do not require names to be declared
+	\item Type inference is needed for languages like ML or Python, which check types, but do not require names to be declared
 	\end{itemize}
 	\vspace{.5cm}
 	\begin{example}
@@ -1796,14 +1821,14 @@ do {
 \subsubsection{Type conversion}
 \subsubsectiontableofcontentslide
 
-\begin{frame}{Why Type Conversion?}
+\begin{frame}[t]{Why Type Conversion?}
 	\begin{block}{Consider:}
 		Expression, e.g. \ccode{f + i} \\
 		Where \ccode{f} is a \kw{float} and \ccode{i} is an \kw{integer}
 	\end{block}
 	\vspace{.25cm}
 	\begin{itemize}
-	\item Representations of floating-point numbers and integers are different
+	\item Representations in computer memory of floating-point numbers and integers are different
 	\item Different machine instructions are used for operations on integers and floats
 	\item Compiler may need to convert one of the operands to ensure that both operands are of the same type when the operator is applied:
 			\begin{tac}[.5\linewidth]
@@ -1819,6 +1844,7 @@ do {
 	\begin{description}
 	\item[Widening conversion] \emph{preserve information} between the value before the conversion and the value after the conversion
 	\item[Narrowing conversion] can \emph{lose information}
+	\item $a \rightarrow b$ means: value of type $a$ could be converted to value of type $b$
 	\end{description}
 	\begin{center}
 		\includegraphics[width=.6\linewidth]{java_type_conversion}
@@ -1951,7 +1977,7 @@ do {
 
 \begin{frame}{Overloading of a Function}
 	\begin{definition}
-		Allow the creation of several functions with the same name, which differ from each other in the type of the input and the output of the function
+		Allow the creation of several functions with the same name, which differ from each other in the type of the input(s) and the output(s) of the function
 	\end{definition}
 	\begin{itemize}
 	\item Depending on the context, the overloading may be for a function, a procedure, a method, or an operator
@@ -1962,6 +1988,7 @@ do {
 		\begin{enumerate}
 		\item the function name
 		\item the list of the types of the formal parameters of the function
+		\item the return type (optional)
 		\end{enumerate}
 	\end{itemize}
 \end{frame}
@@ -2079,7 +2106,7 @@ fun length(x) =
 	\vspace{.25cm}
 	\begin{block}{Boolean expressions are used for:}
 		\begin{center}
-			\simplebox*[.4\linewidth]{\Emph{Altering the flow of control}}
+			\simplebox*[.4\linewidth]{\emph{Altering the flow of control}}
 			\hspace{1cm}
 			\simplebox*[.4\linewidth]{Computing logical values}
 		\end{center}

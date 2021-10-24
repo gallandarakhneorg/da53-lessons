@@ -2403,7 +2403,7 @@
 		The beginning and ending positions of the token as it appeared in the input stream
 	\vfill
 	\item \code{String image} \\
-		The image of the token as it appeared in the input stream
+		The lexeme of the token as it appeared in the input stream
 	\vfill
 	\item \code{Token next} \\
 		A reference to the next regular (non-special) token from the input stream
@@ -2542,13 +2542,13 @@ private int expr() :
 \subsubsectiontableofcontentslide
 
 \begin{frame}{Error Reporting with JavaCC}
-	\begin{itemize}
-	\item Simply modify the file \ccode{ParseException.java} to do what you want it to do. Typically, you would modify the \ccode{getMessage} method to do your own customized error reporting
-	\item All information regarding these methods can be obtained from the comments in the generated files \ccode{ParseException.java} and \ccode{TokenMgrError.java}
+	\begin{description}
+	\item[Modify file \ccode{ParseException.java}] e.g. changing  \ccode{getMessage} method for customizing error reporting
+	\item See Javadoc in \ccode{ParseException.java} and \ccode{TokenMgrError.java} for details
 	\vfill
-	\item There is a method in the generated parser called \ccode{generateParseException()}
-	\item You can call this method anytime you wish to generate an object of type \ccode{ParseException}. This object will contain all the choices that the parser has attempted since the last successfully consumed token
-	\end{itemize}
+	\item [Override or call \ccode{generateParseException()}] (in the generated parser) \\
+		it generates an object of type \ccode{ParseException}
+	\end{description}
 \end{frame}
 
 \begin{frame}{Error Recovery with JavaCC}
@@ -2586,10 +2586,10 @@ private int expr() :
 \begin{frame}[fragile]{Definition of the function \ccode{error\_skipto()}}
 	\begin{itemize}
 	\item \ccode{error\_skipto()} is a nonterminal that must be define prior to its first usage
-	\item To do so, we must use the following JAVACODE rule
+	\item To do so, we must use the following code:
 	\end{itemize}
 	\begin{lstlisting}[style=lststyle-java]
-	JAVACODE
+	//JAVACODE
 	void error_skipto(int kind) {
 	    ParseException e = generateParseException()
 	    System.err.println(e);
