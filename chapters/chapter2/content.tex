@@ -317,7 +317,7 @@
 		$LM = \left\{st | s\in L, t \in M\right\}$
 		\begin{tabularx}{\linewidth}{@{}lX@{}}
 		\insertexamplelabel & Let $L = \left\{ a, b ,c \right\}$ and $M = \left\{ d, e \right\}$ \\
-		& then $L \cup M = \left\{ ad, ae, bd, be, cd, ce \right\}$
+		& then $LM = \left\{ ad, ae, bd, be, cd, ce \right\}$
 		\end{tabularx}
 	\end{block}
 \end{frame}
@@ -503,8 +503,8 @@
 \begin{frame}[background=8]{Revision of the Regular Definitions}
 	\centering
 	\begin{tabular}{rcl}
-		\regex{letter} & $\rightarrow$ & $[A-Za-Z]$ \\[.2cm]
-		\regex{letter\_} & $\rightarrow$ & $[A-Za-Z\_]$ \\[.2cm]
+		\regex{letter} & $\rightarrow$ & $[A-Za-z]$ \\[.2cm]
+		\regex{letter\_} & $\rightarrow$ & $[A-Za-z\_]$ \\[.2cm]
 		\regex{digit} & $\rightarrow$ & $[0-9]$ \\[.2cm]
 		\regex{letters} & $\rightarrow$ & $\regex{letter}+$ \\[.2cm]
 		\regex{digits} & $\rightarrow$ & $\regex{digit}+$ \\[.2cm]
