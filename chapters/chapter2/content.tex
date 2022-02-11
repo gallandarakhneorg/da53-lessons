@@ -331,10 +331,11 @@
 			\end{cases}$
 		\begin{tabularx}{\linewidth}{@{}lX@{}}
 		\insertexamplelabel & Let $M = \left\{ d, e \right\}$ \\
-		& then $M^4 = \left\{ \begin{array}{l}
-			\scriptstyle dddd, ddde, ddded, ddee, dedd, dede, \\
-			\scriptstyle deded, deee, eddd, edde, edded, edee, \\
-			\scriptstyle eedd, eede, eeded, eeee \end{array} \right\}$
+		& then $M^4 = \left\{ \begin{array}{llllll}
+			\scriptstyle dddd, & \scriptstyle ddde, & \scriptstyle dded, & \scriptstyle ddee, \\
+			\scriptstyle dedd, & \scriptstyle dede, & \scriptstyle deed, & \scriptstyle deee, \\
+			\scriptstyle eddd, & \scriptstyle edde, & \scriptstyle eded, & \scriptstyle edee, \\
+			\scriptstyle eedd, & \scriptstyle eede, & \scriptstyle eeed, & \scriptstyle eeee \end{array} \right\}$
 		\end{tabularx}
 	\end{block}
 \end{frame}
@@ -673,8 +674,8 @@ keywords are not identifiers even though they look like identifiers.}
 	\begin{lstlisting}[style=lststyle-java]
 Token getRelop() { /* return null on failure */
   char c;
+  int state = 0;
   Token token = new Token(Tag.RELOP);
-
   while (true) { /* repeat until a return or failure */
     switch(state) {
     case 0: 

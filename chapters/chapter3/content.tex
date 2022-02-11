@@ -506,11 +506,12 @@
 		\begin{column}[t]{.5\linewidth}
 			Let the string to parse:
 				\begin{center}\texttt{9 - 5 + 2}\end{center}
-			Let the grammar:\\[1em]
+			Let the grammar:\\
 			\begin{scriptsize}
 			\begin{bnf}
 				\bnfprod*{expression}{\bnfpn{expression} \bnfts{+} \bnfpn{term}} \\
 				\bnfalt*{\bnfpn{expression} \bnfts{-} \bnfpn{term}} \\
+				\bnfalt*{\bnfpn{term}} \\
 				\bnfprod*{term}{\bnfpn{term} \bnfts{*} \bnfpn{factor}} \\
 				\bnfalt*{\bnfpn{term} \bnfts{/} \bnfpn{factor}} \\
 				\bnfalt*{\bnfpn{factor}} \\
@@ -1638,7 +1639,7 @@
 \begin{frame}{Example of Shift-Reduce Parsing}
 	\begin{footnotesize}
 	\begin{minipage}{.33\linewidth}\begin{bnf}
-		\bnfprod*{E}{\bnfpn{T} \; \bnfpn{T'}} \\
+		\bnfprod*{E}{\bnfpn{T} \; \bnfpn{E'}} \\
 		\bnfprod*{E'}{\bnfts{+} \; \bnfpn{T} \; \bnfpn{T'}} \\
 		\bnfalt*{\bnfes} \\
 		\bnfprod*{T}{\bnfpn{F} \; \bnfpn{T'}} \\

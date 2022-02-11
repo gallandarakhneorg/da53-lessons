@@ -827,7 +827,7 @@
 	\vspace{1cm}
 	\begin{definitionblock}{Writing}
 	\emph{\tactext{x[i] = y}} \\
-	Copy the value \tactext{x} at the i$^{\text{th}}$ memory unit beyond \tactext{x}
+	Copy the value \tactext{y} at the i$^{\text{th}}$ memory unit beyond \tactext{x}
 	\end{definitionblock}
 \end{frame}
 
@@ -1433,7 +1433,7 @@ do {
 		\sddmore{\sddpn{Arrays}}{
 			head.type = Arrays.type; head.width = Arrays.width}
 		\sddalt{\sddts{record} \; \sddts{\{} \; \sddpn{Types} \; \sddts{\}}}{
-			head.type = record; head.with = Types.width}
+			head.type = record; head.width = Types.width}
 		\sddprod{Types}{\sddpn{Type} \sddpn{Types}}{
 			head.width = Type.width + Types.width}
 		\sddalt{\sddes}{
@@ -1671,7 +1671,7 @@ do {
 			\kw{quadruple}("[]=", L.addr, E.addr, L.base)
 		}
 		\sddprod{E}{\sddpn{L}}{
-			head.addr = \kw{new} TempraryVariable() \newl
+			head.addr = \kw{new} TemporaryVariable() \newl
 			\kw{quadruple}("=[]", L.base, L.addr, head.addr)
 		}
 	\end{sdd}
@@ -1717,7 +1717,7 @@ do {
 	\only<8>{\putat(170,-150){\mdseries\normalcolor\tiny
 		\begin{sdd}[.6\linewidth]
 		\sddprod{E}{\sddpn{L}}{
-			head.addr = \kw{new} TempraryVariable() \newl
+			head.addr = \kw{new} TemporaryVariable() \newl
 			\kw{quadruple}("=[]", L.base, L.addr, head.addr)
 		}
 		\end{sdd}
@@ -1937,7 +1937,7 @@ do {
 			}
 			\uElseIf{t$_{out}$ = \kw{int} and t$_{in}$ = \kw{float}}{
 				t \affect \kw{new} TemporaryVariable()\;
-				\kw{quadruple}("(float)", a, $\emptyset$, t)\;
+				\kw{quadruple}("(int)", a, $\emptyset$, t)\;
 				\Return t
 			}
 			\Else{
