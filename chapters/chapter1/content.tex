@@ -391,13 +391,13 @@
 	\begin{block}{Compiler v.s. Transpiler v.s. Interpreter}
 	\begin{itemize}
 	\item Compiler and transpiler is faster than interpreter at mapping inputs to outputs
-	\item Interpreter gives better error diagnostics than compiler, because it execute the source program statement by statement (no code optimization)
+	\item Interpreter gives better error diagnostics than compiler, because it executes the source program statement by statement (no code optimization)
 	\end{itemize}
 	\end{block}
 	\vspace{1cm}
 	\begin{block}{Hybrid Compiler}
 	\begin{itemize}
-	\item Compile on \emph{one machine}, execute the generated program on \emph{another machine}
+	\item Compile on \emph{one machine/architecture}, execute the generated program on \emph{another machine/architecture}
 	\item To be faster, use just-in-time compilers to translate intermediate programs into machine language and avoid the interpretation, e.g., the Oracle's Java Runtime Environment
 	\end{itemize}
 	\end{block}
@@ -406,7 +406,7 @@
 
 \begin{frame}<1>[t]{Toolchain}
 	\begin{itemize}
-	\item Several other programs may be required to create an executable target program
+	\item Several programs may be required to create an executable target program
 	\item They compose the toolchain of the compiler
 	\end{itemize}
 	\putat(40,-150){\includeanimatedfigure[width=.8\linewidth]{toolchain}}
@@ -594,7 +594,6 @@ public class SymbolTable {
  private SymbolTable(SymbolTable enclosingEnvironment) {
      this.enclosingEnvironment = enclosingEnvironment;
  }
- //....
 	\end{lstlisting}
 \end{frame}
 
@@ -619,7 +618,6 @@ public class SymbolTable {
      }
      return null;
  }
- //....
 	\end{lstlisting}
 \end{frame}
 
@@ -702,9 +700,8 @@ public class SymbolTable {
 		\begin{block}{Intermediate code}
 			Two representations are generally used: \begin{itemize}
 				\item Syntax tree
-				\item Three-address code
+				\item Three-address code, that is easy to produce, and translate into the target machine
 			\end{itemize}
-			that is easy to produce, and translate into the target machine
 		\end{block}
 	\end{minipage}
 \end{frame}
@@ -757,7 +754,7 @@ public class SymbolTable {
 \begin{frame}<7>{Code Generator}
 	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	\begin{minipage}{.8\linewidth}
-		\alertbox*{Maps an intermediate representation into the target language}
+		\alertbox*{Maps an intermediate representation to the target language}
 		\vspace{.5cm}
 		\begin{itemize}
 		\item If the target language is machine code, registers or memory locations are selected for each variables used by the program
@@ -786,7 +783,7 @@ public class SymbolTable {
 \sectiontableofcontentslide
 
 \begin{frame}{Tools to Create a Compiler}
-	\alertbox*{Several tools are available to help the compiler writer to build his compiler}
+	\alertbox*{Several tools are available to help the compiler writer to build his/her compiler}
 	\vspace{.5cm}
 	\fancybox{Scanner generators}{Lexical analyzers from a reg-ex description tokens \\
 	(Flex, JFlex\dots)}{scanner-icon}{1}
