@@ -1259,7 +1259,7 @@ unsafe void myFunction(int n) {
 	\begin{enumerate}
 		\item \emph{Programmer must be aware and may pay attention to his uses of the pointers}
 		\vspace{.5cm}
-		\item \emph{Dangling-pointer-dereference error does not occurs in run-time environments that has an \Emph{automatic garbage collector}}
+		\item \emph{Dangling-pointer-dereference error does not occurs in run-time environments that have an \Emph{automatic garbage collector}}
 	\end{enumerate}
 \end{frame}
 
@@ -1310,8 +1310,8 @@ unsafe void myFunction(int n) {
 	\begin{block}{Reference Counting}
 		\begin{itemize}
 			\item Associate a \Emph{counter} with each dynamically allocated object: \begin{itemize}
-				\item counter is incremented when object is created
-				\item counter is decremented when object is deleted
+				\item counter is incremented when object use is added
+				\item counter is decremented when object use is deleted
 			\end{itemize}
 			\item Object is released when the counter is zero
 		\end{itemize}
@@ -1756,7 +1756,7 @@ class Main {
 			\begin{itemize}
 				\item Every Unscanned object will eventually be scanned and move to the \emph{Scanned} state
 				\item To scan an object, each pointer within it and follow this pointer to the target object
-				\item Scanned object can only contain references to other scanned ot unscanned objects, never to unreached objects \\ $\Rightarrow$ accessible chunks are moved to the Unscanned state if they are unreachable
+				\item Scanned object can only contain references to other scanned or unscanned objects, never to unreached objects \\ $\Rightarrow$ accessible chunks are moved to the Unscanned state if they are unreachable
 			\end{itemize}
 	\end{definitionblock}}
 	\only<4>{\begin{itemize}

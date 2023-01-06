@@ -1786,7 +1786,7 @@ do {
 	}{synthesis-type-checking}
 	\begin{itemize}
 	\item It requires names and their types to be declared before they are used
-	\item Relationship between types must be defined, e.g., $T_1 \subset T_2$ for value set of $T_A$ are included in value set of $T_2$
+	\item Relationship between types must be defined, e.g., $T_1 \subset T_2$ for value set of $T_1$ are included in value set of $T_2$
 	\end{itemize}
 	\vspace{.5cm}
 	\begin{example}
@@ -2482,7 +2482,7 @@ if ( x < 100 || x > 200 && x != y ) x = 0;
 			B$_1$.true = head.true \newl
 			B$_1$.false = \kw{newlabel}()
 		}
-		\sddmore{B}{
+		\sddmore{\sddpn{B}}{
 			B$_2$.true = head.true \newl
 			B$_2$.false = head.false
 		}
@@ -2580,7 +2580,7 @@ if ( x < 100 || x > 200 && x != y ) x = 0;
 
 \begin{frame}{Backpatching of the Boolean Control-Flow Rules}
 	\begin{sdd}
-	\sddprod{B}{\sddpn{true}}{
+	\sddprod{B}{\sddts{true}}{
 		\emph{head.bptruelist = makebplist(instadr())} \newl
 		\kw{quadruple}("goto", \emph{\kw{?}}, $\emptyset$, $\emptyset$)
 	}
