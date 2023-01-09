@@ -1610,9 +1610,9 @@ do {
 		\[ base + w \times i \]
 		where $w$ is the width of each array element, $base$ is the relative address of the storage allocated for the array
 	\end{definitionblock}
-	\begin{definitionblock}{Position of the element at index $(i_1,\dots,i_k)$ in $k$-dimension array (zero-base indexing, row major)}
-		\[ base + w \times \left[ \sum_{0 \le j \le k-1} \left( s_j * i_{j+1} \right) + s_k \right] \]
-		where $s_n$ is the number of cells at the n$^{\text{th}}$ dimension
+	\begin{definitionblock}{Position of the element at index $(i_0,\dots,i_{n-1})$ in $n$-dimension array (zero-base indexing, row major)}
+		\[ base + w \times \left[ \sum_{j\in [0..n)} \left( \left(\prod_{d\in [j..n)}s_d\right) \times i_j \right) + i_{n-1} \right] \]
+		where $s_d$ is the number of cells for dimension $d$.
 	\end{definitionblock}
 \end{frame}
 
