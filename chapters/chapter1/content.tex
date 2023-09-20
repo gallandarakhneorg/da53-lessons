@@ -225,7 +225,7 @@
 	\end{definitionblock}
 \end{frame}
 
-\begin{frame}[background=6]{{``static'' Term Use} in Java}
+\begin{frame}[background=6]{{Use of ``static'' Term} in Java}
 	\begin{center}
 		\code{public static int x = 1;}
 	\end{center}
@@ -258,7 +258,7 @@
 \subsubsection{Parameter-passing mechanisms}
 
 \begin{frame}{{Parameter-passing} Mechanisms}
-	\alertbox*{All programming languages have the notion of procedur; but they can differ in how these procedures get their arguments}
+	\alertbox*{All programming languages have the notion of procedure; but they can differ in how these procedures get their arguments}
 	\vspace{1cm}
 	\alertbox{How are the actual parameters (the parameters used in the call of a procedure) associated with the formal parameters (those used in the procedure definition)?}
 	\vspace{1cm}
@@ -313,13 +313,13 @@
 \begin{frame}{\textcircled{3} Call-by-name}
 	\begin{block}{Principle}
 		\begin{itemize}
-			\item It requires that the callee execute as if the actual parameter were substituted literally for the formal parameter in the code of the callee
+			\item It requires that the callee executes itself as if the formal parameter in the code of the callee are substituted by the actual parameter literally
 			\item Uses of the formal parameter are implemented by following the pointer to the location indicated by the caller
 		\end{itemize}
 	\end{block}
 	\vspace{1cm}
 	\begin{example}
-		Macro-functions in the C-family languages use this parameter passing mechanism
+		Macro-functions in the C-family languages use this parameter passing mechanism; or variables in Shell Bash
 	\end{example}
 \end{frame}
 
@@ -495,13 +495,13 @@
 	\begin{itemize}
 	\item Reads the stream of characters making up the source program
 	\item Groups the characters into meaningful sequences called \emph{lexemes}
-	\item Output for each lexeme:
+	\item Each lexeme is recognized by a token that is provided to the rest of the compiler:
 		\begin{center}
 			\ccode{token={\textless}token-name, attribute-value{\textgreater}}
 		\end{center}
 		\begin{itemize}
 		\item \code{token-name}: the identifier of the token
-		\item \code{attribute-value}: entry in the symbol table for this token
+		\item \code{attribute-value}: optional entry in the symbol table for this token
 		\end{itemize}
 		\end{itemize}
 	\end{minipage}
@@ -717,7 +717,7 @@ public class SymbolTable {
 		\begin{enumerate}
 			\item At most one operator on the right side
 			\item Temporary names are generated to hold the value computed by the three-address instruction
-			\item Some instructions have fewer then three operands
+			\item Some instructions have fewer than three operands
 		\end{enumerate}
 	\end{alertblock}
 \end{frame}
@@ -734,7 +734,7 @@ public class SymbolTable {
 			(faster, shorter, less power consumer\dots)}
 		\vspace{.5cm}
 		\begin{itemize}
-		\item All the compilers include a machine-independent code optimizer
+		\item Many the compilers include a machine-independent code optimizer
 		\item Those that spent a large amount of time on this phase are named ``optimizing compilers''
 		\end{itemize}
 		\vspace{.5cm}

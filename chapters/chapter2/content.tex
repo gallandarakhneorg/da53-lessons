@@ -232,7 +232,7 @@
 			\item \emph{If \id{forward} is outside a buffer}, the other buffer is reloaded from the input, and move \id{forward} to the beginning of the newly loaded buffer
 			\item \emph{If character pointed by \id{forward} does not match a lexeme from \id{lexemeBegin}}:
 				\begin{itemize}
-					\item \emph{If is is a valid lexeme}, output the lexeme, move \id{lexemeBegin} to \id{foward}
+					\item \emph{If it is a valid lexeme}, output the lexeme, move \id{lexemeBegin} to \id{foward}
 					\item \emph{Else} generate an error
 				\end{itemize}
 			\item \emph{Else} move \id{forward} to the right
@@ -524,20 +524,20 @@
 
 \begin{frame}{Definition of our Illustrative Language}
 	\alertbox*{We are able to express patterns using regular expressions \\
-		How to regex patterns for all the tokens of our language?}
+		How to define regex patterns for all the tokens of our language?}
 	\vspace{.5cm}
 	\centering
 	\begin{tabular}{rcl}
-		\regex{term} & $\rightarrow$ & \regex{number} \\
-		& $\rightarrow$ & \regex{id} \\[.2cm]
+		\regex{statement} & $\rightarrow$ & \ccode{\kw{if}} \regex{expr} \ccode{\kw{then}} \regex{statement} \ccode{\kw{else}} \regex{statement} \\
+		& $\rightarrow$ & \regex{term} \\[.2cm]
 		\regex{expr} & $\rightarrow$ & \regex{term} \ccode{=} \regex{term} \\
 		& $\rightarrow$ & \regex{term} \ccode{{\textless}{\textgreater}} \regex{term} \\
 		& $\rightarrow$ & \regex{term} \ccode{\textless} \regex{term} \\
 		& $\rightarrow$ & \regex{term} \ccode{\textgreater} \regex{term} \\
 		& $\rightarrow$ & \regex{term} \ccode{\textless=} \regex{term} \\
 		& $\rightarrow$ & \regex{term} \ccode{\textgreater=} \regex{term} \\[.2cm]
-		\regex{statement} & $\rightarrow$ & \ccode{\kw{if}} \regex{expr} \ccode{\kw{then}} \regex{statement} \ccode{\kw{else}} \regex{statement} \\
-		& $\rightarrow$ & \regex{term} \\
+		\regex{term} & $\rightarrow$ & \regex{number} \\
+		& $\rightarrow$ & \regex{id} \\
 	\end{tabular}
 \end{frame}
 
@@ -904,7 +904,7 @@ int installNumber() {
 	\item Several implementations of lexical-analyzer generators provides Java source code
 	\vfill
 	\item JLex is a lexical analyzer generator, written for Java, in Java
-	\item JLex is based upon the Lex lexical analyzer generator model $\Rightarrow$ \alert{the input file is the similar as the one for Lex, but not the same}
+	\item JLex is based upon the Lex lexical analyzer generator model $\Rightarrow$ \alert{the input file is similar as the one for Lex, but not exactly the same}
 		\begin{lstlisting}[language=Python]
 User code
 %%
@@ -981,7 +981,7 @@ Translation rules
 \sidecite{McCullough.1943}
 \begin{frame}{Finite Automata}
 	\begin{definitionblock}{Finite Automaton}
-		Finite automaton is recognizer: it says ``yes'' or ``no'' about each possible input string
+		Finite automaton is a recognizer: it says ``yes'' or ``no'' about each possible input string
 	\end{definitionblock}
 	\begin{columns}
 		\begin{column}[t]{.5\linewidth}
@@ -1597,7 +1597,10 @@ Translation rules
 	\end{example}
 \end{frame}
 
-\animatedfigureslide<2->{Example of the NFA Automaton}{complete_nfa_automaton}
+%\animatedfigureslide<2->{Example of the NFA Automaton}{complete_nfa_automaton}
+\begin{frame}<2->{Example of the NFA Automaton}
+	\includeanimatedfigure[width=\linewidth]{complete_nfa_automaton}
+\end{frame}
 
 \begin{frame}{Running the NFA Automaton}
 	\begin{rightarrowsequence}
