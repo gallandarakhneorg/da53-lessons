@@ -216,7 +216,7 @@
 		\end{enumerate}
 	\end{definitionblock}}
 	\only<5>{\begin{definitionblock}{Start Symbol}
-			Nonterminal from which all the language's strings could be revided \\
+			Nonterminal from which all the language's strings could be derived \\
 			Conventionally: the head of the first production is the start symbol
 		\end{definitionblock}}
 \end{frame}
@@ -384,7 +384,7 @@
 
 \begin{frame}{Derivation or Repetitive Rule Application}
 	\begin{definitionblock}{Repetitive Rule Application}
-		Sequence of derivations $u_1 \deriv u_2 \deriv \dots \deriv u_k$ rewrites $u_1$ to $u_n$ \\[.2cm]
+		Sequence of derivations $u_1 \deriv u_2 \deriv \dots \deriv u_k$ rewrites $u_1$ to $u_k$ \\[.2cm]
 		\Emph{Formally:} string $u$ derives to string $v$ if $\exists k\in\mathbb{N}+$ and $\exists u_{1},\cdots ,u_{k}\in (N\cup \Sigma)^{*}$ such that $u_{1}\deriv u_{2}\deriv \cdots \deriv u_{k}$, $u=u_1$ and $v=u_k$ \\[.2cm]
 		\Emph{Notation 1:} $u_1 \seqderiv u_k$ (reflexive transitive closure)\\
 		\Emph{Notation 2:} if $k\ge2$, $u_1 \seqderivone u_k$ (transitive closure)
@@ -466,7 +466,7 @@
 	\end{columns}
 	\only<6>{%
 		\vspace{.5cm}
-		\alertbox*{Grammar is ambiguous because the following derivation is possible on the input: \\
+		\alertbox*{Grammar is ambiguous because the following derivation is also possible on the input: \\
 			$\bnfpn{E} \derivlm \bnfpn{E} \bnfts{*} \bnfpn{E}$
 			$\derivlm \bnfpn{E} \bnfts{+} \bnfpn{E} \bnfts{*} \bnfpn{E}$
 			$\derivlm \bnfts{id} \bnfts{+} \bnfpn{E} \bnfts{*} \bnfpn{E}$
@@ -775,7 +775,7 @@
 \end{frame}
 
 \begin{frame}[t]{Why using Regex?}
-	\begin{alertblock}{Why use regular expressions to define the lexical syntax of a language?}
+	\begin{alertblock}{Why could regular expressions be used to define the lexical syntax of a language?}
 		\begin{enumerate}
 			\item Separating the syntactic structure of a language into lexical and non-lexical parts provides a better modularity
 			\item Lexical rules of a language are frequently quite simple, and to describe them we do not need a notation as complex as the grammars
@@ -813,7 +813,7 @@
 	\end{small}
 \end{frame}
 
-\begin{frame}[t]{{Solving Ambiguity:} ``dangling else'' --- Complex}
+\begin{frame}[t]{{Solving Ambiguity:} ``dangling else'' --- Complex Solution}
 	\begin{footnotesize}
 	The disambiguation of this ``if-then-else'' problem may be included into a new grammar
 	\begin{bnf}
@@ -834,7 +834,7 @@
 	\end{footnotesize}
 \end{frame}
 
-\begin{frame}[t]{{Solving Ambiguity:} ``dangling else'' --- Simple}
+\begin{frame}[t]{{Solving Ambiguity:} ``dangling else'' --- Simple Solution}
 	\begin{footnotesize}
 	The disambiguation of this ``if-then-else'' problem may be included into a new grammar
 	\begin{bnf}

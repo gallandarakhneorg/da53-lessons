@@ -972,7 +972,7 @@ Translation rules
 
 \sidecite{Aho.1990, Hopcroft.2006}
 \begin{frame}[background=6]{Lexical Analyzer by Hand}
-	To go deeper in how a program like Lex turns its input program into a lexical analyzer, the formalism called ``\Emph{finite automata}'' is at the heart of this transition
+	To go deeper in how a program like Lex turns its input program into a sequence of tokens, the formalism called ``\Emph{finite automata}'' is at the heart of this transition
 \end{frame}
 
 \subsection{Finite automata}
@@ -980,7 +980,7 @@ Translation rules
 
 \sidecite{McCullough.1943}
 \begin{frame}{Finite Automata}
-	\begin{definitionblock}{Finite Automaton}
+	\begin{definitionblock}{Finite Automaton Principle}
 		Finite automaton is a recognizer: it says ``yes'' or ``no'' about each possible input string
 	\end{definitionblock}
 	\begin{columns}
@@ -1421,7 +1421,7 @@ Translation rules
 		\Output{DFA $D$ accepting the same language as $N$}
 		\Behavior{\begin{enumerate}
 			\item Algorithm constructs a transition table $Dtran$ from $D$. Each state of $D$ is a set of NFA states, and we construct $Dtran$ so that $D$ will simulate ``in parallel'' all the possible moves $N$ can make on a given input string
-			\item NDA may be built from the table $Dtran$
+			\item DFA may be built from the table $Dtran$
 			\end{enumerate}}
 	\end{myalgorithm}
 \end{frame}
