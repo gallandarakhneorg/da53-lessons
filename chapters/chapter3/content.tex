@@ -100,7 +100,7 @@
 		\end{column}
 		\begin{column}[t]{.5\linewidth}
 			\begin{block}{Syntactic errors}
-				\emph{Invalid tokens} that are broking the grammar, e.g., misplaced semicolons or extra or missing braces. Another example is a \kw{case} outside an enclosing \kw{switch} block
+				\emph{Invalid tokens} that are breaking the grammar, e.g., misplaced semicolons or extra or missing braces. Another example is a \kw{case} outside an enclosing \kw{switch} block
 			\end{block}
 		\end{column}
 	\end{columns}
@@ -267,34 +267,21 @@
 	\begin{block}{Others Notations}
 		\begin{itemize}
 			\item Uppercase letters late in the alphabet, such as X, Y, Z, represent grammar symbols that is, either nonterminals or terminals
-			\item Lowercase letters late in the alphabet, chiefly u, v, \dots, z, represent (possibly empty) strings of terminals
+			\item Lowercase letters late in the alphabet, e.g., u, v, \dots, z, represent (possibly empty) strings of terminals
 			\item Lowercase Greek letters $\alpha$, $\beta$, \dots, represent (possibly empty) strings of grammar symbols
 		\end{itemize}
 	\end{block}
 \end{frame}
 
-\begin{frame}{{General Principle} of Parsing}
-	\begin{definitionblock}{Parsing}
-		Parsing is the process of taking a string of terminals and figuring out how to \Emph{derive} it from the start symbol \\
-		If the string cannot be derived, the parser reports a syntax error
-	\end{definitionblock}
-	\vspace{.5cm}
-	\begin{rightarrowsequence}
-		\arrow{Grammar derives strings by beginning with the start symbol}
-		\arrow{Repeated replacement of a nonterminal by the body of a production for that nonterminal}
-		\arrow{Terminal strings, that can be derived, form the language defined by the grammar, namely, $L(G)$}
-	\end{rightarrowsequence}
-\end{frame}
-
 \begin{frame}[t,fragile,background={10}]{Example of a Grammar}
 	\begin{itemize}
-	\item Arithmetic expressions are defined by the following grammar.
-	\item The terminals are: \begin{description}
-		\item[Operators] \bnfts{+}, \bnfts{-}, \bnfts{*}, \bnfts{/}, \bnfts{(}, \bnfts{)}
-		\item[Numbers] \bnfts{number} stands for any number
-		\item[Identifier] \bnfts{id} stands for any variable's name
+		\item Arithmetic expressions are defined by the following grammar.
+		\item The terminals are: \begin{description}
+			\item[Operators] \bnfts{+}, \bnfts{-}, \bnfts{*}, \bnfts{/}, \bnfts{(}, \bnfts{)}
+			\item[Numbers] \bnfts{number} stands for any number
+			\item[Identifier] \bnfts{id} stands for any variable's name
 		\end{description}
-	\item The grammar is:
+		\item The grammar is:
 	\end{itemize}
 	\begin{bnf}
 		\bnfprod*{expression}{\bnfpn{expression} \bnfts{+} \bnfpn{term}} \\
@@ -312,7 +299,7 @@
 \begin{rightlawnframe}<11>{{Hierarchy of Grammars} by Chomsky: Type-0}{chomsky-hierarchy}
 	Type-0 grammars generates languages that can be recognized by a Turing machine \\[.5cm]
 	$\gamma \bnfopo \alpha$ \\[.5cm]
-	\inlineexample{$L=\left\{w|w\right\}$ describes a terminating Turing machine} \\[.5cm]
+	\inlineexample{$L=\left\{w\right\}$ describes a terminating Turing machine} \\[.5cm]
 	Recognition Complexity: NP-hard
 \end{rightlawnframe}
 
@@ -345,6 +332,19 @@
 	\inlineexample{Regex pattern specification} \\[.5cm]
 	Recognition Complexity: $O(n)$
 \end{rightlawnframe}
+
+\begin{frame}{{General Principle} of Parsing}
+	\begin{definitionblock}{Parsing}
+		Parsing is the process of taking a string of terminals and figuring out how to \Emph{derive} it from the start symbol \\
+		If the string cannot be derived, the parser reports a syntax error
+	\end{definitionblock}
+	\vspace{.5cm}
+	\begin{rightarrowsequence}
+		\arrow{Grammar derives strings by beginning with the start symbol}
+		\arrow{Repeated replacement of a nonterminal by the body of a production for that nonterminal}
+		\arrow{Terminal strings, that can be derived, constitute the language $L(G)$ defined by the grammar $G$}
+	\end{rightarrowsequence}
+\end{frame}
 
 \subsection{Derivations and Parse Tree}
 \subsubsectiontableofcontentslide*
@@ -387,21 +387,21 @@
 		Sequence of derivations $u_1 \deriv u_2 \deriv \dots \deriv u_k$ rewrites $u_1$ to $u_k$ \\[.2cm]
 		\Emph{Formally:} string $u$ derives to string $v$ if $\exists k\in\mathbb{N}+$ and $\exists u_{1},\cdots ,u_{k}\in (N\cup \Sigma)^{*}$ such that $u_{1}\deriv u_{2}\deriv \cdots \deriv u_{k}$, $u=u_1$ and $v=u_k$ \\[.2cm]
 		\Emph{Notation 1:} $u_1 \seqderiv u_k$ (reflexive transitive closure)\\
-		\Emph{Notation 2:} if $k\ge2$, $u_1 \seqderivone u_k$ (transitive closure)
+		\Emph{Notation 2:} if $k\ge3$, $u_1 \seqderivone u_k$ (transitive closure)
 	\end{definitionblock}
 	\begin{block}{Properties}
 		\begin{description}
 		\item[Identity] $\alpha\seqderiv\alpha$, for any string $\alpha$
-		\item[Transitivity] If $\alpha\seqderiv\beta$, and $\beta\deriv\gamma$, then $\alpha\seqderiv\gamma$
+		\item[Transitivity] If $\alpha\seqderiv\beta$, and $\beta\deriv\gamma$, then $\alpha\seqderivone\gamma$
 		\end{description}
 	\end{block}
 \end{frame}
 
-\begin{frame}[background=8]{Derivation as a Sentence of a Grammar}
+\begin{frame}[background=8]{Derivations as a Sentence of a Grammar}
 	\begin{itemize}
 	\item If $S \seqderiv a$, where $\bnfpn{S}$ is the start symbol of a grammar $G$, we say that $\bnftd{a}$ is a \emph{sentential form of $G$}
 	\vfill
-	\item A sentence of $G$ is a sentential form, which is nonterminal
+	\item A sentence of $G$ is a nonterminal sentential form
 	\vfill
 	\item The language generated by $G$ is its set of sentences
 	\vfill
@@ -531,26 +531,28 @@
 \subsubsection{Building a Parse Tree with Derivations}
 \subsubsectiontableofcontentslide
 
-\begin{frame}{Algorithm to Build a Parse Tree with Derivations}
+\begin{frame}[t]{Algorithm to Build a Parse Tree with Derivations}
 	\begin{scriptsize}
 	\begin{myalgorithm}
 	\SetKwFunction{node}{node}
-	\SetKwFunction{nodelabel}{label}
+	\SetKwFunction{nodelabel}{name}
+	\SetKwFunction{nodeinput}{input}
 	\SetKwFunction{nodechild}{addChild}
 	\Inputs{A sequence of tokens $T$. A grammar $G$ with the start symbol $s_0$.}
 	\Output{A parse tree that corresponds to $T$ and $G$.}
 	\Begin{
-		$r$ \affect \node($s_0$, $T$) ;	$L$ \affect $[r]$ ; $input[r]$ \affect $T$ \;
+		$r$ \affect \node($s_0$, $T$) \tcc*{Node constructor(nonterminal, input tokens)}
+		$L$ \affect $[r]$ \tcc*{List of nodes to build up}
 		\While(\tcc*[f]{Leftmost derivation}){$L = [n].L'$}{
 			$L$ \affect $L'$ \;
-			\If{$\exists (\nodelabel(n) \bnfopo b) \in G | input[n]$ matches $b$}{
+			\If{$\exists (\nodelabel(n) \bnfopo b) \in G$ such that $\nodeinput(n)$ matches $b$}{
 				\ForEach{$\alpha s \beta = b$}{
-					$m$ \affect $\omega \in T | (input[\alpha]\;\omega\;input[\beta]) = input[n]$ \;
-					$c$ \affect \node($s$) \;
+					$m$ \affect $\omega \in T$ such that $(\nodeinput(n) = \nodeinput(\alpha)\;\omega\;\nodeinput(\beta))$ \;
+					$c$ \affect \node($s$, $m$) \;
 					\nodechild($n$,$c$) \;
 					\If{$s$ is nonterminal}{
 						$L$ \affect $L.[c]$ \;
-						$input[c]$ \affect $m$ \;
+						$\nodeinput(c)$ \affect $m$ \;
 					}
 				}
 			}
@@ -689,7 +691,6 @@
 				\bnfpn{S} \derivlm \bnfts{(} \bnfpn{S} \bnfts{)} \bnfpn{S} \derivlm \bnfts{(} \alpha \bnfts{)} \bnfpn{S} \derivlm \bnfts{(} \alpha \bnfts{)} \beta
 			\]
 			Derivations of $\alpha$ and $\beta$ from $\bnfpn{S}$ take fewer than $n$ steps, so by the inductive hypothesis $\alpha$ and $\beta$ are balanced \\
-			Therefore, the string ``$\bnfts{(}\alpha\beta$'' must be balanced
 		}
 	\end{myalgorithm}
 \end{frame}
@@ -976,7 +977,7 @@
 	\vfill
 	\item These functions allow us to choose which production to apply, based on the next input symbol
 	\vfill
-	\item During panic-mode error recovery the set of tokens replied by FOLLOW can be used as synchronizing tokens
+	\item During panic-mode error recovery, the set of tokens replied by FOLLOW can be used as synchronizing tokens
 	\end{itemize}
 \end{frame}
 
@@ -1307,7 +1308,7 @@
 \begin{frame}{Nonrecursive Predictive Parsing}
 	\begin{itemize}
 	\item Nonrecursive predictive parser can be built by maintaining a stack explicitly, rather than implicitly via recursive calls
-	\item Parser mimics a leftmost derivation. If \code{w} is the input that has been matched so far, then the stack holds a sequence of grammar symbols a such that:
+	\item Parser mimics a leftmost derivation. If $w$ is the input that has been matched so far, then the stack holds a sequence of grammar symbols a such that:
 		\begin{center}
 			$S \seqderiv w\;\alpha$
 		\end{center}
@@ -1438,7 +1439,7 @@
 
 \begin{frame}[background=6]{Panic Mode}
 	\begin{itemize}
-	\item \emph{Panic-mode error recovery is based on the idea of skipping over symbols on the input until a token in a selected set of synchronizing tokens appears}
+	\item \emph{Panic-mode recovery is based on the idea of skipping symbols on the input until a token in a selected set of synchronizing tokens appears}
 	\vspace{.5cm}
 	\item Its effectiveness depends on the choice of synchronizing set
 	\item The sets should be chosen so that the parser recovers quickly from errors that are likely to occur in practice
@@ -1699,12 +1700,12 @@
 			\bnfalt*{\bnfts{id}} \\
 			\bnfprod*{expression}{\bnfts{id} \bnfts{(} \bnfpn{expressions} \bnfts{)}} \\
 			\bnfalt*{\bnfts{number}} \\
+			\bnfalt*{\bnftd{id}} \\
 			\bnfprod*{expressions}{\bnfpn{expressions} \bnfts{,} \bnfpn{expression}} \\
 			\bnfalt*{\bnfpn{expression}}
 		\end{bnf}\end{footnotesize}
 	\vspace{-.75cm}
 	\item Consider the stack : $\bnfts{eof} \dots \bnfts{id} \bnfts{(} \bnfts{id} \bnfts{)}$
-	\item Consider the input : $\bnfts{,} \bnfts{id} \bnfts{)} \dots \bnfts{eof}$
 	\item It is evident that the $\bnfts{id}$ on top of the stack should be reduced, but by which production?
 		\begin{enumerate}
 		\item $\bnfpn{parameters} \bnfopo \bnfts{id}$ if $p$ is a procedure
@@ -1885,7 +1886,7 @@
 		\raisebox{-\height}{\pgfuseimage{rightarrow-in-code}}
 		\begin{tabular}[t]{|c|}
 			\hline
-			$I_0$ \\
+			$I_1$ \\
 			\hline
 			$\bnfpn{E'} \bnfopo \bnfindex \; \bnfpn{E}$ \\
 			$\bnfpn{E} \bnfopo \bnfindex \; \bnfpn{E} \bnfts{+} \bnfpn{T}$ \\
@@ -1897,7 +1898,7 @@
 		\raisebox{-\height}{\pgfuseimage{rightarrow-in-code}}
 		\begin{tabular}[t]{|c|}
 			\hline
-			$I_0$ \\
+			$I_2$ \\
 			\hline
 			$\bnfpn{E'} \bnfopo \bnfindex \; \bnfpn{E}$ \\
 			$\bnfpn{E} \bnfopo \bnfindex \; \bnfpn{E} \; \bnfts{+} \bnfpn{T}$ \\
@@ -1912,7 +1913,7 @@
 	\small
 	\only<1>{$I = \{ (E' \bnfopo \bnfindex \; E) \}$ and CLOSURE($I$) $= I_0$ \\}
 	\only<2>{Consider $E$-productions because $E$ is on the right of the dot. Add $\bnfpn{E} \bnfopo \bnfindex \; \bnfpn{E} \bnfts{+} \bnfpn{T}$ and $\bnfpn{E} \bnfopo \bnfindex \; \bnfpn{T}$ to $I_0$ \\}
-	\only<3>{Consider $E$-productions and $T$-productions because they are both on the right of the dot. Items for $E$-productions are already inside $I_0$, but not items for $T$-productions. \\}
+	\only<3>{Consider $E$-productions, $T$-productions and $F$-productions because they are both on the right of the dot. Items for $E$-productions are already inside $I_1$, but not items for $T$-productions. \\}
 \end{frame}
 
 \begin{frame}{GOTO}
@@ -2304,7 +2305,7 @@
 	\item \ccode{yyerrok()} resets the parser to its normal mode of operation
 	\vfill
 	\item \small Here, the error production causes the program to suspend normal parsing when a syntax error is found on an input line
-	\item \small On encountering the error, the parser in the program starts popping symbols from its stack until it encounters a statethat as a shift action on the token error. Then the input is read until the new-line character is read. Then the parser reduces error '{\textbackslash}n' to lines, and emits the diagnotic message ``error message''
+	\item \small On encountering the error, the parser in the program starts popping symbols from its stack until it encounters a state that as a shift action on the token error. Then the input is read until the new-line character is read. Then the parser reduces error '{\textbackslash}n' to lines, and emits the diagnotic message ``error message''
 	\end{itemize}
 	\begin{lstlisting}[style=lststyle-c]
 	line   :   lines expr '\n'  { printf("%g\n", $2); }
@@ -2347,7 +2348,7 @@
 	\only<3>{\begin{block}{Java compilation unit}
 		The Java compilation unit is a Java code that must contain at least the declaration of the class of the parser: \\
 		\dots \\
-		\code{public class} \ccode{{\textless}parser\_name{\textgreater} \{} \\
+		\code{public class} \ccode{{\textless}parserName{\textgreater} \{} \\
 		\dots \\
 		\ccode{\}} \\
 		\dots
@@ -2356,7 +2357,7 @@
 		Two functions are automatically generated inside the parser class:
 		\begin{itemize}
 		\item \code{Token getNextToken()}: returns the next available token
-		\item \code{Token getToken(int index)}: returns the ith token ahead
+		\item \code{Token getToken(int index)}: returns the i-th token ahead
 		\end{itemize}
 	\end{block}}
 	\only<5>{\begin{block}{Translation rules}
@@ -2370,7 +2371,7 @@
 \end{frame}
 
 \begin{frame}{Define Regular Expressions for Tokens}
-	\begin{definition}
+	\begin{definition}[Tokens]
 		\ccode{[{\textless}state\_list{\textgreater}] {\textless}kind{\textgreater} [\bnfts{IGNORE\_CASE}] \bnfts{:}} \\
 		\ccode{\{ {\textless}regexpr{\textgreater} $|$ {\textless}regexpr{\textgreater} $|$ \dots \}}
 	\end{definition}
@@ -2391,7 +2392,7 @@
 	\vfill
 	\item[SKIP] simply skipped (ignored) by the token manager
 	\vfill
-	\item[MORE] Sometimes it is useful to gradually build up a token to be passed on to the parser. Matches to this kind of regular expression are stored in a buffer until the next \bnfts{TOKEN} or \bnfts{SPECIAL\_TOKEN} match
+	\item[MORE] Sometimes it is useful to gradually build up a token to be passed to the parser. Match lexemes for this kind of regex are stored in a buffer until the next \bnfts{TOKEN} or \bnfts{SPECIAL\_TOKEN} matches
 	\end{enumerate}
 \end{frame}
 
