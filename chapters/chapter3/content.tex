@@ -438,7 +438,7 @@
 				\bnfalt*{\bnfts{id}}
 			\end{bnf}\end{small}
 			\item Input string: \\
-				\ccode{2 + 4 * 6}
+				\ccode{a + b * c}
 			\item List of tokens: \\
 				$\bnfts{id}\bnfts{+}\bnfts{id}\bnfts{*}\bnfts{id}$
 			\end{itemize}
@@ -522,7 +522,7 @@
 			\end{scriptsize}
 		\end{column}
 		\begin{column}[t]{.5\linewidth}
-			The parse tree is:\\[1em]
+			The parse tree is:\\[0.5em]
 			\includegraphics[width=.9\linewidth]{parse_tree_expr}
 		\end{column}			
 	\end{columns}
@@ -969,13 +969,13 @@
 
 \begin{frame}[background=6]{{What are the Functions} FIRST and FOLLOW?}
 	\begin{itemize}
-	\item The construction of both top-down and bottom-up parsers is aided by two functions associated with a grammar G:
+	\item The construction of both top-down and bottom-up parsers uses 0two functions associated with a grammar G:
 		\begin{enumerate}
 		\item FIRST
 		\item FOLLOW
 		\end{enumerate}
 	\vfill
-	\item These functions allow us to choose which production to apply, based on the next input symbol
+	\item These functions enable to choose which production to apply, based on the next input symbol
 	\vfill
 	\item During panic-mode error recovery, the set of tokens replied by FOLLOW can be used as synchronizing tokens
 	\end{itemize}

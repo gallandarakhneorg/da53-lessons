@@ -12,15 +12,15 @@
 	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
 	Translation of languages guided by context-free grammars \\[.2cm]
 	\emph{Type checking} for source language \\[.2cm]
-	\emph{Generation} of parse tree or intermediate code \\[.2cm]
-	\emph{Parse tree} is an abstract representation of the program \\[.2cm]
+	\emph{Generation} of syntax tree or intermediate code \\[.2cm]
+	\emph{Syntax tree} is an abstract representation of the program \\[.2cm]
 	\emph{Intermediate code} is assembly language independent of any platform
 \end{rightlawnframe}
 
 \sidecite{Samelson.1960, Brooker.1962, Paakki.1995}
 \begin{frame}{Syntax-Directed Translation}
 	\begin{itemize}
-	\item \emph{Syntax-directed translation} specifies the values of attributes, attached to the grammar symbols, by associating semantic rules with the grammar productions \\[.2cm]
+	\item \emph{Syntax-directed translation} specifies the values of attributes, attached to the grammar symbols, by associating semantic rules with the grammar productions \\[.5cm]
 		\begin{sdd}
 		\sddtitle{Grammar Productions}{Semantic Rules}
 		\sddprod{expr}{\sddpn{expr} \; \sddts{+} \; \sddpn{term}}{head.t = expr.t \concat term.t \concat '+'}
@@ -38,16 +38,17 @@
 
 \begin{frame}{{Two Types} of Syntax-Directed Translation}
 	\begin{rightarrowsequence}
-		\arrow{Construct a parse tree}
-		\arrow{Compute the attributes' values of the tree nodes}
+		\arrow{\textcircled{1} Construct a syntax tree in memory}
+		\arrow{\textcircled{2} Compute the attributes' values for grammar symbols}
 	\end{rightarrowsequence}
 	\vspace{.25cm}
 	\alertbox*{In many cases, translation can be done during parsing, without building an explicit tree in memory}
-	\vspace{.2cm}
+	\vspace{.25cm}
+	\alertbox{Two approaches for definition/use of attributes:}
 	\begin{center}
-		\titlebox*[.3\linewidth]{L-attributed Translations}{L=left}
+		\titlebox*[.3\linewidth]{L-attributed Translation}{L=left}
 		\hspace{1cm}
-		\titlebox*[.3\linewidth]{S-attributed Translations}{S=synthesized}
+		\titlebox*[.3\linewidth]{S-attributed Translation}{S=synthesized}
 	\end{center}
 \end{frame}
 
@@ -99,6 +100,7 @@
 \end{frame}
 
 \begin{frame}{{Two Notations} for Syntax-Directed Definition}
+	\alertbox{A semantic rule could be executed in the middle of the production elements}
 	\begin{itemize}
 	\item Notation during the lectures:
 		\begin{sdd}
@@ -157,14 +159,14 @@
 \sidecite{Knuth.1968}
 \begin{frame}{Synthetized and Inherited Attributes}
 	\begin{definitionblock}{Synthesized Attribute}
-		Attribute for a nonterminal $A$ \emph{head} at a parse-tree node $N$, defined in a semantic rule associated with the production at $N$
+		Attribute for a nonterminal $A$, \emph{head} in parse-tree node $N$, defined in a semantic rule associated with the production at $N$
 	\end{definitionblock}
-	\alertbox{Synthetized attribute is defined by a semantic rule}
+	\alertbox{Value of synthetized attribute is defined in a semantic rule}
 	\vspace{.5cm}
 	\begin{definitionblock}{Inherited Attribute}
-		Attribute for a nonterminal $B$ in the \emph{body} at a parse-tree node $N$, defined in a semantic rule associated with the production at the \emph{parent} of $N$
+		Attribute for a nonterminal $B$, in \emph{body} of parse-tree node $N$, defined in a semantic rule associated with the production at the \emph{parent} of $N$
 	\end{definitionblock}
-	\alertbox{Inherited attribute is read in a semantic rule}
+	\alertbox{Value of inherited attribute is inherited and read in a semantic rule}
 \end{frame}
 
 \subsection{Evaluating a SDD with a parse tree}
@@ -178,12 +180,12 @@
 	\item[Annotated Parse Tree] parse tree with attributes
 	\end{description}
 	\vspace{.5cm}
-	\hiconbox{Parse tree $\neq$ Syntax tree (source program representation, see slides later)}{problem-icon}
+	\hiconbox{Parse tree $\neq$ Syntax tree (source program representation, see later)}{problem-icon}
 	\vspace{.5cm}
 	\alertbox*{Depth-first iteration on the parse tree enables to execute the semantic rules in the right order, i.e., based on attributes' dependencies (see later)}
 \end{frame}
 
-\begin{frame}[t]{Example of Evaluation}
+\begin{frame}[t]{Example of SDD Evaluation}
 	\begin{center}
 		\begin{small}
 		\begin{sdd}[.7\linewidth]
@@ -219,11 +221,11 @@
 	\end{rightarrowsequence}
 \end{frame}
 
-\subsection{Dependency graph}
+\subsection{Dependency graph for SDD}
 \subsectiontableofcontentslide
 
 \sidecite{Knuth.1968}
-\begin{frame}{Dependency Graph}
+\begin{frame}{Dependency Graph for SDD}
 	\begin{definitionblock}{Dependency Graph}
 		Flow of information among the attribute instances in a particular parse tree \\[.2cm]
 		\begin{description}
@@ -281,15 +283,13 @@
 		Such that $i < j \implies \exists$ an edge from $N_i$ to $N_j$
 	\end{definitionblock}
 	\vspace{1cm}
-	\hiconbox{Such an ordering embeds a directed graph into a linear order, and is called a topological sort of the graph}{information-icon}
+	\hiconbox{Such an ordering transforms a directed graph into a linear order, and is called a topological sort of the graph}{information-icon}
 \end{frame}
 
 \sidecite{Knuth.1968, Jazayeri.1975}
-\begin{frame}[t]{{Problem to Determine the Order} of the Attributes}
+\begin{frame}{{Problem to Determine the Order} of the Attributes}
 	\hiconbox{If there is any cycle in the graph, then there are no topological sorts, i.e., there is no way to evaluate the SDD on the parse tree}{problem-icon}
-	\vspace{.25cm}
-	\hiconbox{Given a SDD, it is very hard to cycle}{information-icon}
-	\vspace{.25cm}
+	\vspace{.5cm}
 	\hiconbox{
 		Translations can be implemented using classes of SDD that guarantee an evaluation order, i.e., without cycle \newline
 		Two classes could be used:
@@ -336,14 +336,14 @@
 	\end{footnotesize}
 \end{frame}
 
-\section{Syntax tree and graph}
+\section{Intermediate Representation: syntax tree and syntax graph}
 \sectiontableofcontentslide*
 
 \subsection{Syntax tree}
 
 \begin{frame}[background=6]{{Syntax Tree} as Intermediate Representation}
 	\begin{itemize}
-		\item Since some compilers use \emph{syntax tree as an intermediate representation}, a common form of SDD turns its input string into a tree
+		\item Since several compilers use \emph{syntax tree as an intermediate representation}, a common form of SDD turns its input string into a tree
 		\vfill
 		\item To complete the translation to intermediate code, the compiler may then walk the syntax tree, using another set of rules than the parse tree
 	\end{itemize}
@@ -353,7 +353,7 @@
 \subsubsectiontableofcontentslide
 
 \begin{frame}{Syntax Tree}
-	\begin{definitionblock}{Syntax Tree}
+	\begin{definitionblock}{Definition}
 		Tree defined as $\langle N, C \rangle$, where:
 		\begin{itemize}
 			\item $N$ is the set of nodes; \\
@@ -646,7 +646,7 @@
 	\end{columns}
 \end{frame}
 
-\section{Three-address code}
+\section{Intermediate Representation: three-address code}
 \sectiontableofcontentslide
 
 \sidecite{Strong.1958, Wirth.1971, Johnson.1979, Ritchie.1979}
@@ -704,28 +704,27 @@
 \subsectiontableofcontentslide
 
 \begin{frame}{Address}
-	\alertbox*{Address can be one of:}
+	\alertbox*{Address value can be one of:}
 	\vspace{.5cm}
-	\titlebox*[.3\linewidth]{Constant}{
+	\titlebox*[.3\linewidth]{Constant value}{
 		Compiler must deal with many different types of constants and variables}
 	\hfill
 	\titlebox*[.3\linewidth]{Name}{
-		Source-program name. \newline
 		In implementation, it is replaced by a pointer to a symbol-table entry}
 	\hfill
 	\titlebox*[.3\linewidth]{Temporary Name}{
 		Created by the compiler. \newline
-		Usefull for creating a distinct name each time a temporary is needed. \newline
+		Useful for creating a distinct name each time a temporary is needed. \newline
 		Usual syntax: \tactext{\t{i}}
 	}
 \end{frame}
 
-\begin{frame}[background=6]{Label}
+\begin{frame}[background=6]{Label of the TAC lines}
 	\begin{definitionblock}{Symbolic Label}
-		Index of a three-address instruction in the sequence of instructions
+		Unique identifier of a TAC line. It may be the index of a three-address instruction in the sequence of instructions, or a textual symbol.
 	\end{definitionblock}
 	\begin{itemize}
-	\item Numeric positions can be substituted for the labels, either by making a separate computing pass or by ``backpatching''
+	\item Symbolic labels can avoid ``backpatching'' process for ensuring that all the labels are correctly referenced from TAC instructions
 	\end{itemize}
 	\begin{columns}
 		\begin{column}{.4\linewidth}
@@ -790,7 +789,7 @@
 	\begin{columns}
 		\begin{column}{.8\linewidth}
 		\begin{small}
-		Procedure calls and returns are implemented using the following instructions:
+		Calls and returns are implemented using the following instructions: \\
 		\vfill
 		\begin{itemize}
 		\item \tactext{\kw{param} x}: for passing the value \tactext{x} as parameters
@@ -851,7 +850,7 @@
 \begin{frame}[fragile,background=6]{Example of Three-Address Code}
 	\larger\larger
 	\begin{columns}
-		\begin{column}{.3\linewidth}
+		\begin{column}{.45\linewidth}
 			\centering
 			\begin{lstlisting}[style=lststyle-java,basicstyle=\normalsize]
 byte v;
@@ -867,7 +866,7 @@ do {
 			\centering
 			\pgfuseimage{right-arrow}
 		\end{column}
-		\begin{column}{.6\linewidth}
+		\begin{column}{.45\linewidth}
 			\begin{tac}[.7\linewidth]
 				\a[L]{\t1}{i + 1}
 				\a{i}{\t1}
@@ -877,25 +876,29 @@ do {
 			\end{tac}
 		\end{column}
 	\end{columns}
+	\vspace{.5cm}
+	\hiconbox{Variable declarations are to translated\newline
+		Memory size of a byte value is 8\newline
+		Address is the number of a valid storage cell}{information-icon}
 \end{frame}
 
-\begin{frame}{{Do we need more} Three-Address Instructions?}
+\begin{frame}{{Do we need more} three-address instructions?}
 	\begin{rightarrowsequence}
 		\arrow[bg=CIADlightgray,fg=black]{
 			Available operators is an important issue in the design of an intermediate form \\[.25cm]
-			Operator set must be rich enough to implement the operations from the source language
+			Set of instructions must be rich enough to implement the operations from the source language
 		}
 		\arrow[bg=CIADgreen]{
-			Operators that are close to machine instructions make it easier to implement the intermediate form on a target machine
+			TAC Instructions close to machine instructions $\Rightarrow$ easier to implement intermediate form on target machine
 		}
 		\arrow[bg=CIADmagenta]{
-			If long sequences of instructions for source-language must be generated, then the optimizer and code generator may have to work harder to generate good code
+			But if TAC instructions are too low-level, optimizer and code generator have harder work for generating them
 		}
 	\end{rightarrowsequence}
 \end{frame}
 
 \begin{frame}{Implementation of Three-Address Code}
-	\alertbox*{Three-address instructions could be implemented in a compiler as \emph{objects} or as \emph{records} following one of:}
+	\alertbox*{Three-address instructions could be implemented with \emph{classes} or \emph{records}, following one of the conventions below:}
 	\vspace{.25cm}
 	\fancybox{Quadruple}{Representation with four fields}{quadruple-icon}{01}
 	\hfill
@@ -959,7 +962,7 @@ do {
 \end{frame}
 
 \begin{frame}[background=6,fragile]{Example of Implementation in C}
-	\begin{lstlisting}[language=C,basicstyle=\scriptsize]
+	\begin{lstlisting}[language=C++,basicstyle=\scriptsize]
 	/* Operations supported by the three-address code */
 	typedef enum { MULTIPLY, ADD, MINUS, ...} Operator;
 
@@ -1145,7 +1148,7 @@ do {
 	Two differences between SSA and the standard form of the three-address code:
 	\begin{enumerate}
 	\item All assignments in SSA are to variables with distinct names
-	\item Introduction of the $\phi$-function
+	\item Introduction of the $\phi$-function for helping optimization
 	\end{enumerate}
 \end{frame}
 
@@ -1184,7 +1187,7 @@ do {
 
 \begin{frame}{$\phi$-Function}
 	\begin{definitionblock}{$\phi$-Function}
-		Notation convention to \emph{combine two definitions of the same variable} in parallel control-flow paths
+		Notation convention to \emph{combine two definitions of the same variable} that are from parallel control-flow paths
 	\end{definitionblock}
 	\begin{example}
 		\begin{columns}
@@ -1242,11 +1245,11 @@ do {
 	\begin{definitionblock}{Type Expression}
 		Type expression is one of:
 		\begin{enumerate}
-		\item \emph{Basic type}: \kw{boolean}, \kw{char}, \kw{integer}, \kw{float}, \kw{void}
+		\item \emph{Basic type}: \kw{boolean}, \kw{char}, \kw{integer}, \kw{float}
 		\item \emph{Type name}
 		\item Expression built with the \emph{array type constructor}
 		\item \emph{Record}: data structure with named fields
-		\item \emph{Function prototype}: by using the function prototype constructor $inputType \rightarrow outputType$
+		\item \emph{Function prototype}: by using the function prototype constructor $inputTypes \rightarrow outputType$
 		\item \emph{Cartesian product} of two type expressions: if $s$ and $t$ are type expressions, then $s \times t$ is a type expression
 		\end{enumerate}
 	\end{definitionblock}
@@ -1310,14 +1313,14 @@ do {
 		\alertbox{
 			From the type of a name, amount of storage needed at run-time could be determined at compile time
 		}
-		\begin{block}{Size Determination}
+		\begin{block}{Static size Determination}
 			\begin{itemize}
-				\item \emph{Width of a type} (and not of a variable) is the number of storage units (usually bytes) needed for values of that type
+				\item \emph{Width of a type} (and not of a variable) is the number of storage units (usually bytes) needed for storing values of that type
 				\item Basic type requires an integral number of storage units
-				\item Data of varying length (string, dynamic array\dots) is handled by reserving a known fixed amount of storage units for a pointer to the data (usually 64 or 128 bits)
+				\item Data of varying length (string, dynamic array\dots) is associated to a pointer (usually 64 or 128 bits) to the the fixed storage unit for that data
 			\end{itemize}
 		\end{block}
-		\begin{block}{Address (Location) Determination for Run-time}
+		\begin{block}{Static Determination of the Run-time Address (Location)}
 			\begin{itemize}
 				\item \emph{Relative address} of each name could be determined based on their size
 				\item For easy access, aggregated data (array, class\dots) is allocated in contiguous block
@@ -1425,7 +1428,7 @@ do {
 \subsubsectiontableofcontentslide
 
 \begin{frame}[t]{Definition of Records or Classes}
-	\alertbox*{Extension of the previous grammar with $T$-production}
+	\alertbox*{Extension of the previous grammar with \ensuremath{\sddpn{Types}} and \ensuremath{\sddpn{Type}} productions}
 	\vspace{.5cm}
 	\begin{sdd}
 		\sddprod{Type}{\sddpn{Base}}{
@@ -2112,7 +2115,7 @@ fun length(x) =
 		\end{center}
 	\end{block}
 	\begin{itemize}
-	\item To support this distinction, we may:
+	\item To support this distinction, we could:
 		\begin{enumerate}
 		\item Use two different nonterminals
 		\item Use inherited attributes
