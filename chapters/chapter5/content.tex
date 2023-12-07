@@ -648,7 +648,7 @@ unsafe void myFunction(int n) {
 						}
 						\Return{babylonian\_algo(q/2, 10)}\;
 					}
-					sqrt(5)\;
+					sqrt(4)\;
 				\end{myprocedure}
 			\end{scriptsize}
 	}}
@@ -1195,7 +1195,7 @@ unsafe void myFunction(int n) {
 	\hiconbox{
 		Two common errors may occurs in manual memory management:
 		\begin{enumerate}
-			\item \alert{Memory Leak:} failing ever to delete data that cannot be referenced
+			\item \alert{Memory Leak:} loosing reference to undeleted data
 			\item \alert{Dangling-pointer reference:} referencing deleted data
 		\end{enumerate}
 	}{danger-icon}
@@ -1526,7 +1526,7 @@ unsafe void myFunction(int n) {
 		\emph{assuming that all the other objects are not reachable} \\[.5cm]
 		Reference counting is an approximation of the first approach:
 		\begin{itemize}
-			\item Counter of the reference to an object is maintained
+			\item Counter of the references to an object is maintained
 			\item When the counter goes to zero, the object becomes unreachable (discussed in the next section)
 		\end{itemize}
 	\end{block}
@@ -1615,7 +1615,7 @@ class Main {
 	\only<10>{\putat(-15,29){\pgfuseimage{rightarrow-in-code}}}
 	\only<11>{\putat(170,190){\parbox[t]{.5\paperwidth}{\normalcolor\mdseries\small\nohyphens{
 		This set of objects should be garbage collected. But their counters are greater than 0 \\
-		Such a situation is tantamount to a \alert{memory leak}, since this set of objects will never be deallocated}}}}
+		Such a situation is a \alert{memory leak}, since this set of objects will never be deallocated}}}}
 \end{frame}
 
 \begin{frame}<12->[t,fragile]{{Solving Memory Leak} with Reference-Counting Garbage Collector}
@@ -1803,7 +1803,7 @@ class Main {
 				\While{$\exists$ o $\in$ Unscanned}{
 					Unscanned \affect Unscanned $\setminus \{ o \}$\;
 					\ForEach{r $\in$ \referencesin{o}}{
-						\If{$neg$ reached\_bit[r]}{
+						\If{$\neg$ reached\_bit[r]}{
 							reached\_bit[r] \affect true\;
 							Unscanned \affect Unscanned $\cup \{ r \}$\;
 						}
@@ -1821,7 +1821,7 @@ class Main {
 				\tcc{SWEEPING PHASE}
 				Free \affect $\emptyset$\;
 				\ForEach{c $\in$ chunks}{
-					\uIf{$neg$ reached\_bit[c]}{
+					\uIf{$\neg$ reached\_bit[c]}{
 						Free \affect Free $\cup \{ c \}$
 					}
 					\Else{
@@ -2184,11 +2184,11 @@ class Main {
 	\vspace{.25cm}
 	\begin{itemize}
 		\item These objects becomes unreachable before the GC is invoked
-		\item $\Rightarrow$ GC is cost effective with the approaches presented in the previous slides
+		\item[$\Rightarrow$] GC is cost effective with the approaches presented in the previous slides
 	\end{itemize}
 	\vspace{.25cm}
 	\begin{itemize}
-		\item The same ``mature'' objects were found and copied at every round of the GC
+		\item The same ``mature/old'' objects were found and copied at every round of the GC
 	\end{itemize}
 	\vspace{.25cm}
 	\begin{block}{Two major approaches for effective GC}

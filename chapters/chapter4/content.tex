@@ -674,11 +674,11 @@
 		Sequence of three-address instructions
 	\end{definitionblock}
 	\begin{definitionblock}{Three-Address Instruction}
-		Has the form: \tactext{r = l op r} \\
+		Has the form: \tactext{o = l op r} \\
 		\begin{itemize}
 			\item \tactext{op} is operation to apply
 			\item \tactext{l} and \tactext{r} are the addresses of the operands if needed
-			\item \tactext{r} is the address storing the result of the operation
+			\item \tactext{o} is the address storing the result of the operation
 		\end{itemize}
 	\end{definitionblock}
 	\begin{example}
@@ -1212,7 +1212,7 @@ do {
 	\end{example}
 	\alertbox{Impossible to determine which \tactext{x} value is used for \tactext{x * a} \newline
 		$\Rightarrow$ harder to optimize the target code}
-	\alertbox*{$\phi$-function replies the ``defined'' value in its arguments}
+	\alertbox*{$\phi$-function replies the ``defined'' value from its arguments}
 \end{frame}
 
 \section[Generation of variables]{Code generation of variables}
