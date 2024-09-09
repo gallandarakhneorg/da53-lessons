@@ -585,7 +585,7 @@ public class Symbol {
 public class SymbolTable {
 
  /** Collection of the symbol in the current context. */
- private final Map<String,Symbol> table = new TreeMap<String,Symbol>();
+ private final Map<String,Symbol> table = new TreeMap<>();
 
  /** Reference to the symbol table that is associated to the enclosing scope. */
  private final SymbolTable enclosingEnvironment;
@@ -711,7 +711,7 @@ public class SymbolTable {
 		\ccode{{\textless}variable{\textgreater} = {\textless}operand1{\textgreater} {\textless}operator{\textgreater} {\textless}operand2{\textgreater}}}
 	\begin{itemize}
 	\item Each operand can act like a register
-	\item The affectation operator is implicit and always present
+	\item The assignment operator is implicit and always present
 	\end{itemize}
 	\begin{alertblock}{Constraints}
 		\begin{enumerate}
@@ -744,7 +744,7 @@ public class SymbolTable {
 	\end{minipage}
 \end{frame}
 
-\figureslide{Example of Optimization}{intermediate_code_optim}
+\figureslide{Example of Optimizations}{intermediate_code_optim}
 
 \begin{frame}<6>{Example of Machine-Independent Code Optimization}
 	\putat*(340,-197){\includeanimatedfigure[width=2.5cm]{compiler_structure}}
@@ -767,7 +767,7 @@ public class SymbolTable {
 
 \begin{frame}{Example of Code Generation}
 	\begin{itemize}
-	\item Assumes that R1 and R2 are registers
+	\item Assumes that R1 and R2 are registers in the microprocessor
 	\item Variables are mapped to registers so that they can be easily used for the generation of the next instructions
 	\end{itemize}
 	\vspace{.25cm}
@@ -802,6 +802,38 @@ public class SymbolTable {
 	\fancybox{Construction toolkits}{Include the other tools and IDE integration (Xtext\dots)}{toolkit-icon}{6}
 \end{frame}
 
+\section{Metamodelling and Programming Languages}
+\sectiontableofcontentslide
+
+\begin{frame}[t]{Metalevels in Programming Languages}
+	\sidecite{Doller.2022}
+	\smaller
+	\begin{columns}
+		\begin{column}{.7\linewidth}
+			\begin{alertblock}{How to define the key constructs of your programming language?}
+				\begin{itemize}
+					\item What are the concepts used for writing a program with the language?
+					\item What are the keywords of the language?
+					\item What are structural constructs of the language?
+				\end{itemize}
+			\end{alertblock}
+			\vspace{.5cm}
+			\begin{block}<2>{One solution: metamodelling}
+				\begin{itemize}
+				\item Definition a \Emph{metamodel} that contains the key concepts and their relation ships
+				\item Language constructs are all defined in the metamodel
+				\item Language and grammar define the textual structure of a program
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{.3\linewidth}
+			\includegraphics<2>[width=\linewidth]{metalayers}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\figureslide{Example of the Java Metamodel}{javametamodel}
+
 \section{Conclusion}
 \sectiontableofcontentslide
 
@@ -833,6 +865,7 @@ public class SymbolTable {
 		\item[Parse Tree] A graphical tree representation of the productions that are matching a sequence of input tokens.
 		\item[Intermediate Code] The result of the syntax analysis is a representation of the source program, called intermediate code. Two primary forms of intermediate code are illustrated: abstract syntax tree (similar to parse tree), and three-address code.
 		\item[Symbol Table] A data structure that holds information about identifiers.
+		\item[Metamodel] A metamodel can be defined as a model of a modeling or programming language. A metamodel is used to express the concepts common to all the models or programs in the same domain.
 	\end{description}
 \end{frame}
 
