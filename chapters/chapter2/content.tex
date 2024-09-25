@@ -53,10 +53,27 @@
 	\vspace{1cm}
 	\begin{example}
 		\begin{itemize}
-		\item Let the statement: \code{printf("Total = \%d\n", score);}
+		\item Let the statement: \code{printf("Total = \%d\\n", score);}
 		\item Both \code{printf} and \code{score} are lexemes
 		\item String of characters is a lexeme
 		\item Parenthesis, coma and semicolumn characters are also lexemes
+		\end{itemize}
+	\end{example}
+\end{frame}
+
+\begin{frame}{Pattern}
+	\begin{definition}
+		A description of the form that the lexemes of a token may take
+		\begin{itemize}
+			\item For keyword: the pattern is a sequence of characters that form the keyword
+			\item For identifier and some other token: the pattern is a more complex structure that is \emph{matched} by many strings
+		\end{itemize}
+	\end{definition}
+	\vspace{1cm}
+	\begin{example}
+		\begin{itemize}
+			\item Let the statement: \code{printf("Total = \%d\\n", score);}
+			\item both \id{printf} and \id{score} are described by the pattern \regex{[\_a-zA-Z][\_a-zA-Z]*} (regex)
 		\end{itemize}
 	\end{example}
 \end{frame}
@@ -73,25 +90,8 @@
 	\vfill
 	\begin{example}
 		\begin{itemize}
-		\item Let the statement: \code{printf("Total = \%d\n", score);}
+		\item Let the statement: \code{printf("Total = \%d\\n", score);}
 		\item both \code{printf} and \code{score} are lexemes matching the pattern for token \token{id}
-		\end{itemize}
-	\end{example}
-\end{frame}
-
-\begin{frame}{Pattern}
-	\begin{definition}
-		A description of the form that the lexemes of a token may take
-		\begin{itemize}
-			\item For keyword: the pattern is a sequence of characters that form the keyword
-			\item For identifier and some other token: the pattern is a more complex structure that is \emph{matched} by many strings
-		\end{itemize}
-	\end{definition}
-	\vspace{1cm}
-	\begin{example}
-		\begin{itemize}
-		\item Let the statement: \code{printf("Total = \%d\n", score);}
-		\item both \id{printf} and \id{score} are described by the pattern \regex{[\_a-zA-Z][\_a-zA-Z]*} (regex)
 		\end{itemize}
 	\end{example}
 \end{frame}
@@ -437,7 +437,7 @@
 		\hline
 		$r(st) = (rs)t$ & Concatenation is associative \\
 		\hline
-		$r(s|t) = rs|rt$; $(s|t)r = st|tr$ & Concatenation distributes over $|$ \\
+		$r(s|t) = rs|rt$; $(s|t)r = sr|tr$ & Concatenation distributes over $|$ \\
 		\hline
 		$\epsilon r = r\epsilon = r$ & $\epsilon$ is the identity for concatenation \\
 		\hline
@@ -458,7 +458,7 @@
 		If $\Sigma$ is an alphabet of basic symbols, a regular definition is a sequence of definitions of the form: \\
 		\centering\begin{tabular}{rcl}
 			\regex{d\textdown{1}} & $\rightarrow$ & $r_1$ \\
-			\regex{d\textdown{2}} & $\rightarrow$ & $r2$ \\
+			\regex{d\textdown{2}} & $\rightarrow$ & $r_2$ \\
 			& \dots &\\
 			\regex{d\textdown{n}} & $\rightarrow$ & $r_n$ \\
 		\end{tabular}
@@ -523,9 +523,10 @@
 \subsubsectiontableofcontentslide*
 
 \begin{frame}{Definition of our Illustrative Language}
-	\alertbox*{We are able to express patterns using regular expressions \\
+	\alertbox*{We are able to express patterns using regular expressions. \\
 		How to define regex patterns for all the tokens of our language?}
-	\vspace{.5cm}
+	\vspace{.25cm}
+	Basic language grammar:
 	\centering
 	\begin{tabular}{rcl}
 		\regex{statement} & $\rightarrow$ & \ccode{\kw{if}} \regex{expr} \ccode{\kw{then}} \regex{statement} \ccode{\kw{else}} \regex{statement} \\
@@ -545,9 +546,9 @@
 	\begin{small}
 	\begin{tabularx}{\linewidth}{|l|X|l|X|}
 		\hline
-		\tabularheading\chead{Lexeme}&\chead{Regular Expression}&\chead{Token}&\chead{Token Attributes} \\
+		\tabularheading\chead{Lexeme Example}&\chead{Regular Expression}&\chead{Token}&\chead{Token Attributes} \\
 		\hline
-		ws & $[\ {\backslash}n{\backslash}t{\backslash}r]+$ & - & - \\
+		\textvisiblespace\textvisiblespace & $[\textvisiblespace{\backslash}n{\backslash}t{\backslash}r]+$ & - & - \\
 		\hline
 		if & $if$ & \token{if} & - \\
 		\hline
@@ -557,7 +558,7 @@
 		\hline
 		id & $\regex{letter\_}\ (\regex{letter\_}|\regex{digit})*$ & \token{id} & pointer to symbol table's entry \\
 		\hline
-		number & $\regex{digits}(.\ \regex{digits})?$ & \token{number} & pointer to symbol table's entry \\
+		$12.5$ & $\regex{digits}(.\ \regex{digits})?$ & \token{number} & pointer to symbol table's entry \\
 		\hline
 		= & $=$ & \token{relop} & \ccode{EQ} \\
 		\hline
@@ -662,7 +663,7 @@ keywords are not identifiers even though they look like identifiers.}
 \begin{frame}{Implementation of a Lexical Analyzer}
 	\alertbox*{There are several ways that a collection of transition diagrams can be used to build a lexical analyzer}
 	\begin{itemize}
-	\item A variable state is holding the number of the current state for a transition diagram
+	\item A variable is holding the number of the current state for a transition diagram
 	\vspace{.5cm}
 	\item Each transition diagram is simulated by a piece of code inside a function
 	\vspace{.5cm}
@@ -811,12 +812,12 @@ Auxiliary functions
 	\end{block}}
 	\only<3>{\begin{block}{Auxiliary functions}
 		\begin{itemize}
-		\item Holds whatever additional functions are used in the actions
+		\item Holds additional functions that are used in the actions
 		\end{itemize}
 	\end{block}}
 \end{frame}
 
-\begin{frame}[fragile,background=9]{{Example of a Lex Program:} declarations}
+\begin{frame}[fragile,background=6]{{Example of a Lex Program:} declarations}
 	\begin{lstlisting}[style=lststyle-c]
 %{
   /* definitions of manifest constants, if not already
@@ -857,7 +858,7 @@ else      { return ELSE; }
 	\end{lstlisting}
 \end{frame}
 
-\begin{frame}[fragile,background={10}]{{Example of a Lex Program:} auxiliary functions}
+\begin{frame}[fragile,background=6]{{Example of a Lex Program:} auxiliary functions}
 	\begin{lstlisting}[style=lststyle-c]
 int installID() {
   /* function to install the lexeme, whose first
@@ -1064,7 +1065,7 @@ Translation rules
 				\SetKwFunction{nextchar}{nextChar}
 				\SetKwFunction{move}{move}
 				\Inputs{An input string \code{x} terminated by \kw{eof} character. A NFA $N$ with start state $s_0$, accepting states $F$, and transition function \move}
-				\Output{Answer ``yes'' if $N$ accepts \ccode{x}; ``no'' otherwise}
+				\Output{Answer ``yes'' if $N$ accepts \code{x}; ``no'' otherwise}
 				\Behavior{The algorithm keeps a set of current states $S$, those that are reached from $s_0$ following a path labeled by the inputs read so far. If $c$ is the next input character, read by the function \nextchar, then we first compute \move($S$,$c$) and then close that set using \epsilonclosure}
 				\BlankLine
 				\Begin{
@@ -1667,7 +1668,7 @@ Translation rules
 	\centering\pgfuseimage{complete_dfa_automaton} \\[.25cm]
 	\begin{block}{\small Note}\small
 	Both states $6$ and $8$ are final states for patterns ``$abb$'' and ``$a*b+$'', resp \\
-	Only the first in the Lex program is considered by the NDA
+	Only the first in the Lex program is considered by the DFA
 	\end{block}
 \end{frame}
 
@@ -1698,7 +1699,7 @@ Translation rules
 				Read \texttt{"a"} \\[-.5em]
 				Pass the edge of the DFA, and update the current state \\[-.5em]
 				Because the state $2$ is a final state in the NFA, the state \\[-.5em]
-				$(247)$ is marked
+				$(247)$ in DFA is marked
 				\end{footnotesize}
 		}
 		\only<3>{	
@@ -1710,7 +1711,7 @@ Translation rules
 				\begin{footnotesize}
 				Read \texttt{"b"} \\[-.5em]
 				Pass the edge of the DFA, and update the current state \\[-.5em]
-				Because the state $8$ is a final state in the NFA, the state $(8)$ is marked
+				Because the state $8$ is a final state in the NFA, the state $(8)$ in DFA is marked
 				\end{footnotesize}
 		}
 		\only<5>{	
