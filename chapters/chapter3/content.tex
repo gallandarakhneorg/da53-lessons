@@ -969,7 +969,7 @@
 
 \begin{frame}[background=6]{{What are the Functions} FIRST and FOLLOW?}
 	\begin{itemize}
-	\item The construction of both top-down and bottom-up parsers uses 0two functions associated with a grammar G:
+	\item The construction of both top-down and bottom-up parsers uses two functions associated with a grammar G:
 		\begin{enumerate}
 		\item FIRST
 		\item FOLLOW
@@ -1176,9 +1176,9 @@
 		\begin{definitionblock}{$LL(1)$ Grammar (refined)}
 			Grammar $G$ is $LL(1)$ iff whenever $\bnfpn{A} \bnfopo \alpha \bnfor \beta$ are two distinct productions of $G$, the following conditions hold:
 				\begin{enumerate}
-				\item For nonterminal $\bnfts{a}$, both $\alpha$ and $\beta$ derive strings beginning with $\bnfts{a}$
+				\item For nonterminal $\bnfts{a}$, only one $\alpha$ or $\beta$ derives strings beginning with $\bnfts{a}$
 				\item At most one of $\alpha$ and $\beta$ can derive the empty string
-				\item If $\beta\seqderiv\bnfes$, then $\alpha$ does not derive any string beginning with a terminal in FOLLOW($A$)
+				\item If $\beta\seqderiv\bnfes$, then $\alpha$ does not derive any string beginning with a terminal in FOLLOW($B$)
 				\item Likewise, if $\alpha\seqderiv\bnfes$, then $\beta$ does not derive any string beginning with a terminal in FOLLOW($A$)
 				\end{enumerate}
 		\end{definitionblock}
@@ -1287,7 +1287,7 @@
 		\only<9>{	\Emph{For production:} \bnfmark{6}~$\bnfpn{T'} \bnfopo \bnfes$ \\
 				FIRST($\bnfes$) = $\{ \bnfes \}$ \\
 				FOLLOW($T'$) = $\{ \bnfts{+}, \bnfts{)}, \bnfts{eof} \}$ \\
-				Put the production in $M[T',\bnfts{+}]$ and $M[T,\bnfts{)}]$ \\
+				Put the production in $M[T',\bnfts{+}]$ and $M[T',\bnfts{)}]$ \\
 				Put the production in $M[T',\bnfts{eof}]$
 		}
 		\only<10>{	\Emph{For production:} \bnfmark{7}~$\bnfpn{F} \bnfopo \bnfts{(} \bnfpn{E} \bnfts{)}$ \\
@@ -1308,7 +1308,7 @@
 \begin{frame}{Nonrecursive Predictive Parsing}
 	\begin{itemize}
 	\item Nonrecursive predictive parser can be built by maintaining a stack explicitly, rather than implicitly via recursive calls
-	\item Parser mimics a leftmost derivation. If $w$ is the input that has been matched so far, then the stack holds a sequence of grammar symbols a such that:
+	\item Parser mimics a leftmost derivation. If $w$ is the input that has been matched so far, then the stack holds a sequence of grammar symbols such that:
 		\begin{center}
 			$S \seqderiv w\;\alpha$
 		\end{center}
@@ -1700,7 +1700,7 @@
 			\bnfalt*{\bnfts{id}} \\
 			\bnfprod*{expression}{\bnfts{id} \bnfts{(} \bnfpn{expressions} \bnfts{)}} \\
 			\bnfalt*{\bnfts{number}} \\
-			\bnfalt*{\bnftd{id}} \\
+			\bnfalt*{\bnfts{id}} \\
 			\bnfprod*{expressions}{\bnfpn{expressions} \bnfts{,} \bnfpn{expression}} \\
 			\bnfalt*{\bnfpn{expression}}
 		\end{bnf}\end{footnotesize}
@@ -2063,7 +2063,7 @@
 	\BlankLine
 	\Begin{
 		$S$ \affect $[ s_0 ]$; $a$ \affect \inputSymbol() \;
-		$stopParser$ \affect \code{false} \;
+		$stopParser$ \affect false \;
 		\While{$\neg stopParser$}{
 			$s$ \affect \topOf($S$) \;
 			\uIf{ACTION[$s,a$] = \Shift($t$)}{
@@ -2077,7 +2077,7 @@
 				\print( $\bnfpn{A} \bnfopo \beta$) \;
 			}
 			\uIf{ACTION[$s,a$] = \Accept}{
-				$stopParser$ \affect \code{true} \;
+				$stopParser$ \affect true \;
 			}
 			\Else{
 				\throw{"No production found"}
@@ -2337,12 +2337,12 @@
 	\begin{small}
 	\only<1>{\begin{block}{Parser Definition}
 		\begin{itemize}
-		\item The name that follows ``PARSER\_BEGIN'' and ``PARSER\_END'' must be the same and this identifies the name of the generated parser
+		\item The \texttt{<parserName>} that follows ``PARSER\_BEGIN'' and ``PARSER\_END'' must be the same and it identifies the class name of the generated parser
 		\end{itemize}
 	\end{block}}
 	\only<2>{\begin{block}{Options}
 		\begin{itemize}
-		\item JavaCC options permits to control the behavior of the parser
+		\item JavaCC options permits to control the behavior of the parser: case [in]sensitive, etc.
 		\end{itemize}
 	\end{block}}
 	\only<3>{\begin{block}{Java compilation unit}
@@ -2353,7 +2353,7 @@
 		\ccode{\}} \\
 		\dots
 	\end{block}}
-	\only<4>{\begin{block}{Predefined functions in the \ccode{parser\_name} class}
+	\only<4>{\begin{block}{Predefined functions in the \ccode{parserName} class}
 		Two functions are automatically generated inside the parser class:
 		\begin{itemize}
 		\item \code{Token getNextToken()}: returns the next available token
@@ -2388,7 +2388,7 @@
 	\begin{enumerate}
 	\item[TOKEN] describes tokens in the grammar. The token manager creates a Token object for each match of such a regular expression and returns it to the parser
 	\vfill
-	\item[SPECIAL\_TOKEN] like tokens, except that they do not have significance during parsing, ie. the BNF productions ignore them
+	\item[SPECIAL\_TOKEN] like tokens, except that they do not have significance during parsing, i.e. the BNF productions ignore them
 	\vfill
 	\item[SKIP] simply skipped (ignored) by the token manager
 	\vfill
@@ -2415,7 +2415,7 @@
 \begin{frame}{Methods of the Predefined \ccode{Token} Class}
 	\begin{itemize}
 	\item \code{Object getValue()} \\
-		An optional attribute value of the \ccode{Token}. Tokens which are not used as syntactic sugar will often contain meaningful values that will be used later on by the compiler or interpreter. This attribute value is often different from the image. Any subclass of Token that actually wants to return a non-null value can override this method as appropriate
+		An optional attribute value of the \ccode{Token}. Tokens which are not used as syntactic sugar will often contain meaningful values that will be used later on by the compiler or interpreter. This attribute value is often different from the image. \emph{Any subclass of Token that actually wants to return a non-null value can override this method as appropriate}
 	\vfill
 	\item \code{static final Token newToken(int ofKind)} \\
 		\code{static final Token newToken(int ofKind, String image)} \\
@@ -2425,17 +2425,18 @@
 
 \begin{frame}[t]{Grammar Productions}
 	\begin{definition}\small
-		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater} {\textless}identifier{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
+		\ccode{{\textless}access\_modifier{\textgreater} {\textless}return\_type{\textgreater} {\textless}name{\textgreater} \bnfts( {\textless}parameters{\textgreater} \bnfts) \bnfts:} \\
 		\ccode{{\textless}java\_block{\textgreater}} \\
 		\ccode{\bnfts\{ {\textless}expansion\_choices{\textgreater} \bnfts\}}
 	\end{definition}
 	\begin{itemize}
-	\item Name of the non-terminal $\Rightarrow$ name of the method
+	\item \emph{Notation very similar to a Java function/method declaration:}
 		\begin{itemize}
-		\item parameters and return value depends on the goal of the compiler
+		\item Name of the non-terminal $\Rightarrow$ name of the method
+		\item Default access modifier: \code{public}
+		\item Parameters and return value depends on the goal of the compiler, and enable to pass values from production to production
 		\end{itemize}
-	\item Calls to non-terminals $\Rightarrow$ function calls
-	\item Default access modifier: \code{public}
+	\item Derivation of non-terminal $A$ $\Rightarrow$ method call \code{A()}
 	\end{itemize}
 \end{frame}
 
@@ -2461,11 +2462,16 @@
 	\end{definition}
 	\begin{description}
 	\item[Java block] arbitrary Java declarations and code put at the beginning of the method generated for the Java non-terminal
-	\item[Expansion choices] a sequence of expansion units. Each nonterminal is written as a function call. Semantic actions are Java blocks inside this part of the BNF production
+	\item[Expansion choices] a sequence of expansion units that corresponds to the production bodies:
+		\begin{itemize}
+			\item Each nonterminal is written as a function call
+			\item Semantic actions are Java blocks inside this part of the BNF production
+		\end{itemize}
 	\end{description}
 \end{frame}
 
 \begin{frame}[fragile]{Example of JavaCC File \insertcontinuationwith{1}}
+	\alertbox{Language that represents arithmetic expressions and its interpreter}
 	\begin{lstlisting}[style=lststyle-java]
 	PARSER_BEGIN(CalculatorParser)
 	    public class CalculatorParser {
