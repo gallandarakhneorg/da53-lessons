@@ -815,7 +815,7 @@
 		\end{column}
 	\end{columns}
 	\vfill
-	\alertbox{Procedures and their implementation are detailed in Chapter~\ref{chap:runtime_environments}}
+	\alertbox{Procedure definition, and their concrete implementation, is detailed in Chapter~\ref{chap:runtime_environments}}
 \end{frame}
 
 \begin{frame}{{Index Copy} Instructions}
@@ -877,9 +877,9 @@ do {
 		\end{column}
 	\end{columns}
 	\vspace{.5cm}
-	\hiconbox{Variable declarations are to translated\newline
-		Memory size of a byte value is 8\newline
-		Address is the number of a valid storage cell}{information-icon}
+	\hiconbox{Variable declarations are not translated to TAC.\newline
+		Memory size of a byte value is 8.\newline
+		Address \tactext{\t2} is the number of a valid storage cell}{information-icon}
 \end{frame}
 
 \begin{frame}{{Do we need more} three-address instructions?}
@@ -889,7 +889,7 @@ do {
 			Set of instructions must be rich enough to implement the operations from the source language
 		}
 		\arrow[bg=CIADgreen]{
-			TAC Instructions close to machine instructions $\Rightarrow$ easier to implement intermediate form on target machine
+			TAC instructions are close to machine instructions \newline $\Rightarrow$ easier to implement intermediate form on target machine
 		}
 		\arrow[bg=CIADmagenta]{
 			But if TAC instructions are too low-level, optimizer and code generator have harder work for generating them
@@ -991,7 +991,7 @@ do {
 
 \begin{frame}{Triple Form}
 	\hiconbox{
-		Result in quadruples is primarily used for temporary names
+		Results in quadruples is primarily used for temporary names
 	}{error-icon}
 	\vspace{.25cm}
 	\begin{definitionblock}{Triple Form for Three-Address Instruction}
@@ -1002,7 +1002,7 @@ do {
 	\end{definitionblock}
 	\vspace{.25cm}
 	\hiconbox{
-		Result of an operation \tactext{x {\textless}op{\textgreater} y} is referred by its position, e.g., \tactext{(0)}, rather than by an explicit temporary name
+		Result of an operation \tactext{x {\textless}op{\textgreater} y} is referred by its position in memory, e.g., \tactext{(0)}, rather than by an explicit temporary name
 	}{information-icon}
 \end{frame}
 
@@ -1127,7 +1127,7 @@ do {
 	\end{small}
 	\vspace{.2cm}
 	\simplebox{
-		Optimizing compiler can reorder the instruction list, without affecting the triples themselves
+		Optimizing compiler can reorder the instruction list (on left), without affecting the triples themselves (on the right)
 	}
 	\begin{small}
 		\hiconbox{
@@ -1186,8 +1186,9 @@ do {
 \end{frame}
 
 \begin{frame}{$\phi$-Function}
-	\begin{definitionblock}{$\phi$-Function}
-		Notation convention to \emph{combine two definitions of the same variable} that are from parallel control-flow paths
+	\begin{definitionblock}{Definition}
+		Notation convention to \emph{combine two definitions of the same variable} that are from parallel control-flow paths. \newline
+		\textbf{$\phi$-function replies the ``defined'' value from its arguments}
 	\end{definitionblock}
 	\begin{example}
 		\begin{columns}
@@ -1211,8 +1212,7 @@ do {
 		\end{columns}
 	\end{example}
 	\alertbox{Impossible to determine which \tactext{x} value is used for \tactext{x * a} \newline
-		$\Rightarrow$ harder to optimize the target code}
-	\alertbox*{$\phi$-function replies the ``defined'' value from its arguments}
+		$\Rightarrow$ harder to optimize the target code $\Rightarrow$ $\phi$-function helps}
 \end{frame}
 
 \section[Generation of variables]{Code generation of variables}
@@ -1222,7 +1222,7 @@ do {
 \subsectiontableofcontentslide*
 
 \begin{frame}{Types and Declarations}
-	\alertbox*{Application of types can be grouped as follows:}
+	\alertbox*{Usages of variable types can be grouped as follows:}
 	\vspace{.25cm}
 	\begin{center}
 		\fancybox{Type Checking}{
@@ -1313,7 +1313,7 @@ do {
 		\alertbox{
 			From the type of a name, amount of storage needed at run-time could be determined at compile time
 		}
-		\begin{block}{Static size Determination}
+		\begin{block}{Static Size Determination}
 			\begin{itemize}
 				\item \emph{Width of a type} (and not of a variable) is the number of storage units (usually bytes) needed for storing values of that type
 				\item Basic type requires an integral number of storage units

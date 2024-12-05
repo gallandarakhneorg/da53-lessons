@@ -65,7 +65,7 @@
 				\only<4>{\begin{itemize}
 						\item \alert{Stack} is used to store data structures, named \alert{activation records}
 						\item Activation records are generated during the procedure/function calls (explained later)
-						\item Each record contains the status of the machine: ordinal counter, machine registers, and data whose lifetimes are the same as the activation time (usually local variables)
+						\item Each record contains the state of the machine: ordinal counter, machine registers, and data whose lifetimes are the same as the activation time (usually local variables)
 				\end{itemize}}
 				\only<5>{\begin{itemize}
 						\item Many languages allow the programmer to allocates and deallocates data under program control (malloc, new\dots)
@@ -339,7 +339,7 @@ main() {
 			\nohyphens{Caller knows where to put the return value, relative to its own record}
 		}
 		\only<2>{	\small
-			\nohyphens{If machine status are standardized, then programs such as debuggers will have an easier time deciphering the stack contents if an error occurs}
+			\nohyphens{If machine states are standardized, then programs such as debuggers will have an easier time deciphering the stack contents if an error occurs}
 		}
 		\only<3>{	\small
 			\nohyphens{Most of the variables have a size that can be determined by the compiler. But some cannot (dynamic arrays\dots)} \\[.25cm]
@@ -368,7 +368,7 @@ main() {
 \begin{frame}[background=6]{Typical Return Sequence}
 	\begin{enumerate}
 		\item Callee places the return value next to the parameters
-		\item Using information in the machine-status fields, callee restores \code{top\_sp} and other registers, \\
+		\item Using information in the machine-state fields, callee restores \code{top\_sp} and other registers, \\
 		branches to the return address that the caller placed in the status field
 		\item Although \code{top\_sp} has been decremented, the caller knows where the return value is, relative to the current value of \code{top\_sp} \\
 		Caller may use that value
@@ -447,7 +447,7 @@ unsafe void myFunction(int n) {
 	\end{columns}
 	\vspace{.25cm}
 	\begin{center}
-		\ccode{top $\leftarrow$ top\_sp - length(fixed\_record\_part)}
+		\ccode{top $\leftarrow$ top\_sp - length(dynamic\_record\_part)}
 	\end{center}
 \end{frame}
 
@@ -648,7 +648,7 @@ unsafe void myFunction(int n) {
 						}
 						\Return{babylonian\_algo(q/2, 10)}\;
 					}
-					sqrt(4)\;
+					sqrt(5)\;
 				\end{myprocedure}
 			\end{scriptsize}
 	}}
@@ -1051,7 +1051,7 @@ unsafe void myFunction(int n) {
 	\end{block}
 	\vspace{.2cm}
 	\begin{definitionblock}{Memory Hole}
-		Free chunks are named hole
+		Free chunks are named holes
 	\end{definitionblock}
 \end{frame}
 
@@ -1114,7 +1114,7 @@ unsafe void myFunction(int n) {
 					\Return{$c$}
 				}
 				\ForEach(\tcp*[f]{Search for smallest chunk}){$\alpha \in \mathbb{S} \cup \{\text{wilderness chunk}\}$}{
-					\If{$\exists c \in$bin$_\alpha$}{
+					\If{$\alpha \ge s$ and $\exists c \in$bin$_\alpha$}{
 						$\langle c,r\rangle$ \affect \allocate{bin$_\alpha,s$} \tcp*{First-fit or best-fit strategy}
 						$\beta$ \affect $\alpha - s$ \;
 						bin$_\beta$ \affect bin$_\beta \cup r$ \;
@@ -1409,7 +1409,7 @@ unsafe void myFunction(int n) {
 	\begin{center}
 		\titlebox*[.4\linewidth]{Statically typed languages}{Types are determined at compile time (ML\dots)}
 		\hspace{1cm}
-		\titlebox*[.4\linewidth]{Dynamically typed languages}{Types are determined at run-time (Java\dots)}
+		\titlebox*[.4\linewidth]{Dynamically typed languages}{Types are determined at run-time (Python\dots)}
 	\end{center}
 \end{frame}
 
@@ -1499,7 +1499,7 @@ unsafe void myFunction(int n) {
 		\begin{itemize}
 			\item Assignments \code{x = y} (\code{x} and \code{y} are references) have two effects:
 			\begin{enumerate}
-				\item \ccode{x} is a now a reference to the object referred by \ccode{y} \\
+				\item \ccode{x} is now a reference to the object referred by \ccode{y} \\
 				Referenced object by \ccode{x} and \ccode{y} is reachable while \ccode{x} or \ccode{y} is reachable
 				\item Original reference of \ccode{x} is lost \\
 				If this lost reference is the last on the object, the object becomes unreachable
